@@ -2,7 +2,7 @@ package maluevartem.cloud_storage_backend.service;
 
 import lombok.RequiredArgsConstructor;
 import maluevartem.cloud_storage_backend.dto.FileDto;
-import maluevartem.cloud_storage_backend.entity.File;
+import maluevartem.cloud_storage_backend.entity.FileEntity;
 import maluevartem.cloud_storage_backend.model.FileBody;
 import maluevartem.cloud_storage_backend.repository.FileRepository;
 import org.springframework.stereotype.Service;
@@ -10,11 +10,7 @@ import org.springframework.transaction.annotation.Transactional;
 import org.springframework.web.multipart.MultipartFile;
 
 import java.io.BufferedInputStream;
-import java.io.FileInputStream;
 import java.io.IOException;
-import java.io.InputStream;
-import java.nio.file.Files;
-import java.nio.file.Paths;
 import java.security.DigestInputStream;
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
@@ -41,10 +37,10 @@ public class FileService {
         }
 
 //        TODO fileRepository.findFileByHash(hash);
-        File createdFile = File.builder()
+        FileEntity createdFile = FileEntity.builder()
                 .fileName(fileName)
                 .fileType(file.getContentType())
-                .data(fileBytes)
+                .fileData(fileBytes)
                 .hash(hash)
                 .size(file.getSize())
                 .build();
@@ -73,13 +69,13 @@ public class FileService {
     @Transactional
     public FileDto getFile(String fileName) {
 
-        File fileFound = fileRepository.findFileByFileName(fileName);
+        FileEntity fileFound = fileRepository.findFileByFileName(fileName);
 //        TODO Exception "Файл не найден!"
 
         return FileDto.builder()
                 .fileName(fileFound.getFileName())
                 .fileType(fileFound.getFileType())
-                .data(fileFound.getData())
+                .fileData(fileFound.getFileData())
                 .hash(fileFound.getHash())
                 .size(fileFound.getSize())
                 .build();
@@ -87,7 +83,7 @@ public class FileService {
 
     public void renameFile(String fileName, FileBody fileBody) {
 
-        File fileFoundForUpdate = fileRepository.findFileByFileName(fileName);
+        FileEntity fileFoundForUpdate = fileRepository.findFileByFileName(fileName);
 
 //        TODO fileRepository.findFileByFileName(fileName);
 
@@ -97,19 +93,19 @@ public class FileService {
 
     public void deleteFile(String fileName) {
 //        TODO проверка
-        File fileFromStorage = fileRepository.findFileByFileName(fileName);
+        FileEntity fileFromStorage = fileRepository.findFileByFileName(fileName);
         fileRepository.deleteById(fileFromStorage.getId());
     }
 
     public List<FileDto> getAllFiles(int limit) {
 
-        List<File> filesByUserIdWithLimit = null; //fileRepository.findFilesByLimit(limit);
+        List<FileEntity> filesByUserIdWithLimit = null; //fileRepository.findFilesByLimit(limit);
 
         return filesByUserIdWithLimit.stream()
                 .map(file -> FileDto.builder()
                         .fileName(file.getFileName())
                         .fileType(file.getFileType())
-                        .data(file.getData())
+                        .fileData(file.getFileData())
                         .hash(file.getHash())
                         .size(file.getSize())
                         .build()).collect(Collectors.toList());

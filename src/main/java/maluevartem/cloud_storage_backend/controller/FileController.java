@@ -36,7 +36,7 @@ public class FileController {
         return ResponseEntity.ok()
                 .contentType(MediaType.parseMediaType(fileDto.getFileType()))
                 .header(HttpHeaders.CONTENT_DISPOSITION, "attachment; filename=\"" + fileDto.getFileName() + "\"")
-                .body(fileDto.getData());
+                .body(fileDto.getFileData());
     }
 
     @PutMapping("/file")

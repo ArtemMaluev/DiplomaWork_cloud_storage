@@ -9,7 +9,7 @@ import javax.persistence.*;
 @AllArgsConstructor
 @Builder
 @Entity
-public class File {
+public class FileEntity {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -19,14 +19,14 @@ public class File {
 
     private String fileType;
 
-    @Column(columnDefinition = "LONGBLOB", name = "data")
-    private byte[] data;
+    @Column(columnDefinition = "LONGBLOB", name = "fileData")
+    private byte[] fileData;
 
     private String hash;
 
     private Long size;
 
-//    @ManyToOne(fetch = FetchType.LAZY)
-//    @JoinColumn(name = "user_id", nullable = false)
-//    private User user;
+    @ManyToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name = "user_id", nullable = false)
+    private UserEntity userEntity;
 }

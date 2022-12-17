@@ -10,7 +10,7 @@ public class FileDto {
 
     private String fileName;
     private String fileType;
-    private byte[] data;
+    private byte[] fileData;
     private String hash;
     private Long size;
 
