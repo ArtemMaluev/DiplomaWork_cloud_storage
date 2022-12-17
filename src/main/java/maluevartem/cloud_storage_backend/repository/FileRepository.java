@@ -2,17 +2,19 @@ package maluevartem.cloud_storage_backend.repository;
 
 import maluevartem.cloud_storage_backend.entity.FileEntity;
 import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.data.jpa.repository.Query;
 import org.springframework.stereotype.Repository;
 
+import java.util.List;
 import java.util.Optional;
 
 @Repository
 public interface FileRepository extends JpaRepository<FileEntity, Long> {
 
-    FileEntity findFileByFileName(String fileName);
+    Optional<FileEntity> findFileByFileName(String fileName);
 
     Optional<FileEntity> findFileByHash(String hash);
 
-
-    //List<File> findFilesByLimit(int limit);
+    @Query(value = "select * from files_entity f where f.user_id = ?1 order by f.id desc limit ?2", nativeQuery = true)
+    List<FileEntity> findFilesByLimit(int limit);
 }

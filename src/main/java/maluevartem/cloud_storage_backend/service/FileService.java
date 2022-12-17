@@ -3,6 +3,8 @@ package maluevartem.cloud_storage_backend.service;
 import lombok.RequiredArgsConstructor;
 import maluevartem.cloud_storage_backend.dto.FileDto;
 import maluevartem.cloud_storage_backend.entity.FileEntity;
+import maluevartem.cloud_storage_backend.exception.FileNotFoundException;
+import maluevartem.cloud_storage_backend.exception.IncorrectDataEntry;
 import maluevartem.cloud_storage_backend.model.FileBody;
 import maluevartem.cloud_storage_backend.repository.FileRepository;
 import org.springframework.stereotype.Service;
@@ -26,21 +28,26 @@ public class FileService {
     @Transactional
     public void addFile(MultipartFile file, String fileName) {
 
-//        TODO fileRepository.findFileByFileName(fileName);
+//        TODO добавить ID
+        fileRepository.findFileByFileName(fileName).ifPresent(s -> {
+            throw new IncorrectDataEntry("Файл с таким именем: { " + fileName + " } уже существует", 0);
+        });
         String hash = null;
-        byte[] fileBytes = null;
+        byte[] fileData = null;
         try {
             hash = checksum(file);
-            fileBytes = file.getBytes();
+            fileData = file.getBytes();
         } catch (NoSuchAlgorithmException | IOException e) {
             e.printStackTrace();
         }
 
-//        TODO fileRepository.findFileByHash(hash);
+        if (fileRepository.findFileByHash(hash).isPresent()) {
+            return;
+        }
         FileEntity createdFile = FileEntity.builder()
                 .fileName(fileName)
                 .fileType(file.getContentType())
-                .fileData(fileBytes)
+                .fileData(fileData)
                 .hash(hash)
                 .size(file.getSize())
                 .build();
@@ -69,39 +76,46 @@ public class FileService {
     @Transactional
     public FileDto getFile(String fileName) {
 
-        FileEntity fileFound = fileRepository.findFileByFileName(fileName);
-//        TODO Exception "Файл не найден!"
+//        TODO добавить ID
+        FileEntity file = fileRepository.findFileByFileName(fileName).orElseThrow(() -> new FileNotFoundException(
+                        "Файл с именем: { " + fileName + " } не найден", 0));
 
         return FileDto.builder()
-                .fileName(fileFound.getFileName())
-                .fileType(fileFound.getFileType())
-                .fileData(fileFound.getFileData())
-                .hash(fileFound.getHash())
-                .size(fileFound.getSize())
+                .fileName(file.getFileName())
+                .fileType(file.getFileType())
+                .fileData(file.getFileData())
+                .hash(file.getHash())
+                .size(file.getSize())
                 .build();
     }
 
     public void renameFile(String fileName, FileBody fileBody) {
 
-        FileEntity fileFoundForUpdate = fileRepository.findFileByFileName(fileName);
+//        TODO добавить ID
+        FileEntity fileToRename = fileRepository.findFileByFileName(fileName).orElseThrow(() -> new FileNotFoundException(
+                        "Файл с именем: { " + fileName + " } не найден", 0));
 
-//        TODO fileRepository.findFileByFileName(fileName);
+//        TODO добавить ID
+        fileRepository.findFileByFileName(fileName).ifPresent(s -> {
+            throw new IncorrectDataEntry("Файл с таким именем: { " + fileName + " } уже существует", 0);
+        });
 
-        fileFoundForUpdate.setFileName(fileBody.getFileName());
-        fileRepository.save(fileFoundForUpdate);
+        fileToRename.setFileName(fileBody.getFileName());
+        fileRepository.save(fileToRename);
     }
 
     public void deleteFile(String fileName) {
-//        TODO проверка
-        FileEntity fileFromStorage = fileRepository.findFileByFileName(fileName);
+//        TODO добавить ID
+        FileEntity fileFromStorage = fileRepository.findFileByFileName(fileName).orElseThrow(() -> new FileNotFoundException(
+                "Файл с именем: { " + fileName + " } не найден", 0));
         fileRepository.deleteById(fileFromStorage.getId());
     }
 
     public List<FileDto> getAllFiles(int limit) {
 
-        List<FileEntity> filesByUserIdWithLimit = null; //fileRepository.findFilesByLimit(limit);
+        List<FileEntity> listFiles = fileRepository.findFilesByLimit(limit);
 
-        return filesByUserIdWithLimit.stream()
+        return listFiles.stream()
                 .map(file -> FileDto.builder()
                         .fileName(file.getFileName())
                         .fileType(file.getFileType())

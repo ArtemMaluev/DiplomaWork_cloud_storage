@@ -2,6 +2,7 @@ package maluevartem.cloud_storage_backend.controller;
 
 import lombok.RequiredArgsConstructor;
 import maluevartem.cloud_storage_backend.dto.FileDto;
+import maluevartem.cloud_storage_backend.exception.FileNotFoundException;
 import maluevartem.cloud_storage_backend.model.FileBody;
 import maluevartem.cloud_storage_backend.service.FileService;
 import org.springframework.http.HttpHeaders;
@@ -24,7 +25,7 @@ public class FileController {
     @PostMapping("/file")
     public ResponseEntity<Void> addFile(@NotNull @RequestParam("file") MultipartFile file, @RequestParam("filename") String fileName) {
         if (file.isEmpty()) {
-            // TODO Exception "Файл не выбран!"
+            throw new FileNotFoundException("Файл не выбран", 0);
         }
         fileService.addFile(file, fileName);
         return new ResponseEntity<>(HttpStatus.OK);
