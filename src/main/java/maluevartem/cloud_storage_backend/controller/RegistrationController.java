@@ -14,12 +14,14 @@ import javax.validation.Valid;
 @RequestMapping("/user")
 public class RegistrationController{
 
-    private RegistrationService registrationService;
+    private final RegistrationService registrationService;
 
     @PostMapping("/register")
     public ResponseEntity<UserDto> registerUser(@Valid @RequestBody UserDto userDto) {
-
-        return new ResponseEntity<>(registrationService.registerUser(userDto), HttpStatus.OK);
+        System.out.println(userDto.toString());
+        UserDto userDto1 = registrationService.registerUser(userDto);
+        System.out.println(userDto1.toString());
+        return new ResponseEntity<>(userDto1, HttpStatus.OK);
     }
 
     @GetMapping("/{id}")
