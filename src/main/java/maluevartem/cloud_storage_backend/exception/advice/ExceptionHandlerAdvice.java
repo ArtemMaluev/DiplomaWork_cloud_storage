@@ -1,5 +1,9 @@
-package maluevartem.cloud_storage_backend.exception;
+package maluevartem.cloud_storage_backend.exception.advice;
 
+import maluevartem.cloud_storage_backend.exception.FileNotFoundException;
+import maluevartem.cloud_storage_backend.exception.IncorrectDataEntry;
+import maluevartem.cloud_storage_backend.exception.InternalServerError;
+import maluevartem.cloud_storage_backend.exception.UserNotFoundException;
 import maluevartem.cloud_storage_backend.model.ErrorMessage;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

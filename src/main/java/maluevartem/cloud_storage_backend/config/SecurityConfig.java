@@ -2,38 +2,36 @@ package maluevartem.cloud_storage_backend.config;
 
 import lombok.RequiredArgsConstructor;
 import maluevartem.cloud_storage_backend.security.JWTFilter;
-import maluevartem.cloud_storage_backend.security.JWTUtil;
-import maluevartem.cloud_storage_backend.service.AuthenticationUserDetailService;
+import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.http.HttpMethod;
-import org.springframework.security.config.annotation.authentication.builders.AuthenticationManagerBuilder;
+import org.springframework.security.config.annotation.method.configuration.EnableGlobalMethodSecurity;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
-import org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter;
 import org.springframework.security.config.http.SessionCreationPolicy;
-import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
+import org.springframework.security.web.SecurityFilterChain;
+import org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter;
 
 @Configuration
 @EnableWebSecurity
 @RequiredArgsConstructor
-public class SecurityConfig extends WebSecurityConfigurerAdapter {
+@EnableGlobalMethodSecurity(prePostEnabled = true)
+public class SecurityConfig {
 
-    private final AuthenticationUserDetailService authenticationUserDetailService;
-    private final BCryptPasswordEncoder bCryptPasswordEncoder;
+    private final JWTFilter jwtFilter;
 
-    @Override
-    protected void configure(HttpSecurity http) throws Exception {
-        http.cors().and().csrf().disable().authorizeRequests()
+    @Bean
+    protected SecurityFilterChain filterChain(HttpSecurity http) throws Exception {
+        return http
+                .httpBasic().and().formLogin().disable()
+                .cors().and().csrf().and().logout().disable()
+                .sessionManagement().sessionCreationPolicy(SessionCreationPolicy.STATELESS)
+                .and()
+                .authorizeRequests()
                 .antMatchers(HttpMethod.POST, "/login", "/user/register").permitAll()
                 .anyRequest().authenticated()
                 .and()
-                //.addFilter(new JWTFilter(authenticationManager()))
-                //.addFilter(new JWTUtil(authenticationManager()))
-                .sessionManagement().sessionCreationPolicy(SessionCreationPolicy.STATELESS);
-    }
-
-    @Override
-    public void configure(AuthenticationManagerBuilder auth) throws Exception {
-        auth.userDetailsService(authenticationUserDetailService).passwordEncoder(bCryptPasswordEncoder);
+                .addFilterAfter(jwtFilter, UsernamePasswordAuthenticationFilter.class)
+                .build();
     }
 }
