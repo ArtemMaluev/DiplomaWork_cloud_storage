@@ -11,10 +11,10 @@ import java.util.Optional;
 @Repository
 public interface FileRepository extends JpaRepository<FileEntity, Long> {
 
-    Optional<FileEntity> findFileByFileName(String fileName);
+    Optional<FileEntity> findFileByUserEntityIdAndFileName(Long userId, String fileName);
 
-    Optional<FileEntity> findFileByHash(String hash);
+    Optional<FileEntity> findFileByUserEntityIdAndHash(Long userId, String hash);
 
     @Query(value = "select * from files_entity f where f.user_id = ?1 order by f.id desc limit ?2", nativeQuery = true)
-    List<FileEntity> findFilesByLimit(int limit);
+    List<FileEntity> findFilesByUserIdWithLimit(Long userId, int limit);
 }

@@ -7,6 +7,7 @@ import maluevartem.cloud_storage_backend.exception.FileNotFoundException;
 import maluevartem.cloud_storage_backend.exception.IncorrectDataEntry;
 import maluevartem.cloud_storage_backend.model.FileBody;
 import maluevartem.cloud_storage_backend.repository.FileRepository;
+import maluevartem.cloud_storage_backend.security.JWTToken;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 import org.springframework.web.multipart.MultipartFile;
@@ -24,13 +25,13 @@ import java.util.stream.Collectors;
 public class FileService {
 
     private final FileRepository fileRepository;
+    private final JWTToken jwtToken;
 
     @Transactional
     public void addFile(MultipartFile file, String fileName) {
-
-//        TODO добавить ID
-        fileRepository.findFileByFileName(fileName).ifPresent(s -> {
-            throw new IncorrectDataEntry("Файл с таким именем: { " + fileName + " } уже существует", 0);
+        Long userID = jwtToken.getAuthenticatedUser().getId();
+        fileRepository.findFileByUserEntityIdAndFileName(userID, fileName).ifPresent(s -> {
+            throw new IncorrectDataEntry("Файл с таким именем: { " + fileName + " } уже существует", userID);
         });
         String hash = null;
         byte[] fileData = null;
@@ -41,7 +42,7 @@ public class FileService {
             e.printStackTrace();
         }
 
-        if (fileRepository.findFileByHash(hash).isPresent()) {
+        if (fileRepository.findFileByUserEntityIdAndHash(userID, hash).isPresent()) {
             return;
         }
         FileEntity createdFile = FileEntity.builder()
@@ -75,10 +76,9 @@ public class FileService {
 
     @Transactional
     public FileDto getFile(String fileName) {
-
-//        TODO добавить ID
-        FileEntity file = fileRepository.findFileByFileName(fileName).orElseThrow(() -> new FileNotFoundException(
-                        "Файл с именем: { " + fileName + " } не найден", 0));
+        Long userID = jwtToken.getAuthenticatedUser().getId();
+        FileEntity file = fileRepository.findFileByUserEntityIdAndFileName(userID, fileName).orElseThrow(() -> new FileNotFoundException(
+                        "Файл с именем: { " + fileName + " } не найден", userID));
 
         return FileDto.builder()
                 .fileName(file.getFileName())
@@ -90,14 +90,12 @@ public class FileService {
     }
 
     public void renameFile(String fileName, FileBody fileBody) {
+        Long userID = jwtToken.getAuthenticatedUser().getId();
+        FileEntity fileToRename = fileRepository.findFileByUserEntityIdAndFileName(userID, fileName).orElseThrow(() -> new FileNotFoundException(
+                        "Файл с именем: { " + fileName + " } не найден", userID));
 
-//        TODO добавить ID
-        FileEntity fileToRename = fileRepository.findFileByFileName(fileName).orElseThrow(() -> new FileNotFoundException(
-                        "Файл с именем: { " + fileName + " } не найден", 0));
-
-//        TODO добавить ID
-        fileRepository.findFileByFileName(fileName).ifPresent(s -> {
-            throw new IncorrectDataEntry("Файл с таким именем: { " + fileName + " } уже существует", 0);
+        fileRepository.findFileByUserEntityIdAndFileName(userID, fileName).ifPresent(s -> {
+            throw new IncorrectDataEntry("Файл с таким именем: { " + fileName + " } уже существует", userID);
         });
 
         fileToRename.setFileName(fileBody.getFileName());
@@ -105,22 +103,20 @@ public class FileService {
     }
 
     public void deleteFile(String fileName) {
-//        TODO добавить ID
-        FileEntity fileFromStorage = fileRepository.findFileByFileName(fileName).orElseThrow(() -> new FileNotFoundException(
-                "Файл с именем: { " + fileName + " } не найден", 0));
+        Long userID = jwtToken.getAuthenticatedUser().getId();
+        FileEntity fileFromStorage = fileRepository.findFileByUserEntityIdAndFileName(userID, fileName).orElseThrow(() -> new FileNotFoundException(
+                "Файл с именем: { " + fileName + " } не найден", userID));
         fileRepository.deleteById(fileFromStorage.getId());
     }
 
     public List<FileDto> getAllFiles(int limit) {
+        Long userId = jwtToken.getAuthenticatedUser().getId();
 
-        List<FileEntity> listFiles = fileRepository.findFilesByLimit(limit);
+        List<FileEntity> listFiles = fileRepository.findFilesByUserIdWithLimit(userId, limit);
 
         return listFiles.stream()
                 .map(file -> FileDto.builder()
                         .fileName(file.getFileName())
-                        .fileType(file.getFileType())
-                        .fileData(file.getFileData())
-                        .hash(file.getHash())
                         .size(file.getSize())
                         .build()).collect(Collectors.toList());
     }

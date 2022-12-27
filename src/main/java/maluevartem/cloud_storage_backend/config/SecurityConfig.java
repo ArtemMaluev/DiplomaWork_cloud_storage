@@ -23,8 +23,8 @@ public class SecurityConfig {
     @Bean
     protected SecurityFilterChain filterChain(HttpSecurity http) throws Exception {
         return http
-                .httpBasic().and().formLogin().disable()
-                .cors().and().csrf().and().logout().disable()
+                .httpBasic().disable().formLogin().disable()
+                .cors().and().csrf().disable().logout().disable()
                 .sessionManagement().sessionCreationPolicy(SessionCreationPolicy.STATELESS)
                 .and()
                 .authorizeRequests()

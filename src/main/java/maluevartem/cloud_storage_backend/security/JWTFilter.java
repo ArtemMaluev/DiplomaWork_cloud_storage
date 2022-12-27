@@ -28,7 +28,6 @@ public class JWTFilter extends GenericFilterBean {
             Claims claims = jwtToken.getAccessClaims(token);
 
             JWTAuthentication jwtInfoToken = new JWTAuthentication();
-            //jwtInfoToken.setRoles(getRoles(claims));
             jwtInfoToken.setUsername(claims.getSubject());
             jwtInfoToken.setAuthenticated(true);
 

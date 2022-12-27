@@ -7,7 +7,7 @@ import maluevartem.cloud_storage_backend.exception.IncorrectDataEntry;
 import maluevartem.cloud_storage_backend.exception.UserNotFoundException;
 import maluevartem.cloud_storage_backend.repository.UserRepository;
 import maluevartem.cloud_storage_backend.utils.MapperUtils;
-import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
+import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 
 @Service
@@ -16,7 +16,7 @@ public class RegistrationService {
 
     private final UserRepository userRepository;
     private final MapperUtils mapperUtils;
-    private final BCryptPasswordEncoder passwordEncoder;
+    private final PasswordEncoder passwordEncoder;
 
     public UserDto registerUser(UserDto userDto) {
         UserEntity userEntity = mapperUtils.toUserEntity(userDto);

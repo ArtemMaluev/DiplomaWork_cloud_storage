@@ -13,6 +13,7 @@ import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
 
 import javax.validation.Valid;
+import javax.validation.constraints.Min;
 import javax.validation.constraints.NotNull;
 import java.util.List;
 
@@ -54,7 +55,7 @@ public class FileController {
     }
 
     @GetMapping("/list")
-    public ResponseEntity<List<FileDto>> getAllFiles(@RequestParam int limit) {
+    public ResponseEntity<List<FileDto>> getAllFiles(@Min(1) @RequestParam int limit) {
         return new ResponseEntity<>(fileService.getAllFiles(limit), HttpStatus.OK);
     }
 }
