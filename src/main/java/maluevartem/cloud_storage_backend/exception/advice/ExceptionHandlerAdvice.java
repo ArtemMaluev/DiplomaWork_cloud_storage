@@ -1,5 +1,6 @@
 package maluevartem.cloud_storage_backend.exception.advice;
 
+import lombok.extern.slf4j.Slf4j;
 import maluevartem.cloud_storage_backend.exception.FileNotFoundException;
 import maluevartem.cloud_storage_backend.exception.IncorrectDataEntry;
 import maluevartem.cloud_storage_backend.exception.InternalServerError;
@@ -10,6 +11,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.RestControllerAdvice;
 
+@Slf4j
 @RestControllerAdvice
 public class ExceptionHandlerAdvice {
 
@@ -18,6 +20,7 @@ public class ExceptionHandlerAdvice {
         ErrorMessage msg = new ErrorMessage();
         msg.setMessage(exc.getMessage());
         msg.setId(exc.getId());
+        log.error("(ERROR) Ошибка: {}, id: {}", exc.getMessage(), exc.getId());
         return new ResponseEntity<>(msg, HttpStatus.NOT_FOUND);
     }
 
@@ -26,6 +29,7 @@ public class ExceptionHandlerAdvice {
         ErrorMessage msg = new ErrorMessage();
         msg.setMessage(exc.getMessage());
         msg.setId(exc.getId());
+        log.error("(ERROR) Ошибка: {}, id: {}", exc.getMessage(), exc.getId());
         return new ResponseEntity<>(msg, HttpStatus.NOT_FOUND);
     }
 
@@ -34,6 +38,7 @@ public class ExceptionHandlerAdvice {
         ErrorMessage msg = new ErrorMessage();
         msg.setMessage(exc.getMessage());
         msg.setId(exc.getId());
+        log.error("(ERROR) Ошибка: {}, id: {}", exc.getMessage(), exc.getId());
         return new ResponseEntity<>(msg, HttpStatus.BAD_REQUEST);
     }
 
@@ -42,6 +47,7 @@ public class ExceptionHandlerAdvice {
         ErrorMessage msg = new ErrorMessage();
         msg.setMessage(exc.getMessage());
         msg.setId(exc.getId());
+        log.error("(ERROR) Ошибка: {}, id: {}", exc.getMessage(), exc.getId());
         return new ResponseEntity<>(msg, HttpStatus.INTERNAL_SERVER_ERROR);
     }
 

@@ -1,6 +1,7 @@
 package maluevartem.cloud_storage_backend.controller;
 
 import lombok.RequiredArgsConstructor;
+import lombok.extern.slf4j.Slf4j;
 import maluevartem.cloud_storage_backend.dto.UserDto;
 import maluevartem.cloud_storage_backend.service.RegistrationService;
 import org.springframework.http.HttpStatus;
@@ -9,29 +10,29 @@ import org.springframework.web.bind.annotation.*;
 
 import javax.validation.Valid;
 
+@Slf4j
 @RestController
 @RequiredArgsConstructor
 @RequestMapping("/user")
-public class RegistrationController{
+public class RegistrationController {
 
     private final RegistrationService registrationService;
 
     @PostMapping("/register")
     public ResponseEntity<UserDto> registerUser(@Valid @RequestBody UserDto userDto) {
-        System.out.println(userDto.toString());
-        UserDto userDto1 = registrationService.registerUser(userDto);
-        System.out.println(userDto1.toString());
-        return new ResponseEntity<>(userDto1, HttpStatus.OK);
+        log.info("Новый пользователь приступил к регистрации: {}", userDto);
+        return new ResponseEntity<>(registrationService.registerUser(userDto), HttpStatus.OK);
     }
 
     @GetMapping("/{id}")
     public ResponseEntity<UserDto> getUser(@PathVariable Long id) {
-
+        log.info("Получен пользователь по ID: {}", id);
         return new ResponseEntity<>(registrationService.getUser(id), HttpStatus.OK);
     }
 
     @DeleteMapping("/delete/{id}")
     public ResponseEntity<Void> deleteUser(@PathVariable Long id) {
+        log.info("Удален пользователь с ID: {}", id);
         registrationService.deleteUser(id);
         return new ResponseEntity<>(HttpStatus.OK);
     }

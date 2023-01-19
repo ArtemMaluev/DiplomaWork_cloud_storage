@@ -1,6 +1,7 @@
 package maluevartem.cloud_storage_backend.controller;
 
 import lombok.RequiredArgsConstructor;
+import lombok.extern.slf4j.Slf4j;
 import maluevartem.cloud_storage_backend.config.AuthenticationConfigConstants;
 import maluevartem.cloud_storage_backend.dto.UserDto;
 import maluevartem.cloud_storage_backend.model.Token;
@@ -15,6 +16,7 @@ import org.springframework.web.bind.annotation.RestController;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+@Slf4j
 @RestController
 @RequiredArgsConstructor
 public class AuthenticationController {
@@ -23,7 +25,9 @@ public class AuthenticationController {
 
     @PostMapping("/login")
     public ResponseEntity<Token> authenticationLogin(@RequestBody UserDto userDto) {
+        log.info("Пользователь пытается войти в систему: {}", userDto);
         Token token = authenticationService.authenticationLogin(userDto);
+        log.info("Пользователь: {} успешно вошел в систему. Auth-token: {}", userDto, token.getToken());
         return ResponseEntity.ok(token);
     }
 
@@ -34,7 +38,7 @@ public class AuthenticationController {
         if (userLogout == null) {
             return new ResponseEntity<>(HttpStatus.BAD_REQUEST);
         }
-
+        log.info("Пользователь: {} успешно вышел из системы. Auth-token: {}", userLogout, authToken);
         return new ResponseEntity<>(HttpStatus.OK);
     }
 }

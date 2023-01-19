@@ -7,6 +7,7 @@ import io.jsonwebtoken.UnsupportedJwtException;
 import io.jsonwebtoken.io.Decoders;
 import io.jsonwebtoken.security.Keys;
 import lombok.NonNull;
+import lombok.extern.slf4j.Slf4j;
 import maluevartem.cloud_storage_backend.entity.UserEntity;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
@@ -19,6 +20,7 @@ import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
+@Slf4j
 @Component
 public class JWTToken {
 
@@ -50,6 +52,7 @@ public class JWTToken {
                 .setExpiration(exp)
                 .signWith(secret)
                 .compact();
+        log.info("Auth-token добавлен в список активных токеннов");
         listTokens.add(token);
         return token;
     }
@@ -71,15 +74,15 @@ public class JWTToken {
                     .parseClaimsJws(token);
             return true;
         } catch (ExpiredJwtException expEx) {
-            //log.error("Token expired", expEx);
+            log.error("Срок действия токена истек (Token expired)", expEx);
         } catch (UnsupportedJwtException unsEx) {
-            //log.error("Unsupported jwt", unsEx);
+            log.error("Форма токена неподдерживается jwt (Unsupported jwt)", unsEx);
         } catch (MalformedJwtException mjEx) {
-            //log.error("Malformed jwt", mjEx);
+            log.error("Форма токена некорректна для jwt (Malformed jwt)", mjEx);
         } catch (SignatureException sEx) {
-            //log.error("Invalid signature", sEx);
+            log.error("Недействительная подпись (Invalid signature)", sEx);
         } catch (Exception e) {
-            //log.error("invalid token", e);
+            log.error("Недопустимый токен (Invalid token)", e);
         }
         return false;
     }

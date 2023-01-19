@@ -2,6 +2,7 @@ package maluevartem.cloud_storage_backend.security;
 
 import io.jsonwebtoken.Claims;
 import lombok.RequiredArgsConstructor;
+import lombok.extern.slf4j.Slf4j;
 import maluevartem.cloud_storage_backend.config.AuthenticationConfigConstants;
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.stereotype.Component;
@@ -15,6 +16,7 @@ import javax.servlet.ServletResponse;
 import javax.servlet.http.HttpServletRequest;
 import java.io.IOException;
 
+@Slf4j
 @Component
 @RequiredArgsConstructor
 public class JWTFilter extends GenericFilterBean {
@@ -25,6 +27,7 @@ public class JWTFilter extends GenericFilterBean {
     public void doFilter(ServletRequest servletRequest, ServletResponse servletResponse, FilterChain filterChain) throws IOException, ServletException {
         String token = getTokenFromRequest((HttpServletRequest) servletRequest);
         if (token != null && jwtToken.validateAccessToken(token)) {
+            log.info("Токен действителен: {}", token);
             Claims claims = jwtToken.getAccessClaims(token);
 
             JWTAuthentication jwtInfoToken = new JWTAuthentication();
