@@ -94,7 +94,7 @@ public class FileService {
         FileEntity fileToRename = fileRepository.findFileByUserEntityIdAndFileName(userID, fileName).orElseThrow(() -> new FileNotFoundException(
                         "Файл с именем: { " + fileName + " } не найден", userID));
 
-        fileRepository.findFileByUserEntityIdAndFileName(userID, fileName).ifPresent(s -> {
+        fileRepository.findFileByUserEntityIdAndFileName(userID, fileBody.getFileName()).ifPresent(s -> {
             throw new IncorrectDataEntry("Файл с таким именем: { " + fileName + " } уже существует", userID);
         });
 

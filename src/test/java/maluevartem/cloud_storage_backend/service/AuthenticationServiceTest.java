@@ -1,0 +1,87 @@
+package maluevartem.cloud_storage_backend.service;
+
+import maluevartem.cloud_storage_backend.dto.UserDto;
+import maluevartem.cloud_storage_backend.entity.UserEntity;
+import maluevartem.cloud_storage_backend.model.Token;
+import maluevartem.cloud_storage_backend.repository.UserRepository;
+import maluevartem.cloud_storage_backend.security.JWTToken;
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.extension.ExtendWith;
+import org.mockito.Mockito;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.boot.test.mock.mockito.MockBean;
+import org.springframework.security.core.Authentication;
+import org.springframework.security.core.context.SecurityContextHolder;
+import org.springframework.security.crypto.password.PasswordEncoder;
+import org.springframework.security.test.context.support.WithMockUser;
+import org.springframework.test.context.ContextConfiguration;
+import org.springframework.test.context.junit.jupiter.SpringExtension;
+
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+import java.util.Optional;
+
+@ExtendWith(SpringExtension.class)
+@ContextConfiguration
+@SpringBootTest
+public class AuthenticationServiceTest {
+
+    private static final String AUTH_TOKEN = "auth-token";
+    private static final String VALUE_TOKEN = "Bearer token";
+    @Autowired
+    private AuthenticationService authenticationService;
+    @MockBean
+    private UserRepository userRepository;
+    @MockBean
+    private JWTToken jwtToken;
+    @MockBean
+    private PasswordEncoder passwordEncoder;
+    private HttpServletRequest request;
+    private HttpServletResponse response;
+    private UserEntity userEntity;
+    private UserDto userDto;
+
+    @BeforeEach
+    public void init() {
+        request = Mockito.mock(HttpServletRequest.class);
+        response = Mockito.mock(HttpServletResponse.class);
+
+        userDto = UserDto.builder()
+                .login("Login")
+                .password("Password")
+                .build();
+        userEntity = UserEntity.builder()
+                .id(1L)
+                .login("Login")
+                .password("Password")
+                .build();
+    }
+
+    @Test
+    public void test_authenticationLogin() {
+        Mockito.when(userRepository.findUserByLogin(userDto.getLogin())).thenReturn(Optional.ofNullable(userEntity));
+        Mockito.when(passwordEncoder.matches(userDto.getPassword(), userEntity.getPassword())).thenReturn(true);
+        Mockito.when(jwtToken.generateToken(userEntity)).thenReturn(VALUE_TOKEN);
+
+        Token generatedToken = authenticationService.authenticationLogin(userDto);
+
+        Assertions.assertNotNull(generatedToken);
+    }
+
+    @Test
+    @WithMockUser(username = "Login",password = "Password")
+    public void test_logout() {
+
+        Authentication auth = SecurityContextHolder.getContext().getAuthentication();
+
+        Mockito.when(userRepository.findUserByLogin(auth.getName())).thenReturn(Optional.ofNullable(userEntity));
+
+        String login = authenticationService.logout(AUTH_TOKEN, request, response);
+
+        Assertions.assertEquals(login, userDto.getLogin());
+    }
+}

@@ -7,6 +7,8 @@ import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.mockito.Mockito;
+import org.springframework.boot.test.autoconfigure.web.servlet.AutoConfigureMockMvc;
+import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.http.MediaType;
 import org.springframework.test.web.servlet.MockMvc;
 import org.springframework.test.web.servlet.setup.MockMvcBuilders;
@@ -20,6 +22,8 @@ import static org.springframework.test.web.servlet.request.MockMvcRequestBuilder
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.content;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
 
+@SpringBootTest
+@AutoConfigureMockMvc
 public class AuthenticationControllerTest {
 
     private static final String AUTH_TOKEN = "auth-token";
@@ -58,16 +62,14 @@ public class AuthenticationControllerTest {
 
     @Test
     public void test_logout() {
-        String token = "auth-token";
-
         request = Mockito.mock(HttpServletRequest.class);
         response = Mockito.mock(HttpServletResponse.class);
 
-        Mockito.when(request.getHeader(AUTH_TOKEN)).thenReturn(token);
+        Mockito.when(request.getHeader(AUTH_TOKEN)).thenReturn(AUTH_TOKEN);
 
         AuthenticationController controller = new AuthenticationController(authenticationService);
 
         Assertions.assertDoesNotThrow(() -> controller.logout(AUTH_TOKEN, request, response));
-        Mockito.verify(authenticationService, Mockito.times(1)).logout(token, request, response);
+        Mockito.verify(authenticationService, Mockito.times(1)).logout(AUTH_TOKEN, request, response);
     }
 }
