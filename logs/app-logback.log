@@ -1,55 +1,62 @@
-2023-01-25 14:35:53,360 INFO [main] maluevartem.cloud_storage_backend.CloudStorageBackendApplication: Сервер запущен: Wed Jan 25 14:35:53 MSK 2023
-2023-01-25 14:35:53,887 INFO [main] org.springframework.boot.StartupInfoLogger: Starting CloudStorageBackendApplication using Java 11.0.14.1 on Jgeleziaka-13 with PID 5308 (D:\JavaCourse\DiplomaWork_CloudStorage\cloud_storage_backend\target\classes started by Пользователь in D:\JavaCourse\DiplomaWork_CloudStorage\cloud_storage_backend)
-2023-01-25 14:35:53,888 DEBUG [main] org.springframework.boot.StartupInfoLogger: Running with Spring Boot v2.7.5, Spring v5.3.23
-2023-01-25 14:35:53,889 INFO [main] org.springframework.boot.SpringApplication: No active profile set, falling back to 1 default profile: "default"
-2023-01-25 14:35:53,889 INFO [background-preinit] org.hibernate.validator.internal.util.Version: HV000001: Hibernate Validator 6.2.5.Final
-2023-01-25 14:35:54,989 INFO [main] org.springframework.data.repository.config.RepositoryConfigurationDelegate: Multiple Spring Data modules found, entering strict repository configuration mode
-2023-01-25 14:35:54,990 INFO [main] org.springframework.data.repository.config.RepositoryConfigurationDelegate: Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
-2023-01-25 14:35:55,020 INFO [main] org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport: Spring Data JDBC - Could not safely identify store assignment for repository candidate interface maluevartem.cloud_storage_backend.repository.FileRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
-2023-01-25 14:35:55,022 INFO [main] org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport: Spring Data JDBC - Could not safely identify store assignment for repository candidate interface maluevartem.cloud_storage_backend.repository.UserRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
-2023-01-25 14:35:55,023 INFO [main] org.springframework.data.repository.config.RepositoryConfigurationDelegate: Finished Spring Data repository scanning in 27 ms. Found 0 JDBC repository interfaces.
-2023-01-25 14:35:55,029 INFO [main] org.springframework.data.repository.config.RepositoryConfigurationDelegate: Multiple Spring Data modules found, entering strict repository configuration mode
-2023-01-25 14:35:55,030 INFO [main] org.springframework.data.repository.config.RepositoryConfigurationDelegate: Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2023-01-25 14:35:55,059 INFO [main] org.springframework.data.repository.config.RepositoryConfigurationDelegate: Finished Spring Data repository scanning in 26 ms. Found 2 JPA repository interfaces.
-2023-01-25 14:35:55,727 INFO [main] org.springframework.boot.web.embedded.tomcat.TomcatWebServer: Tomcat initialized with port(s): 8090 (http)
-2023-01-25 14:35:55,735 INFO [main] org.apache.juli.logging.DirectJDKLog: Initializing ProtocolHandler ["http-nio-8090"]
-2023-01-25 14:35:55,736 INFO [main] org.apache.juli.logging.DirectJDKLog: Starting service [Tomcat]
-2023-01-25 14:35:55,736 INFO [main] org.apache.juli.logging.DirectJDKLog: Starting Servlet engine: [Apache Tomcat/9.0.68]
-2023-01-25 14:35:55,860 INFO [main] org.apache.juli.logging.DirectJDKLog: Initializing Spring embedded WebApplicationContext
-2023-01-25 14:35:55,861 INFO [main] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext: Root WebApplicationContext: initialization completed in 1931 ms
-2023-01-25 14:35:55,914 DEBUG [main] org.springframework.web.filter.GenericFilterBean: Filter 'JWTFilter' configured for use
-2023-01-25 14:35:56,106 INFO [main] com.zaxxer.hikari.HikariDataSource: HikariPool-1 - Starting...
-2023-01-25 14:35:56,497 INFO [main] com.zaxxer.hikari.HikariDataSource: HikariPool-1 - Start completed.
-2023-01-25 14:35:56,882 INFO [main] liquibase.logging.core.JavaLogger: Successfully acquired change log lock
-2023-01-25 14:35:56,937 INFO [main] liquibase.logging.core.JavaLogger: Reading resource: db/changelog/migrations/script-v1.0-create-table-file_entity.yaml
-2023-01-25 14:35:57,075 INFO [main] liquibase.logging.core.JavaLogger: Reading resource: db/changelog/migrations/script-v1.0-create-table-user_entity.yaml
-2023-01-25 14:35:57,165 INFO [main] liquibase.logging.core.JavaLogger: Reading resource: db/changelog/migrations/script-v1.0-fill-table-user_entity.sql
-2023-01-25 14:35:57,199 INFO [main] liquibase.logging.core.JavaLogger: Creating database history table with name: mysqlDataBase.DATABASECHANGELOG
-2023-01-25 14:35:57,213 INFO [main] liquibase.logging.core.JavaLogger: Reading from mysqlDataBase.DATABASECHANGELOG
-2023-01-25 14:35:57,342 INFO [main] liquibase.logging.core.JavaLogger: Table file_entity created
-2023-01-25 14:35:57,345 INFO [main] liquibase.logging.core.JavaLogger: ChangeSet db/changelog/migrations/script-v1.0-create-table-file_entity.yaml::create-table-file_entity::Maluev Artem ran successfully in 15ms
-2023-01-25 14:35:57,365 INFO [main] liquibase.logging.core.JavaLogger: Table user_entity created
-2023-01-25 14:35:57,367 INFO [main] liquibase.logging.core.JavaLogger: ChangeSet db/changelog/migrations/script-v1.0-create-table-user_entity.yaml::create-table-user_entity::Maluev Artem ran successfully in 12ms
-2023-01-25 14:35:57,403 INFO [main] liquibase.logging.core.JavaLogger: Custom SQL executed
-2023-01-25 14:35:57,406 INFO [main] liquibase.logging.core.JavaLogger: ChangeSet db/changelog/migrations/script-v1.0-fill-table-user_entity.sql::raw::includeAll ran successfully in 23ms
-2023-01-25 14:35:57,428 INFO [main] liquibase.logging.core.JavaLogger: Successfully released change log lock
-2023-01-25 14:35:57,500 INFO [main] org.hibernate.jpa.internal.util.LogHelper: HHH000204: Processing PersistenceUnitInfo [name: default]
-2023-01-25 14:35:57,545 INFO [main] org.hibernate.Version: HHH000412: Hibernate ORM core version 5.6.12.Final
-2023-01-25 14:35:57,703 INFO [main] org.hibernate.annotations.common.reflection.java.JavaReflectionManager: HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
-2023-01-25 14:35:57,804 INFO [main] org.hibernate.dialect.Dialect: HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
-2023-01-25 14:35:58,347 INFO [main] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator: HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2023-01-25 14:35:58,356 INFO [main] org.springframework.orm.jpa.AbstractEntityManagerFactoryBean: Initialized JPA EntityManagerFactory for persistence unit 'default'
-2023-01-25 14:35:58,772 WARN [main] org.springframework.boot.autoconfigure.security.servlet.UserDetailsServiceAutoConfiguration: 
+2023-01-26 14:52:26,983 INFO [main] maluevartem.cloud_storage_backend.CloudStorageBackendApplication: Сервер запущен: Thu Jan 26 14:52:26 MSK 2023
+2023-01-26 14:52:27,524 INFO [main] org.springframework.boot.StartupInfoLogger: Starting CloudStorageBackendApplication using Java 11.0.14.1 on Jgeleziaka-13 with PID 12448 (D:\JavaCourse\DiplomaWork_CloudStorage\cloud_storage_backend\target\classes started by Пользователь in D:\JavaCourse\DiplomaWork_CloudStorage\cloud_storage_backend)
+2023-01-26 14:52:27,524 INFO [background-preinit] org.hibernate.validator.internal.util.Version: HV000001: Hibernate Validator 6.2.5.Final
+2023-01-26 14:52:27,525 DEBUG [main] org.springframework.boot.StartupInfoLogger: Running with Spring Boot v2.7.5, Spring v5.3.23
+2023-01-26 14:52:27,526 INFO [main] org.springframework.boot.SpringApplication: No active profile set, falling back to 1 default profile: "default"
+2023-01-26 14:52:28,385 INFO [main] org.springframework.data.repository.config.RepositoryConfigurationDelegate: Multiple Spring Data modules found, entering strict repository configuration mode
+2023-01-26 14:52:28,386 INFO [main] org.springframework.data.repository.config.RepositoryConfigurationDelegate: Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2023-01-26 14:52:28,419 INFO [main] org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport: Spring Data JDBC - Could not safely identify store assignment for repository candidate interface maluevartem.cloud_storage_backend.repository.FileRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2023-01-26 14:52:28,420 INFO [main] org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport: Spring Data JDBC - Could not safely identify store assignment for repository candidate interface maluevartem.cloud_storage_backend.repository.UserRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2023-01-26 14:52:28,422 INFO [main] org.springframework.data.repository.config.RepositoryConfigurationDelegate: Finished Spring Data repository scanning in 30 ms. Found 0 JDBC repository interfaces.
+2023-01-26 14:52:28,429 INFO [main] org.springframework.data.repository.config.RepositoryConfigurationDelegate: Multiple Spring Data modules found, entering strict repository configuration mode
+2023-01-26 14:52:28,429 INFO [main] org.springframework.data.repository.config.RepositoryConfigurationDelegate: Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-01-26 14:52:28,461 INFO [main] org.springframework.data.repository.config.RepositoryConfigurationDelegate: Finished Spring Data repository scanning in 27 ms. Found 2 JPA repository interfaces.
+2023-01-26 14:52:29,034 INFO [main] org.springframework.boot.web.embedded.tomcat.TomcatWebServer: Tomcat initialized with port(s): 8888 (http)
+2023-01-26 14:52:29,044 INFO [main] org.apache.juli.logging.DirectJDKLog: Initializing ProtocolHandler ["http-nio-8888"]
+2023-01-26 14:52:29,044 INFO [main] org.apache.juli.logging.DirectJDKLog: Starting service [Tomcat]
+2023-01-26 14:52:29,044 INFO [main] org.apache.juli.logging.DirectJDKLog: Starting Servlet engine: [Apache Tomcat/9.0.68]
+2023-01-26 14:52:29,188 INFO [main] org.apache.juli.logging.DirectJDKLog: Initializing Spring embedded WebApplicationContext
+2023-01-26 14:52:29,189 INFO [main] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext: Root WebApplicationContext: initialization completed in 1624 ms
+2023-01-26 14:52:29,256 DEBUG [main] org.springframework.web.filter.GenericFilterBean: Filter 'JWTFilter' configured for use
+2023-01-26 14:52:29,441 INFO [main] com.zaxxer.hikari.HikariDataSource: HikariPool-1 - Starting...
+2023-01-26 14:52:29,800 INFO [main] com.zaxxer.hikari.HikariDataSource: HikariPool-1 - Start completed.
+2023-01-26 14:52:30,134 INFO [main] liquibase.logging.core.JavaLogger: Successfully acquired change log lock
+2023-01-26 14:52:30,189 INFO [main] liquibase.logging.core.JavaLogger: Reading resource: db/changelog/migrations/script-v1.0-create-table-file_entity.yaml
+2023-01-26 14:52:30,345 INFO [main] liquibase.logging.core.JavaLogger: Reading resource: db/changelog/migrations/script-v1.0-create-table-user_entity.yaml
+2023-01-26 14:52:30,351 INFO [main] liquibase.logging.core.JavaLogger: Reading resource: db/changelog/migrations/script-v1.0-fill-table-user_entity.sql
+2023-01-26 14:52:30,384 INFO [main] liquibase.logging.core.JavaLogger: Creating database history table with name: mysqlDataBase.DATABASECHANGELOG
+2023-01-26 14:52:30,400 INFO [main] liquibase.logging.core.JavaLogger: Reading from mysqlDataBase.DATABASECHANGELOG
+2023-01-26 14:52:30,544 INFO [main] liquibase.logging.core.JavaLogger: Table file_entity created
+2023-01-26 14:52:30,546 INFO [main] liquibase.logging.core.JavaLogger: ChangeSet db/changelog/migrations/script-v1.0-create-table-file_entity.yaml::create-table-file_entity::Maluev Artem ran successfully in 15ms
+2023-01-26 14:52:30,572 INFO [main] liquibase.logging.core.JavaLogger: Table user_entity created
+2023-01-26 14:52:30,575 INFO [main] liquibase.logging.core.JavaLogger: ChangeSet db/changelog/migrations/script-v1.0-create-table-user_entity.yaml::create-table-user_entity::Maluev Artem ran successfully in 17ms
+2023-01-26 14:52:30,604 INFO [main] liquibase.logging.core.JavaLogger: Custom SQL executed
+2023-01-26 14:52:30,607 INFO [main] liquibase.logging.core.JavaLogger: ChangeSet db/changelog/migrations/script-v1.0-fill-table-user_entity.sql::raw::includeAll ran successfully in 21ms
+2023-01-26 14:52:30,623 INFO [main] liquibase.logging.core.JavaLogger: Successfully released change log lock
+2023-01-26 14:52:30,688 INFO [main] org.hibernate.jpa.internal.util.LogHelper: HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-01-26 14:52:30,735 INFO [main] org.hibernate.Version: HHH000412: Hibernate ORM core version 5.6.12.Final
+2023-01-26 14:52:30,916 INFO [main] org.hibernate.annotations.common.reflection.java.JavaReflectionManager: HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-01-26 14:52:31,018 INFO [main] org.hibernate.dialect.Dialect: HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2023-01-26 14:52:31,553 INFO [main] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator: HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-01-26 14:52:31,561 INFO [main] org.springframework.orm.jpa.AbstractEntityManagerFactoryBean: Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-01-26 14:52:31,985 WARN [main] org.springframework.boot.autoconfigure.security.servlet.UserDetailsServiceAutoConfiguration: 
 
-Using generated security password: 4798b2fc-018a-4caa-b93c-f37d4b1b7f1c
+Using generated security password: 4347d68c-1e61-4a6e-97db-674e6521fca6
 
 This generated password is for development use only. Your security configuration must be updated before running your application in production.
 
-2023-01-25 14:35:58,879 WARN [main] org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration: spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2023-01-25 14:35:59,106 INFO [main] org.springframework.security.web.DefaultSecurityFilterChain: Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@5825932c, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@277dddcf, org.springframework.security.web.context.SecurityContextPersistenceFilter@1ced1d14, org.springframework.security.web.header.HeaderWriterFilter@7d086485, org.springframework.web.filter.CorsFilter@321c01c2, maluevartem.cloud_storage_backend.security.JWTFilter@484149eb, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5263f554, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@7d28efd5, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@d5eca06, org.springframework.security.web.session.SessionManagementFilter@3b171fbd, org.springframework.security.web.access.ExceptionTranslationFilter@65b07b9, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@1fd73dcb]
-2023-01-25 14:35:59,511 INFO [main] org.apache.juli.logging.DirectJDKLog: Starting ProtocolHandler ["http-nio-8090"]
-2023-01-25 14:35:59,532 INFO [main] org.springframework.boot.web.embedded.tomcat.TomcatWebServer: Tomcat started on port(s): 8090 (http) with context path ''
-2023-01-25 14:35:59,542 INFO [main] org.springframework.boot.StartupInfoLogger: Started CloudStorageBackendApplication in 6.072 seconds (JVM running for 7.391)
-2023-01-25 14:36:06,657 INFO [SpringApplicationShutdownHook] org.springframework.orm.jpa.AbstractEntityManagerFactoryBean: Closing JPA EntityManagerFactory for persistence unit 'default'
-2023-01-25 14:36:06,661 INFO [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource: HikariPool-1 - Shutdown initiated...
-2023-01-25 14:36:06,685 INFO [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource: HikariPool-1 - Shutdown completed.
+2023-01-26 14:52:32,093 WARN [main] org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration: spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-01-26 14:52:32,326 INFO [main] org.springframework.security.web.DefaultSecurityFilterChain: Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@6e68ccc9, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@1784fcab, org.springframework.security.web.context.SecurityContextPersistenceFilter@4c81e7c2, org.springframework.security.web.header.HeaderWriterFilter@7d086485, org.springframework.web.filter.CorsFilter@63e4bbf9, maluevartem.cloud_storage_backend.security.JWTFilter@6f5e16cf, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@21e15093, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@62cf873a, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@455cb6d9, org.springframework.security.web.session.SessionManagementFilter@3b171fbd, org.springframework.security.web.access.ExceptionTranslationFilter@65b07b9, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@19f9404d]
+2023-01-26 14:52:32,649 INFO [main] org.apache.juli.logging.DirectJDKLog: Starting ProtocolHandler ["http-nio-8888"]
+2023-01-26 14:52:32,672 INFO [main] org.springframework.boot.web.embedded.tomcat.TomcatWebServer: Tomcat started on port(s): 8888 (http) with context path ''
+2023-01-26 14:52:32,684 INFO [main] org.springframework.boot.StartupInfoLogger: Started CloudStorageBackendApplication in 5.587 seconds (JVM running for 6.986)
+2023-01-26 14:52:47,193 INFO [http-nio-8888-exec-2] org.apache.juli.logging.DirectJDKLog: Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-01-26 14:52:47,194 INFO [http-nio-8888-exec-2] org.springframework.web.servlet.FrameworkServlet: Initializing Servlet 'dispatcherServlet'
+2023-01-26 14:52:47,201 INFO [http-nio-8888-exec-2] org.springframework.web.servlet.FrameworkServlet: Completed initialization in 6 ms
+2023-01-26 14:52:47,367 INFO [http-nio-8888-exec-3] maluevartem.cloud_storage_backend.controller.AuthenticationController: Пользователь пытается войти в систему: UserDto(login=User, password=user1234)
+2023-01-26 14:52:47,372 INFO [http-nio-8888-exec-3] maluevartem.cloud_storage_backend.service.AuthenticationService: Поиск пользователя в базе данных по логину: User
+2023-01-26 14:52:47,924 INFO [http-nio-8888-exec-3] maluevartem.cloud_storage_backend.security.JWTToken: Auth-token добавлен в список активных токеннов
+2023-01-26 14:52:47,925 INFO [http-nio-8888-exec-3] maluevartem.cloud_storage_backend.controller.AuthenticationController: Пользователь: UserDto(login=User, password=user1234) успешно вошел в систему. Auth-token: eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiIxIiwic3ViIjoiVXNlciIsImlhdCI6MTY3NDczMzk2NywibmJmIjoxNjc0NzMzOTY3LCJleHAiOjE2NzQ3MzU3Njd9._59AzxnG016L-ztz37IG-aUiiTiF7aMhZ0LXMGET_lo
+2023-01-26 14:57:17,138 INFO [SpringApplicationShutdownHook] org.springframework.orm.jpa.AbstractEntityManagerFactoryBean: Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-01-26 14:57:17,158 INFO [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource: HikariPool-1 - Shutdown initiated...
+2023-01-26 14:57:17,202 INFO [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource: HikariPool-1 - Shutdown completed.

@@ -26,9 +26,9 @@ public class SecurityConfig {
                 .cors().and().csrf().disable().logout().disable()
                 .sessionManagement().sessionCreationPolicy(SessionCreationPolicy.STATELESS)
                 .and()
-                .authorizeRequests()
-                .antMatchers(HttpMethod.POST, "/login", "/user/register").permitAll()
-                .anyRequest().authenticated()
+                .authorizeRequests().antMatchers(HttpMethod.POST, "/login", "/user/register").permitAll()
+                .and()
+                .authorizeRequests().anyRequest().authenticated()
                 .and()
                 .addFilterAfter(jwtFilter, UsernamePasswordAuthenticationFilter.class)
                 .build();
