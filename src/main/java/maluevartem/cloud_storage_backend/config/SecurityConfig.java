@@ -4,6 +4,7 @@ import lombok.RequiredArgsConstructor;
 import maluevartem.cloud_storage_backend.security.JWTFilter;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.core.annotation.Order;
 import org.springframework.http.HttpMethod;
 import org.springframework.security.config.annotation.method.configuration.EnableGlobalMethodSecurity;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
@@ -22,15 +23,18 @@ public class SecurityConfig {
     @Bean
     protected SecurityFilterChain filterChain(HttpSecurity http) throws Exception {
         return http
-                .httpBasic().disable().formLogin().disable()
-                .cors().and().csrf().disable().logout().disable()
+                .httpBasic().disable()
+                .formLogin().disable()
+                .csrf().disable()
+                .cors().and()
+                .logout().disable()
                 .sessionManagement().sessionCreationPolicy(SessionCreationPolicy.STATELESS)
                 .and()
                 .authorizeRequests().antMatchers(HttpMethod.POST, "/login", "/user/register").permitAll()
                 .and()
                 .authorizeRequests().anyRequest().authenticated()
                 .and()
-                .addFilterAfter(jwtFilter, UsernamePasswordAuthenticationFilter.class)
+                .addFilterBefore(jwtFilter, UsernamePasswordAuthenticationFilter.class)
                 .build();
     }
 }

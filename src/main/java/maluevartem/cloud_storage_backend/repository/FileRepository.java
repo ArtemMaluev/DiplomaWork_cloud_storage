@@ -15,6 +15,6 @@ public interface FileRepository extends JpaRepository<FileEntity, Long> {
 
     Optional<FileEntity> findFileByUserEntityIdAndHash(Long userId, String hash);
 
-    @Query(value = "select * from files_entity f where f.user_id = ?1 order by f.id desc limit ?2", nativeQuery = true)
+    @Query(value = "select * from file_entity f where f.user_id = ?1 order by f.id desc limit ?2", nativeQuery = true)
     List<FileEntity> findFilesByUserIdWithLimit(Long userId, int limit);
 }

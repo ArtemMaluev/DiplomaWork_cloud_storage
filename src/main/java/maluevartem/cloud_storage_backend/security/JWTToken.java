@@ -59,7 +59,7 @@ public class JWTToken {
 
     public boolean validateAccessToken(@NonNull String token) {
         for (String t : listTokens) {
-            if (t.equals(token)) {
+            if (!t.equals(token)) {
                 return false;
             }
         }

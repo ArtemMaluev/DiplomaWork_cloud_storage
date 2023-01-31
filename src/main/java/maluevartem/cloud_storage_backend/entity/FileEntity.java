@@ -21,7 +21,7 @@ public class FileEntity {
 
     private String fileType;
 
-    @Column(columnDefinition = "LONGBLOB", name = "fileData")
+    @Column(columnDefinition = "MEDIUMBLOB", name = "fileData")
     private byte[] fileData;
 
     private String hash;

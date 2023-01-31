@@ -1,4 +1,4 @@
-package maluevartem.cloud_storage_backend.testcontainers;
+package maluevartem.cloud_storage_backend.testcontainer;
 
 import org.testcontainers.containers.MySQLContainer;
 

@@ -1,4 +1,4 @@
-package maluevartem.cloud_storage_backend.testcontainers;
+package maluevartem.cloud_storage_backend.testcontainer;
 
 import maluevartem.cloud_storage_backend.CloudStorageBackendApplication;
 import maluevartem.cloud_storage_backend.dto.UserDto;
