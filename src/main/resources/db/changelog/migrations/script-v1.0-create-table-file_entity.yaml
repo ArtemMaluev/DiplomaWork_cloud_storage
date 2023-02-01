@@ -42,9 +42,7 @@ databaseChangeLog:
               - column:
                   name: user_id
                   type: BIGINT
-              - addForeignKeyConstraint:
-                  baseTableName: file_entity
-                  baseColumnNames: user_id
-                  referencedTableName: user_entity
-                  referencedColumnNames: id
-                  constraintName: user_file_fk
+                  constraints:
+                    foreignKeyName: file_user_fk
+                    referencedTableName: user_entity
+                    referencedColumnNames: id
