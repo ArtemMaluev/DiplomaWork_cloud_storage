@@ -28,8 +28,8 @@ public class AuthenticationControllerTest {
 
     private static final String AUTH_TOKEN = "auth-token";
     private static final String VALUE_TOKEN = "Bearer auth-token";
-    private static final String LOGIN = "Login";
-    private static final String PASSWORD = "Password";
+    private static final String LOGIN = "LoginTest";
+    private static final String PASSWORD = "PasswordTest";
 
     private MockMvc mockMvc;
     private AuthenticationService authenticationService;

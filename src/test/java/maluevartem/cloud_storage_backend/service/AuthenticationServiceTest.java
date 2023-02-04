@@ -51,13 +51,13 @@ public class AuthenticationServiceTest {
         response = Mockito.mock(HttpServletResponse.class);
 
         userDto = UserDto.builder()
-                .login("Login")
-                .password("Password")
+                .login("LoginTest")
+                .password("PasswordTest")
                 .build();
         userEntity = UserEntity.builder()
                 .id(1L)
-                .login("Login")
-                .password("Password")
+                .login("LoginTest")
+                .password("PasswordTest")
                 .build();
     }
 
@@ -73,12 +73,12 @@ public class AuthenticationServiceTest {
     }
 
     @Test
-    @WithMockUser(username = "Login",password = "Password")
+    @WithMockUser(username = "LoginTest",password = "PasswordTest")
     public void test_logout() {
 
         Authentication auth = SecurityContextHolder.getContext().getAuthentication();
 
-        Mockito.when(userRepository.findUserByLogin(auth.getName())).thenReturn(Optional.ofNullable(userEntity));
+        Mockito.when(userRepository.findUserByLogin(auth.getPrincipal().toString())).thenReturn(Optional.ofNullable(userEntity));
 
         String login = authenticationService.logout(AUTH_TOKEN, request, response);
 

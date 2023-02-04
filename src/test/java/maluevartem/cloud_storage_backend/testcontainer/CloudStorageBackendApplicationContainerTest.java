@@ -25,8 +25,8 @@ import java.util.Objects;
 public class CloudStorageBackendApplicationContainerTest {
 
     private static final int PORT = 8888;
-    private static final String LOGIN = "User";
-    private static final String PASSWORD = "Password";
+    private static final String LOGIN = "LoginTest";
+    private static final String PASSWORD = "PasswordTest";
 
     @Autowired
     public TestRestTemplate restTemplate;

@@ -26,37 +26,37 @@ public class RegistrationServiceTest {
     @MockBean
     private MapperUtils mapperUtils;
 
-    private UserEntity user;
+    private UserEntity userEntity;
     private UserDto userDto;
 
     @BeforeEach
     public void init() {
         userDto = UserDto.builder()
-                .login("Login")
-                .password("Password")
+                .login("LoginTest")
+                .password("PasswordTest")
                 .build();
-        user = UserEntity.builder()
+        userEntity = UserEntity.builder()
                 .id(1L)
-                .login("Login")
-                .password("Password")
+                .login("LoginTest")
+                .password("PasswordTest")
                 .build();
     }
 
     @Test
     public void test_registerUser() {
-        Mockito.when(mapperUtils.toUserEntity(userDto)).thenReturn(user);
-        Mockito.when(userRepository.findUserByLogin(user.getLogin())).thenReturn(Optional.empty());
+        Mockito.when(mapperUtils.toUserEntity(userDto)).thenReturn(userEntity);
+        Mockito.when(userRepository.findUserByLogin(userEntity.getLogin())).thenReturn(Optional.empty());
 
         registrationService.registerUser(userDto);
 
-        Mockito.verify(userRepository, Mockito.times(1)).findUserByLogin("Login");
-        Mockito.verify(userRepository, Mockito.times(1)).save(user);
+        Mockito.verify(userRepository, Mockito.times(1)).findUserByLogin("LoginTest");
+        Mockito.verify(userRepository, Mockito.times(1)).save(userEntity);
     }
 
     @Test
     public void test_getUser() {
 
-        Mockito.when(userRepository.findById(1L)).thenReturn(Optional.ofNullable(user));
+        Mockito.when(userRepository.findById(1L)).thenReturn(Optional.ofNullable(userEntity));
 
         registrationService.getUser(1L);
 
@@ -65,7 +65,7 @@ public class RegistrationServiceTest {
 
     @Test
     public void test_deleteUser() {
-        Mockito.when(userRepository.findById(1L)).thenReturn(Optional.ofNullable(user));
+        Mockito.when(userRepository.findById(1L)).thenReturn(Optional.ofNullable(userEntity));
 
         registrationService.deleteUser(1L);
 
