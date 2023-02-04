@@ -758,3 +758,683 @@ This generated password is for development use only. Your security configuration
 2023-02-02 14:01:51,383 INFO [SpringApplicationShutdownHook] org.springframework.orm.jpa.AbstractEntityManagerFactoryBean: Closing JPA EntityManagerFactory for persistence unit 'default'
 2023-02-02 14:01:51,386 INFO [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource: HikariPool-1 - Shutdown initiated...
 2023-02-02 14:01:51,411 INFO [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource: HikariPool-1 - Shutdown completed.
+2023-02-02 14:35:36,990 INFO [main] maluevartem.cloud_storage_backend.CloudStorageBackendApplication: Сервер запущен: Thu Feb 02 14:35:36 MSK 2023
+2023-02-02 14:35:37,893 INFO [main] org.springframework.boot.StartupInfoLogger: Starting CloudStorageBackendApplication using Java 11.0.14.1 on Jgeleziaka-13 with PID 14248 (D:\JavaCourse\DiplomaWork_CloudStorage\cloud_storage_backend\target\classes started by Пользователь in D:\JavaCourse\DiplomaWork_CloudStorage\cloud_storage_backend)
+2023-02-02 14:35:37,894 DEBUG [main] org.springframework.boot.StartupInfoLogger: Running with Spring Boot v2.7.5, Spring v5.3.23
+2023-02-02 14:35:37,895 INFO [main] org.springframework.boot.SpringApplication: No active profile set, falling back to 1 default profile: "default"
+2023-02-02 14:35:37,906 INFO [background-preinit] org.hibernate.validator.internal.util.Version: HV000001: Hibernate Validator 6.2.5.Final
+2023-02-02 14:35:39,183 INFO [main] org.springframework.data.repository.config.RepositoryConfigurationDelegate: Multiple Spring Data modules found, entering strict repository configuration mode
+2023-02-02 14:35:39,184 INFO [main] org.springframework.data.repository.config.RepositoryConfigurationDelegate: Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2023-02-02 14:35:39,223 INFO [main] org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport: Spring Data JDBC - Could not safely identify store assignment for repository candidate interface maluevartem.cloud_storage_backend.repository.FileRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2023-02-02 14:35:39,226 INFO [main] org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport: Spring Data JDBC - Could not safely identify store assignment for repository candidate interface maluevartem.cloud_storage_backend.repository.UserRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2023-02-02 14:35:39,227 INFO [main] org.springframework.data.repository.config.RepositoryConfigurationDelegate: Finished Spring Data repository scanning in 36 ms. Found 0 JDBC repository interfaces.
+2023-02-02 14:35:39,236 INFO [main] org.springframework.data.repository.config.RepositoryConfigurationDelegate: Multiple Spring Data modules found, entering strict repository configuration mode
+2023-02-02 14:35:39,237 INFO [main] org.springframework.data.repository.config.RepositoryConfigurationDelegate: Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-02-02 14:35:39,280 INFO [main] org.springframework.data.repository.config.RepositoryConfigurationDelegate: Finished Spring Data repository scanning in 38 ms. Found 2 JPA repository interfaces.
+2023-02-02 14:35:40,286 INFO [main] org.springframework.boot.web.embedded.tomcat.TomcatWebServer: Tomcat initialized with port(s): 8888 (http)
+2023-02-02 14:35:40,300 INFO [main] org.apache.juli.logging.DirectJDKLog: Initializing ProtocolHandler ["http-nio-8888"]
+2023-02-02 14:35:40,301 INFO [main] org.apache.juli.logging.DirectJDKLog: Starting service [Tomcat]
+2023-02-02 14:35:40,301 INFO [main] org.apache.juli.logging.DirectJDKLog: Starting Servlet engine: [Apache Tomcat/9.0.68]
+2023-02-02 14:35:40,467 INFO [main] org.apache.juli.logging.DirectJDKLog: Initializing Spring embedded WebApplicationContext
+2023-02-02 14:35:40,467 INFO [main] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext: Root WebApplicationContext: initialization completed in 2472 ms
+2023-02-02 14:35:40,603 DEBUG [main] org.springframework.web.filter.GenericFilterBean: Filter 'JWTFilter' configured for use
+2023-02-02 14:35:40,992 INFO [main] com.zaxxer.hikari.HikariDataSource: HikariPool-1 - Starting...
+2023-02-02 14:35:41,514 INFO [main] com.zaxxer.hikari.HikariDataSource: HikariPool-1 - Start completed.
+2023-02-02 14:35:42,238 INFO [main] liquibase.logging.core.JavaLogger: Successfully acquired change log lock
+2023-02-02 14:35:42,767 INFO [main] liquibase.logging.core.JavaLogger: Reading from mysqlDataBase.DATABASECHANGELOG
+2023-02-02 14:35:42,946 INFO [main] liquibase.logging.core.JavaLogger: Successfully released change log lock
+2023-02-02 14:35:43,032 INFO [main] org.hibernate.jpa.internal.util.LogHelper: HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-02-02 14:35:43,101 INFO [main] org.hibernate.Version: HHH000412: Hibernate ORM core version 5.6.12.Final
+2023-02-02 14:35:43,315 INFO [main] org.hibernate.annotations.common.reflection.java.JavaReflectionManager: HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-02-02 14:35:43,447 INFO [main] org.hibernate.dialect.Dialect: HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2023-02-02 14:35:44,380 INFO [main] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator: HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-02-02 14:35:44,389 INFO [main] org.springframework.orm.jpa.AbstractEntityManagerFactoryBean: Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-02-02 14:35:44,915 WARN [main] org.springframework.boot.autoconfigure.security.servlet.UserDetailsServiceAutoConfiguration: 
+
+Using generated security password: 2571f7bb-af23-4fa0-9dca-1acc5978ffe9
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2023-02-02 14:35:45,061 WARN [main] org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration: spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-02-02 14:35:45,314 INFO [main] org.springframework.security.web.DefaultSecurityFilterChain: Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@489989eb, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@6d97a357, org.springframework.security.web.context.SecurityContextPersistenceFilter@6da86e98, org.springframework.security.web.header.HeaderWriterFilter@3cd758be, org.springframework.web.filter.CorsFilter@1e6cd1c, maluevartem.cloud_storage_backend.security.JWTFilter@4de79b7d, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@476dc0af, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@797ca322, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@1dab2cf5, org.springframework.security.web.session.SessionManagementFilter@5c8d685e, org.springframework.security.web.access.ExceptionTranslationFilter@44f88149, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@3f908a10]
+2023-02-02 14:35:45,663 INFO [main] org.apache.juli.logging.DirectJDKLog: Starting ProtocolHandler ["http-nio-8888"]
+2023-02-02 14:35:45,689 INFO [main] org.springframework.boot.web.embedded.tomcat.TomcatWebServer: Tomcat started on port(s): 8888 (http) with context path ''
+2023-02-02 14:35:45,700 INFO [main] org.springframework.boot.StartupInfoLogger: Started CloudStorageBackendApplication in 8.541 seconds (JVM running for 11.075)
+2023-02-02 14:35:49,910 INFO [http-nio-8888-exec-1] org.apache.juli.logging.DirectJDKLog: Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-02-02 14:35:49,910 INFO [http-nio-8888-exec-1] org.springframework.web.servlet.FrameworkServlet: Initializing Servlet 'dispatcherServlet'
+2023-02-02 14:35:49,911 INFO [http-nio-8888-exec-1] org.springframework.web.servlet.FrameworkServlet: Completed initialization in 0 ms
+2023-02-02 14:35:59,221 INFO [http-nio-8888-exec-2] maluevartem.cloud_storage_backend.controller.AuthenticationController: Пользователь пытается войти в систему: UserDto(login=User, password=user1234)
+2023-02-02 14:35:59,229 INFO [http-nio-8888-exec-2] maluevartem.cloud_storage_backend.service.AuthenticationService: Поиск пользователя в базе данных по логину: User
+2023-02-02 14:35:59,822 INFO [http-nio-8888-exec-2] maluevartem.cloud_storage_backend.security.JWTToken: Auth-token добавлен в список активных токеннов
+2023-02-02 14:35:59,823 INFO [http-nio-8888-exec-2] maluevartem.cloud_storage_backend.controller.AuthenticationController: Пользователь: UserDto(login=User, password=user1234) успешно вошел в систему. Auth-token: eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiIxIiwic3ViIjoiVXNlciIsImlhdCI6MTY3NTMzNzc1OSwibmJmIjoxNjc1MzM3NzU5LCJleHAiOjE2NzUzMzk1NTl9.Y1aiF703qf7C-vcXfNdcq5OAl5-p22UoQO8NgNKbbGU
+2023-02-02 14:36:00,036 INFO [http-nio-8888-exec-5] maluevartem.cloud_storage_backend.security.JWTFilter: Токен действителен: eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiIxIiwic3ViIjoiVXNlciIsImlhdCI6MTY3NTMzNzc1OSwibmJmIjoxNjc1MzM3NzU5LCJleHAiOjE2NzUzMzk1NTl9.Y1aiF703qf7C-vcXfNdcq5OAl5-p22UoQO8NgNKbbGU
+2023-02-02 14:36:00,045 INFO [http-nio-8888-exec-5] maluevartem.cloud_storage_backend.security.JWTFilter: Токен действителен: eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiIxIiwic3ViIjoiVXNlciIsImlhdCI6MTY3NTMzNzc1OSwibmJmIjoxNjc1MzM3NzU5LCJleHAiOjE2NzUzMzk1NTl9.Y1aiF703qf7C-vcXfNdcq5OAl5-p22UoQO8NgNKbbGU
+2023-02-02 14:36:00,060 INFO [http-nio-8888-exec-5] maluevartem.cloud_storage_backend.controller.FileController: Запрос для получения списка файлов. Лимит: 3
+2023-02-02 14:36:00,074 INFO [http-nio-8888-exec-5] maluevartem.cloud_storage_backend.service.FileService: Поиск всех файлов в базе данных по Id пользователя: 1 и лимиту вывода: 3
+2023-02-02 14:36:00,137 INFO [http-nio-8888-exec-5] maluevartem.cloud_storage_backend.service.FileService: Все файлы в базе данных по Id пользователя: 1 и лимиту вывода: 3 найдены | Список файлов: [FileEntity{id=1, fileName='Регистрация БПЛА.pdf', fileType='application/pdf', hash='0127a5d609ce715877b3f1815a6def2ab3dc21e0e81bb04d22a4e8909f3408c0', size=32939, userId=1}]
+2023-02-02 14:36:05,288 INFO [http-nio-8888-exec-9] maluevartem.cloud_storage_backend.security.JWTFilter: Токен действителен: eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiIxIiwic3ViIjoiVXNlciIsImlhdCI6MTY3NTMzNzc1OSwibmJmIjoxNjc1MzM3NzU5LCJleHAiOjE2NzUzMzk1NTl9.Y1aiF703qf7C-vcXfNdcq5OAl5-p22UoQO8NgNKbbGU
+2023-02-02 14:36:05,295 INFO [http-nio-8888-exec-9] maluevartem.cloud_storage_backend.security.JWTFilter: Токен действителен: eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiIxIiwic3ViIjoiVXNlciIsImlhdCI6MTY3NTMzNzc1OSwibmJmIjoxNjc1MzM3NzU5LCJleHAiOjE2NzUzMzk1NTl9.Y1aiF703qf7C-vcXfNdcq5OAl5-p22UoQO8NgNKbbGU
+2023-02-02 14:38:16,401 WARN [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool$HouseKeeper: HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=2m34s784ms879µs).
+2023-02-02 14:38:16,424 ERROR [http-nio-8888-exec-9] maluevartem.cloud_storage_backend.exception.advice.ExceptionHandlerAdvice: (ERROR) Ошибка: Пользователь не найден, id: 0
+2023-02-02 14:38:17,142 INFO [SpringApplicationShutdownHook] org.springframework.orm.jpa.AbstractEntityManagerFactoryBean: Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-02-02 14:38:17,268 INFO [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource: HikariPool-1 - Shutdown initiated...
+2023-02-02 14:38:17,449 INFO [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource: HikariPool-1 - Shutdown completed.
+2023-02-02 14:38:24,357 INFO [main] maluevartem.cloud_storage_backend.CloudStorageBackendApplication: Сервер запущен: Thu Feb 02 14:38:24 MSK 2023
+2023-02-02 14:38:24,945 INFO [background-preinit] org.hibernate.validator.internal.util.Version: HV000001: Hibernate Validator 6.2.5.Final
+2023-02-02 14:38:24,946 INFO [main] org.springframework.boot.StartupInfoLogger: Starting CloudStorageBackendApplication using Java 11.0.14.1 on Jgeleziaka-13 with PID 8572 (D:\JavaCourse\DiplomaWork_CloudStorage\cloud_storage_backend\target\classes started by Пользователь in D:\JavaCourse\DiplomaWork_CloudStorage\cloud_storage_backend)
+2023-02-02 14:38:24,948 DEBUG [main] org.springframework.boot.StartupInfoLogger: Running with Spring Boot v2.7.5, Spring v5.3.23
+2023-02-02 14:38:24,948 INFO [main] org.springframework.boot.SpringApplication: No active profile set, falling back to 1 default profile: "default"
+2023-02-02 14:38:25,949 INFO [main] org.springframework.data.repository.config.RepositoryConfigurationDelegate: Multiple Spring Data modules found, entering strict repository configuration mode
+2023-02-02 14:38:25,950 INFO [main] org.springframework.data.repository.config.RepositoryConfigurationDelegate: Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2023-02-02 14:38:25,983 INFO [main] org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport: Spring Data JDBC - Could not safely identify store assignment for repository candidate interface maluevartem.cloud_storage_backend.repository.FileRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2023-02-02 14:38:25,985 INFO [main] org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport: Spring Data JDBC - Could not safely identify store assignment for repository candidate interface maluevartem.cloud_storage_backend.repository.UserRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2023-02-02 14:38:25,986 INFO [main] org.springframework.data.repository.config.RepositoryConfigurationDelegate: Finished Spring Data repository scanning in 31 ms. Found 0 JDBC repository interfaces.
+2023-02-02 14:38:25,996 INFO [main] org.springframework.data.repository.config.RepositoryConfigurationDelegate: Multiple Spring Data modules found, entering strict repository configuration mode
+2023-02-02 14:38:25,997 INFO [main] org.springframework.data.repository.config.RepositoryConfigurationDelegate: Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-02-02 14:38:26,043 INFO [main] org.springframework.data.repository.config.RepositoryConfigurationDelegate: Finished Spring Data repository scanning in 38 ms. Found 2 JPA repository interfaces.
+2023-02-02 14:38:26,759 INFO [main] org.springframework.boot.web.embedded.tomcat.TomcatWebServer: Tomcat initialized with port(s): 8888 (http)
+2023-02-02 14:38:26,770 INFO [main] org.apache.juli.logging.DirectJDKLog: Initializing ProtocolHandler ["http-nio-8888"]
+2023-02-02 14:38:26,770 INFO [main] org.apache.juli.logging.DirectJDKLog: Starting service [Tomcat]
+2023-02-02 14:38:26,771 INFO [main] org.apache.juli.logging.DirectJDKLog: Starting Servlet engine: [Apache Tomcat/9.0.68]
+2023-02-02 14:38:26,893 INFO [main] org.apache.juli.logging.DirectJDKLog: Initializing Spring embedded WebApplicationContext
+2023-02-02 14:38:26,893 INFO [main] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext: Root WebApplicationContext: initialization completed in 1881 ms
+2023-02-02 14:38:26,952 DEBUG [main] org.springframework.web.filter.GenericFilterBean: Filter 'JWTFilter' configured for use
+2023-02-02 14:38:27,148 INFO [main] com.zaxxer.hikari.HikariDataSource: HikariPool-1 - Starting...
+2023-02-02 14:38:27,526 INFO [main] com.zaxxer.hikari.HikariDataSource: HikariPool-1 - Start completed.
+2023-02-02 14:38:27,892 INFO [main] liquibase.logging.core.JavaLogger: Successfully acquired change log lock
+2023-02-02 14:38:28,257 INFO [main] liquibase.logging.core.JavaLogger: Reading from mysqlDataBase.DATABASECHANGELOG
+2023-02-02 14:38:28,367 INFO [main] liquibase.logging.core.JavaLogger: Successfully released change log lock
+2023-02-02 14:38:28,429 INFO [main] org.hibernate.jpa.internal.util.LogHelper: HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-02-02 14:38:28,511 INFO [main] org.hibernate.Version: HHH000412: Hibernate ORM core version 5.6.12.Final
+2023-02-02 14:38:28,666 INFO [main] org.hibernate.annotations.common.reflection.java.JavaReflectionManager: HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-02-02 14:38:28,788 INFO [main] org.hibernate.dialect.Dialect: HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2023-02-02 14:38:29,454 INFO [main] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator: HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-02-02 14:38:29,463 INFO [main] org.springframework.orm.jpa.AbstractEntityManagerFactoryBean: Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-02-02 14:38:30,034 WARN [main] org.springframework.boot.autoconfigure.security.servlet.UserDetailsServiceAutoConfiguration: 
+
+Using generated security password: bc1569bb-a259-4235-848c-51d11c6f4fcc
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2023-02-02 14:38:30,166 WARN [main] org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration: spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-02-02 14:38:30,415 INFO [main] org.springframework.security.web.DefaultSecurityFilterChain: Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@73cfafd8, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@4b517357, org.springframework.security.web.context.SecurityContextPersistenceFilter@6956081d, org.springframework.security.web.header.HeaderWriterFilter@399acce3, org.springframework.web.filter.CorsFilter@702ab027, maluevartem.cloud_storage_backend.security.JWTFilter@43cb5f38, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@135f160e, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@230e163b, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@62d5617, org.springframework.security.web.session.SessionManagementFilter@206de1f, org.springframework.security.web.access.ExceptionTranslationFilter@797ca322, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@41bc501b]
+2023-02-02 14:38:30,783 INFO [main] org.apache.juli.logging.DirectJDKLog: Starting ProtocolHandler ["http-nio-8888"]
+2023-02-02 14:38:30,807 INFO [main] org.springframework.boot.web.embedded.tomcat.TomcatWebServer: Tomcat started on port(s): 8888 (http) with context path ''
+2023-02-02 14:38:30,817 INFO [main] org.springframework.boot.StartupInfoLogger: Started CloudStorageBackendApplication in 6.334 seconds (JVM running for 7.793)
+2023-02-02 14:38:36,305 INFO [http-nio-8888-exec-2] org.apache.juli.logging.DirectJDKLog: Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-02-02 14:38:36,305 INFO [http-nio-8888-exec-2] org.springframework.web.servlet.FrameworkServlet: Initializing Servlet 'dispatcherServlet'
+2023-02-02 14:38:36,306 INFO [http-nio-8888-exec-2] org.springframework.web.servlet.FrameworkServlet: Completed initialization in 1 ms
+2023-02-02 14:38:36,460 INFO [http-nio-8888-exec-2] maluevartem.cloud_storage_backend.controller.AuthenticationController: Пользователь пытается войти в систему: UserDto(login=User, password=user1234)
+2023-02-02 14:38:36,465 INFO [http-nio-8888-exec-2] maluevartem.cloud_storage_backend.service.AuthenticationService: Поиск пользователя в базе данных по логину: User
+2023-02-02 14:38:37,205 INFO [http-nio-8888-exec-2] maluevartem.cloud_storage_backend.security.JWTToken: Auth-token добавлен в список активных токеннов
+2023-02-02 14:38:37,206 INFO [http-nio-8888-exec-2] maluevartem.cloud_storage_backend.controller.AuthenticationController: Пользователь: UserDto(login=User, password=user1234) успешно вошел в систему. Auth-token: eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiIxIiwic3ViIjoiVXNlciIsImlhdCI6MTY3NTMzNzkxNywibmJmIjoxNjc1MzM3OTE3LCJleHAiOjE2NzUzMzk3MTd9.2GY0HVUmn5Por4aX4WBe_N2ToyLIvz9snCiazEOAPT8
+2023-02-02 14:38:37,327 INFO [http-nio-8888-exec-1] maluevartem.cloud_storage_backend.security.JWTFilter: Токен действителен: eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiIxIiwic3ViIjoiVXNlciIsImlhdCI6MTY3NTMzNzkxNywibmJmIjoxNjc1MzM3OTE3LCJleHAiOjE2NzUzMzk3MTd9.2GY0HVUmn5Por4aX4WBe_N2ToyLIvz9snCiazEOAPT8
+2023-02-02 14:38:37,332 INFO [http-nio-8888-exec-1] maluevartem.cloud_storage_backend.security.JWTFilter: Токен действителен: eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiIxIiwic3ViIjoiVXNlciIsImlhdCI6MTY3NTMzNzkxNywibmJmIjoxNjc1MzM3OTE3LCJleHAiOjE2NzUzMzk3MTd9.2GY0HVUmn5Por4aX4WBe_N2ToyLIvz9snCiazEOAPT8
+2023-02-02 14:38:37,339 INFO [http-nio-8888-exec-1] maluevartem.cloud_storage_backend.controller.FileController: Запрос для получения списка файлов. Лимит: 3
+2023-02-02 14:38:37,345 INFO [http-nio-8888-exec-1] maluevartem.cloud_storage_backend.service.FileService: Поиск всех файлов в базе данных по Id пользователя: 1 и лимиту вывода: 3
+2023-02-02 14:38:37,393 INFO [http-nio-8888-exec-1] maluevartem.cloud_storage_backend.service.FileService: Все файлы в базе данных по Id пользователя: 1 и лимиту вывода: 3 найдены | Список файлов: [FileEntity{id=1, fileName='Регистрация БПЛА.pdf', fileType='application/pdf', hash='0127a5d609ce715877b3f1815a6def2ab3dc21e0e81bb04d22a4e8909f3408c0', size=32939, userId=1}]
+2023-02-02 14:38:42,243 INFO [http-nio-8888-exec-3] maluevartem.cloud_storage_backend.security.JWTFilter: Токен действителен: eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiIxIiwic3ViIjoiVXNlciIsImlhdCI6MTY3NTMzNzkxNywibmJmIjoxNjc1MzM3OTE3LCJleHAiOjE2NzUzMzk3MTd9.2GY0HVUmn5Por4aX4WBe_N2ToyLIvz9snCiazEOAPT8
+2023-02-02 14:38:42,249 INFO [http-nio-8888-exec-3] maluevartem.cloud_storage_backend.security.JWTFilter: Токен действителен: eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiIxIiwic3ViIjoiVXNlciIsImlhdCI6MTY3NTMzNzkxNywibmJmIjoxNjc1MzM3OTE3LCJleHAiOjE2NzUzMzk3MTd9.2GY0HVUmn5Por4aX4WBe_N2ToyLIvz9snCiazEOAPT8
+2023-02-02 14:38:53,812 ERROR [http-nio-8888-exec-3] maluevartem.cloud_storage_backend.exception.advice.ExceptionHandlerAdvice: (ERROR) Ошибка: Пользователь не найден, id: 0
+2023-02-02 14:39:11,698 INFO [SpringApplicationShutdownHook] org.springframework.orm.jpa.AbstractEntityManagerFactoryBean: Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-02-02 14:39:11,701 INFO [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource: HikariPool-1 - Shutdown initiated...
+2023-02-02 14:39:11,728 INFO [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource: HikariPool-1 - Shutdown completed.
+2023-02-02 14:39:17,765 INFO [main] maluevartem.cloud_storage_backend.CloudStorageBackendApplication: Сервер запущен: Thu Feb 02 14:39:17 MSK 2023
+2023-02-02 14:39:18,343 INFO [main] org.springframework.boot.StartupInfoLogger: Starting CloudStorageBackendApplication using Java 11.0.14.1 on Jgeleziaka-13 with PID 5084 (D:\JavaCourse\DiplomaWork_CloudStorage\cloud_storage_backend\target\classes started by Пользователь in D:\JavaCourse\DiplomaWork_CloudStorage\cloud_storage_backend)
+2023-02-02 14:39:18,343 INFO [background-preinit] org.hibernate.validator.internal.util.Version: HV000001: Hibernate Validator 6.2.5.Final
+2023-02-02 14:39:18,344 DEBUG [main] org.springframework.boot.StartupInfoLogger: Running with Spring Boot v2.7.5, Spring v5.3.23
+2023-02-02 14:39:18,345 INFO [main] org.springframework.boot.SpringApplication: No active profile set, falling back to 1 default profile: "default"
+2023-02-02 14:39:19,176 INFO [main] org.springframework.data.repository.config.RepositoryConfigurationDelegate: Multiple Spring Data modules found, entering strict repository configuration mode
+2023-02-02 14:39:19,177 INFO [main] org.springframework.data.repository.config.RepositoryConfigurationDelegate: Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2023-02-02 14:39:19,219 INFO [main] org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport: Spring Data JDBC - Could not safely identify store assignment for repository candidate interface maluevartem.cloud_storage_backend.repository.FileRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2023-02-02 14:39:19,221 INFO [main] org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport: Spring Data JDBC - Could not safely identify store assignment for repository candidate interface maluevartem.cloud_storage_backend.repository.UserRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2023-02-02 14:39:19,223 INFO [main] org.springframework.data.repository.config.RepositoryConfigurationDelegate: Finished Spring Data repository scanning in 40 ms. Found 0 JDBC repository interfaces.
+2023-02-02 14:39:19,232 INFO [main] org.springframework.data.repository.config.RepositoryConfigurationDelegate: Multiple Spring Data modules found, entering strict repository configuration mode
+2023-02-02 14:39:19,233 INFO [main] org.springframework.data.repository.config.RepositoryConfigurationDelegate: Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-02-02 14:39:19,269 INFO [main] org.springframework.data.repository.config.RepositoryConfigurationDelegate: Finished Spring Data repository scanning in 32 ms. Found 2 JPA repository interfaces.
+2023-02-02 14:39:19,922 INFO [main] org.springframework.boot.web.embedded.tomcat.TomcatWebServer: Tomcat initialized with port(s): 8888 (http)
+2023-02-02 14:39:19,933 INFO [main] org.apache.juli.logging.DirectJDKLog: Initializing ProtocolHandler ["http-nio-8888"]
+2023-02-02 14:39:19,933 INFO [main] org.apache.juli.logging.DirectJDKLog: Starting service [Tomcat]
+2023-02-02 14:39:19,933 INFO [main] org.apache.juli.logging.DirectJDKLog: Starting Servlet engine: [Apache Tomcat/9.0.68]
+2023-02-02 14:39:20,048 INFO [main] org.apache.juli.logging.DirectJDKLog: Initializing Spring embedded WebApplicationContext
+2023-02-02 14:39:20,049 INFO [main] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext: Root WebApplicationContext: initialization completed in 1651 ms
+2023-02-02 14:39:20,112 DEBUG [main] org.springframework.web.filter.GenericFilterBean: Filter 'JWTFilter' configured for use
+2023-02-02 14:39:20,311 INFO [main] com.zaxxer.hikari.HikariDataSource: HikariPool-1 - Starting...
+2023-02-02 14:39:20,632 INFO [main] com.zaxxer.hikari.HikariDataSource: HikariPool-1 - Start completed.
+2023-02-02 14:39:20,986 INFO [main] liquibase.logging.core.JavaLogger: Successfully acquired change log lock
+2023-02-02 14:39:21,323 INFO [main] liquibase.logging.core.JavaLogger: Reading from mysqlDataBase.DATABASECHANGELOG
+2023-02-02 14:39:21,451 INFO [main] liquibase.logging.core.JavaLogger: Successfully released change log lock
+2023-02-02 14:39:21,510 INFO [main] org.hibernate.jpa.internal.util.LogHelper: HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-02-02 14:39:21,569 INFO [main] org.hibernate.Version: HHH000412: Hibernate ORM core version 5.6.12.Final
+2023-02-02 14:39:21,697 INFO [main] org.hibernate.annotations.common.reflection.java.JavaReflectionManager: HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-02-02 14:39:21,793 INFO [main] org.hibernate.dialect.Dialect: HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2023-02-02 14:39:22,445 INFO [main] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator: HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-02-02 14:39:22,454 INFO [main] org.springframework.orm.jpa.AbstractEntityManagerFactoryBean: Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-02-02 14:39:22,982 WARN [main] org.springframework.boot.autoconfigure.security.servlet.UserDetailsServiceAutoConfiguration: 
+
+Using generated security password: b9619a42-5160-47f8-bc55-5850d2770902
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2023-02-02 14:39:23,097 WARN [main] org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration: spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-02-02 14:39:23,331 INFO [main] org.springframework.security.web.DefaultSecurityFilterChain: Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@106c73ed, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@6cd1ee, org.springframework.security.web.context.SecurityContextPersistenceFilter@7adde776, org.springframework.security.web.header.HeaderWriterFilter@7a41f4a7, org.springframework.web.filter.CorsFilter@122a6078, maluevartem.cloud_storage_backend.security.JWTFilter@7f7c420c, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@4ae435a3, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@7f69c4c0, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@6980fa39, org.springframework.security.web.session.SessionManagementFilter@6a827b0c, org.springframework.security.web.access.ExceptionTranslationFilter@6956081d, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@1dab2cf5]
+2023-02-02 14:39:23,654 INFO [main] org.apache.juli.logging.DirectJDKLog: Starting ProtocolHandler ["http-nio-8888"]
+2023-02-02 14:39:23,694 INFO [main] org.springframework.boot.web.embedded.tomcat.TomcatWebServer: Tomcat started on port(s): 8888 (http) with context path ''
+2023-02-02 14:39:23,705 INFO [main] org.springframework.boot.StartupInfoLogger: Started CloudStorageBackendApplication in 5.824 seconds (JVM running for 7.269)
+2023-02-02 14:39:26,135 INFO [http-nio-8888-exec-1] org.apache.juli.logging.DirectJDKLog: Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-02-02 14:39:26,136 INFO [http-nio-8888-exec-1] org.springframework.web.servlet.FrameworkServlet: Initializing Servlet 'dispatcherServlet'
+2023-02-02 14:39:26,137 INFO [http-nio-8888-exec-1] org.springframework.web.servlet.FrameworkServlet: Completed initialization in 1 ms
+2023-02-02 14:39:26,265 INFO [http-nio-8888-exec-1] maluevartem.cloud_storage_backend.controller.AuthenticationController: Пользователь пытается войти в систему: UserDto(login=User, password=user1234)
+2023-02-02 14:39:26,270 INFO [http-nio-8888-exec-1] maluevartem.cloud_storage_backend.service.AuthenticationService: Поиск пользователя в базе данных по логину: User
+2023-02-02 14:39:26,820 INFO [http-nio-8888-exec-1] maluevartem.cloud_storage_backend.security.JWTToken: Auth-token добавлен в список активных токеннов
+2023-02-02 14:39:26,821 INFO [http-nio-8888-exec-1] maluevartem.cloud_storage_backend.controller.AuthenticationController: Пользователь: UserDto(login=User, password=user1234) успешно вошел в систему. Auth-token: eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiIxIiwic3ViIjoiVXNlciIsImlhdCI6MTY3NTMzNzk2NiwibmJmIjoxNjc1MzM3OTY2LCJleHAiOjE2NzUzMzk3NjZ9.XB235DAN6pGTRPJ9UsE6hwHX45g1OzoT6fbONT3Nozw
+2023-02-02 14:39:26,940 INFO [http-nio-8888-exec-2] maluevartem.cloud_storage_backend.security.JWTFilter: Токен действителен: eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiIxIiwic3ViIjoiVXNlciIsImlhdCI6MTY3NTMzNzk2NiwibmJmIjoxNjc1MzM3OTY2LCJleHAiOjE2NzUzMzk3NjZ9.XB235DAN6pGTRPJ9UsE6hwHX45g1OzoT6fbONT3Nozw
+2023-02-02 14:39:26,945 INFO [http-nio-8888-exec-2] maluevartem.cloud_storage_backend.security.JWTFilter: Токен действителен: eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiIxIiwic3ViIjoiVXNlciIsImlhdCI6MTY3NTMzNzk2NiwibmJmIjoxNjc1MzM3OTY2LCJleHAiOjE2NzUzMzk3NjZ9.XB235DAN6pGTRPJ9UsE6hwHX45g1OzoT6fbONT3Nozw
+2023-02-02 14:39:26,952 INFO [http-nio-8888-exec-2] maluevartem.cloud_storage_backend.controller.FileController: Запрос для получения списка файлов. Лимит: 3
+2023-02-02 14:39:26,958 INFO [http-nio-8888-exec-2] maluevartem.cloud_storage_backend.service.FileService: Поиск всех файлов в базе данных по Id пользователя: 1 и лимиту вывода: 3
+2023-02-02 14:39:27,005 INFO [http-nio-8888-exec-2] maluevartem.cloud_storage_backend.service.FileService: Все файлы в базе данных по Id пользователя: 1 и лимиту вывода: 3 найдены | Список файлов: [FileEntity{id=1, fileName='Регистрация БПЛА.pdf', fileType='application/pdf', hash='0127a5d609ce715877b3f1815a6def2ab3dc21e0e81bb04d22a4e8909f3408c0', size=32939, userId=1}]
+2023-02-02 14:39:30,523 INFO [http-nio-8888-exec-7] maluevartem.cloud_storage_backend.security.JWTFilter: Токен действителен: eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiIxIiwic3ViIjoiVXNlciIsImlhdCI6MTY3NTMzNzk2NiwibmJmIjoxNjc1MzM3OTY2LCJleHAiOjE2NzUzMzk3NjZ9.XB235DAN6pGTRPJ9UsE6hwHX45g1OzoT6fbONT3Nozw
+2023-02-02 14:39:30,528 INFO [http-nio-8888-exec-7] maluevartem.cloud_storage_backend.security.JWTFilter: Токен действителен: eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiIxIiwic3ViIjoiVXNlciIsImlhdCI6MTY3NTMzNzk2NiwibmJmIjoxNjc1MzM3OTY2LCJleHAiOjE2NzUzMzk3NjZ9.XB235DAN6pGTRPJ9UsE6hwHX45g1OzoT6fbONT3Nozw
+2023-02-02 14:41:19,322 WARN [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool$HouseKeeper: HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m58s588ms429µs700ns).
+2023-02-02 14:41:19,326 ERROR [http-nio-8888-exec-7] maluevartem.cloud_storage_backend.exception.advice.ExceptionHandlerAdvice: (ERROR) Ошибка: Пользователь не найден, id: 0
+2023-02-02 14:45:04,407 INFO [SpringApplicationShutdownHook] org.springframework.orm.jpa.AbstractEntityManagerFactoryBean: Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-02-02 14:45:04,411 INFO [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource: HikariPool-1 - Shutdown initiated...
+2023-02-02 14:45:04,629 INFO [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource: HikariPool-1 - Shutdown completed.
+2023-02-02 14:45:13,696 INFO [main] maluevartem.cloud_storage_backend.CloudStorageBackendApplication: Сервер запущен: Thu Feb 02 14:45:13 MSK 2023
+2023-02-02 14:45:14,254 INFO [background-preinit] org.hibernate.validator.internal.util.Version: HV000001: Hibernate Validator 6.2.5.Final
+2023-02-02 14:45:14,254 INFO [main] org.springframework.boot.StartupInfoLogger: Starting CloudStorageBackendApplication using Java 11.0.14.1 on Jgeleziaka-13 with PID 6580 (D:\JavaCourse\DiplomaWork_CloudStorage\cloud_storage_backend\target\classes started by Пользователь in D:\JavaCourse\DiplomaWork_CloudStorage\cloud_storage_backend)
+2023-02-02 14:45:14,255 DEBUG [main] org.springframework.boot.StartupInfoLogger: Running with Spring Boot v2.7.5, Spring v5.3.23
+2023-02-02 14:45:14,257 INFO [main] org.springframework.boot.SpringApplication: No active profile set, falling back to 1 default profile: "default"
+2023-02-02 14:45:15,222 INFO [main] org.springframework.data.repository.config.RepositoryConfigurationDelegate: Multiple Spring Data modules found, entering strict repository configuration mode
+2023-02-02 14:45:15,223 INFO [main] org.springframework.data.repository.config.RepositoryConfigurationDelegate: Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2023-02-02 14:45:15,257 INFO [main] org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport: Spring Data JDBC - Could not safely identify store assignment for repository candidate interface maluevartem.cloud_storage_backend.repository.FileRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2023-02-02 14:45:15,259 INFO [main] org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport: Spring Data JDBC - Could not safely identify store assignment for repository candidate interface maluevartem.cloud_storage_backend.repository.UserRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2023-02-02 14:45:15,261 INFO [main] org.springframework.data.repository.config.RepositoryConfigurationDelegate: Finished Spring Data repository scanning in 32 ms. Found 0 JDBC repository interfaces.
+2023-02-02 14:45:15,270 INFO [main] org.springframework.data.repository.config.RepositoryConfigurationDelegate: Multiple Spring Data modules found, entering strict repository configuration mode
+2023-02-02 14:45:15,270 INFO [main] org.springframework.data.repository.config.RepositoryConfigurationDelegate: Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-02-02 14:45:15,307 INFO [main] org.springframework.data.repository.config.RepositoryConfigurationDelegate: Finished Spring Data repository scanning in 32 ms. Found 2 JPA repository interfaces.
+2023-02-02 14:45:16,144 INFO [main] org.springframework.boot.web.embedded.tomcat.TomcatWebServer: Tomcat initialized with port(s): 8888 (http)
+2023-02-02 14:45:16,158 INFO [main] org.apache.juli.logging.DirectJDKLog: Initializing ProtocolHandler ["http-nio-8888"]
+2023-02-02 14:45:16,158 INFO [main] org.apache.juli.logging.DirectJDKLog: Starting service [Tomcat]
+2023-02-02 14:45:16,159 INFO [main] org.apache.juli.logging.DirectJDKLog: Starting Servlet engine: [Apache Tomcat/9.0.68]
+2023-02-02 14:45:16,295 INFO [main] org.apache.juli.logging.DirectJDKLog: Initializing Spring embedded WebApplicationContext
+2023-02-02 14:45:16,295 INFO [main] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext: Root WebApplicationContext: initialization completed in 1994 ms
+2023-02-02 14:45:16,369 DEBUG [main] org.springframework.web.filter.GenericFilterBean: Filter 'JWTFilter' configured for use
+2023-02-02 14:45:16,608 INFO [main] com.zaxxer.hikari.HikariDataSource: HikariPool-1 - Starting...
+2023-02-02 14:45:16,991 INFO [main] com.zaxxer.hikari.HikariDataSource: HikariPool-1 - Start completed.
+2023-02-02 14:45:17,350 INFO [main] liquibase.logging.core.JavaLogger: Successfully acquired change log lock
+2023-02-02 14:45:17,731 INFO [main] liquibase.logging.core.JavaLogger: Reading from mysqlDataBase.DATABASECHANGELOG
+2023-02-02 14:45:17,833 INFO [main] liquibase.logging.core.JavaLogger: Successfully released change log lock
+2023-02-02 14:45:17,894 INFO [main] org.hibernate.jpa.internal.util.LogHelper: HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-02-02 14:45:17,957 INFO [main] org.hibernate.Version: HHH000412: Hibernate ORM core version 5.6.12.Final
+2023-02-02 14:45:18,117 INFO [main] org.hibernate.annotations.common.reflection.java.JavaReflectionManager: HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-02-02 14:45:18,239 INFO [main] org.hibernate.dialect.Dialect: HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2023-02-02 14:45:18,957 INFO [main] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator: HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-02-02 14:45:18,967 INFO [main] org.springframework.orm.jpa.AbstractEntityManagerFactoryBean: Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-02-02 14:45:19,542 WARN [main] org.springframework.boot.autoconfigure.security.servlet.UserDetailsServiceAutoConfiguration: 
+
+Using generated security password: 038b8db6-1d7a-4e63-a61e-13d914868f81
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2023-02-02 14:45:19,664 WARN [main] org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration: spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-02-02 14:45:19,920 INFO [main] org.springframework.security.web.DefaultSecurityFilterChain: Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@7ab8f93, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@6037748a, org.springframework.security.web.context.SecurityContextPersistenceFilter@3a388769, org.springframework.security.web.header.HeaderWriterFilter@25134e01, org.springframework.web.filter.CorsFilter@4d87e7f3, maluevartem.cloud_storage_backend.security.JWTFilter@67eec8e1, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@755a4ef5, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@6eff05e7, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@14c7ab73, org.springframework.security.web.session.SessionManagementFilter@6a3c1b56, org.springframework.security.web.access.ExceptionTranslationFilter@158cb50a, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@6e669b5c]
+2023-02-02 14:45:20,256 INFO [main] org.apache.juli.logging.DirectJDKLog: Starting ProtocolHandler ["http-nio-8888"]
+2023-02-02 14:45:20,279 INFO [main] org.springframework.boot.web.embedded.tomcat.TomcatWebServer: Tomcat started on port(s): 8888 (http) with context path ''
+2023-02-02 14:45:20,290 INFO [main] org.springframework.boot.StartupInfoLogger: Started CloudStorageBackendApplication in 6.476 seconds (JVM running for 7.804)
+2023-02-02 14:45:23,162 INFO [http-nio-8888-exec-2] org.apache.juli.logging.DirectJDKLog: Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-02-02 14:45:23,163 INFO [http-nio-8888-exec-2] org.springframework.web.servlet.FrameworkServlet: Initializing Servlet 'dispatcherServlet'
+2023-02-02 14:45:23,164 INFO [http-nio-8888-exec-2] org.springframework.web.servlet.FrameworkServlet: Completed initialization in 1 ms
+2023-02-02 14:45:23,299 INFO [http-nio-8888-exec-2] maluevartem.cloud_storage_backend.controller.AuthenticationController: Пользователь пытается войти в систему: UserDto(login=User, password=user1234)
+2023-02-02 14:45:23,305 INFO [http-nio-8888-exec-2] maluevartem.cloud_storage_backend.service.AuthenticationService: Поиск пользователя в базе данных по логину: User
+2023-02-02 14:45:23,879 INFO [http-nio-8888-exec-2] maluevartem.cloud_storage_backend.security.JWTToken: Auth-token добавлен в список активных токеннов
+2023-02-02 14:45:23,879 INFO [http-nio-8888-exec-2] maluevartem.cloud_storage_backend.controller.AuthenticationController: Пользователь: UserDto(login=User, password=user1234) успешно вошел в систему. Auth-token: eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiIxIiwic3ViIjoiVXNlciIsImlhdCI6MTY3NTMzODMyMywibmJmIjoxNjc1MzM4MzIzLCJleHAiOjE2NzUzNDAxMjN9.o2v3MyOqc5bjkdeV1EkXBUMIbxLpi9UM7E4prQgfSt4
+2023-02-02 14:45:24,002 INFO [http-nio-8888-exec-1] maluevartem.cloud_storage_backend.security.JWTFilter: Токен действителен: eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiIxIiwic3ViIjoiVXNlciIsImlhdCI6MTY3NTMzODMyMywibmJmIjoxNjc1MzM4MzIzLCJleHAiOjE2NzUzNDAxMjN9.o2v3MyOqc5bjkdeV1EkXBUMIbxLpi9UM7E4prQgfSt4
+2023-02-02 14:45:24,011 INFO [http-nio-8888-exec-1] maluevartem.cloud_storage_backend.security.JWTFilter: Токен действителен: eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiIxIiwic3ViIjoiVXNlciIsImlhdCI6MTY3NTMzODMyMywibmJmIjoxNjc1MzM4MzIzLCJleHAiOjE2NzUzNDAxMjN9.o2v3MyOqc5bjkdeV1EkXBUMIbxLpi9UM7E4prQgfSt4
+2023-02-02 14:45:24,019 INFO [http-nio-8888-exec-1] maluevartem.cloud_storage_backend.controller.FileController: Запрос для получения списка файлов. Лимит: 3
+2023-02-02 14:45:24,027 INFO [http-nio-8888-exec-1] maluevartem.cloud_storage_backend.service.FileService: Поиск всех файлов в базе данных по Id пользователя: 1 и лимиту вывода: 3
+2023-02-02 14:45:24,078 INFO [http-nio-8888-exec-1] maluevartem.cloud_storage_backend.service.FileService: Все файлы в базе данных по Id пользователя: 1 и лимиту вывода: 3 найдены | Список файлов: [FileEntity{id=1, fileName='Регистрация БПЛА.pdf', fileType='application/pdf', hash='0127a5d609ce715877b3f1815a6def2ab3dc21e0e81bb04d22a4e8909f3408c0', size=32939, userId=1}]
+2023-02-02 14:45:33,234 INFO [http-nio-8888-exec-4] maluevartem.cloud_storage_backend.security.JWTFilter: Токен действителен: eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiIxIiwic3ViIjoiVXNlciIsImlhdCI6MTY3NTMzODMyMywibmJmIjoxNjc1MzM4MzIzLCJleHAiOjE2NzUzNDAxMjN9.o2v3MyOqc5bjkdeV1EkXBUMIbxLpi9UM7E4prQgfSt4
+2023-02-02 14:45:33,240 INFO [http-nio-8888-exec-4] maluevartem.cloud_storage_backend.security.JWTFilter: Токен действителен: eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiIxIiwic3ViIjoiVXNlciIsImlhdCI6MTY3NTMzODMyMywibmJmIjoxNjc1MzM4MzIzLCJleHAiOjE2NzUzNDAxMjN9.o2v3MyOqc5bjkdeV1EkXBUMIbxLpi9UM7E4prQgfSt4
+2023-02-02 14:46:30,547 WARN [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool$HouseKeeper: HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m13s455ms240µs300ns).
+2023-02-02 14:46:30,566 ERROR [http-nio-8888-exec-4] maluevartem.cloud_storage_backend.exception.advice.ExceptionHandlerAdvice: (ERROR) Ошибка: Пользователь не найден, id: 0
+2023-02-02 14:46:31,108 INFO [SpringApplicationShutdownHook] org.springframework.orm.jpa.AbstractEntityManagerFactoryBean: Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-02-02 14:46:31,111 INFO [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource: HikariPool-1 - Shutdown initiated...
+2023-02-02 14:46:31,139 INFO [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource: HikariPool-1 - Shutdown completed.
+2023-02-02 14:49:47,790 INFO [main] maluevartem.cloud_storage_backend.CloudStorageBackendApplication: Сервер запущен: Thu Feb 02 14:49:47 MSK 2023
+2023-02-02 14:49:48,386 INFO [main] org.springframework.boot.StartupInfoLogger: Starting CloudStorageBackendApplication using Java 11.0.14.1 on Jgeleziaka-13 with PID 14232 (D:\JavaCourse\DiplomaWork_CloudStorage\cloud_storage_backend\target\classes started by Пользователь in D:\JavaCourse\DiplomaWork_CloudStorage\cloud_storage_backend)
+2023-02-02 14:49:48,387 INFO [background-preinit] org.hibernate.validator.internal.util.Version: HV000001: Hibernate Validator 6.2.5.Final
+2023-02-02 14:49:48,388 DEBUG [main] org.springframework.boot.StartupInfoLogger: Running with Spring Boot v2.7.5, Spring v5.3.23
+2023-02-02 14:49:48,389 INFO [main] org.springframework.boot.SpringApplication: No active profile set, falling back to 1 default profile: "default"
+2023-02-02 14:49:49,219 INFO [main] org.springframework.data.repository.config.RepositoryConfigurationDelegate: Multiple Spring Data modules found, entering strict repository configuration mode
+2023-02-02 14:49:49,220 INFO [main] org.springframework.data.repository.config.RepositoryConfigurationDelegate: Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2023-02-02 14:49:49,255 INFO [main] org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport: Spring Data JDBC - Could not safely identify store assignment for repository candidate interface maluevartem.cloud_storage_backend.repository.FileRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2023-02-02 14:49:49,257 INFO [main] org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport: Spring Data JDBC - Could not safely identify store assignment for repository candidate interface maluevartem.cloud_storage_backend.repository.UserRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2023-02-02 14:49:49,258 INFO [main] org.springframework.data.repository.config.RepositoryConfigurationDelegate: Finished Spring Data repository scanning in 31 ms. Found 0 JDBC repository interfaces.
+2023-02-02 14:49:49,267 INFO [main] org.springframework.data.repository.config.RepositoryConfigurationDelegate: Multiple Spring Data modules found, entering strict repository configuration mode
+2023-02-02 14:49:49,267 INFO [main] org.springframework.data.repository.config.RepositoryConfigurationDelegate: Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-02-02 14:49:49,308 INFO [main] org.springframework.data.repository.config.RepositoryConfigurationDelegate: Finished Spring Data repository scanning in 34 ms. Found 2 JPA repository interfaces.
+2023-02-02 14:49:49,958 INFO [main] org.springframework.boot.web.embedded.tomcat.TomcatWebServer: Tomcat initialized with port(s): 8888 (http)
+2023-02-02 14:49:49,967 INFO [main] org.apache.juli.logging.DirectJDKLog: Initializing ProtocolHandler ["http-nio-8888"]
+2023-02-02 14:49:49,968 INFO [main] org.apache.juli.logging.DirectJDKLog: Starting service [Tomcat]
+2023-02-02 14:49:49,968 INFO [main] org.apache.juli.logging.DirectJDKLog: Starting Servlet engine: [Apache Tomcat/9.0.68]
+2023-02-02 14:49:50,090 INFO [main] org.apache.juli.logging.DirectJDKLog: Initializing Spring embedded WebApplicationContext
+2023-02-02 14:49:50,090 INFO [main] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext: Root WebApplicationContext: initialization completed in 1655 ms
+2023-02-02 14:49:50,156 DEBUG [main] org.springframework.web.filter.GenericFilterBean: Filter 'JWTFilter' configured for use
+2023-02-02 14:49:50,362 INFO [main] com.zaxxer.hikari.HikariDataSource: HikariPool-1 - Starting...
+2023-02-02 14:49:50,681 INFO [main] com.zaxxer.hikari.HikariDataSource: HikariPool-1 - Start completed.
+2023-02-02 14:49:51,040 INFO [main] liquibase.logging.core.JavaLogger: Successfully acquired change log lock
+2023-02-02 14:49:51,405 INFO [main] liquibase.logging.core.JavaLogger: Reading from mysqlDataBase.DATABASECHANGELOG
+2023-02-02 14:49:51,506 INFO [main] liquibase.logging.core.JavaLogger: Successfully released change log lock
+2023-02-02 14:49:51,565 INFO [main] org.hibernate.jpa.internal.util.LogHelper: HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-02-02 14:49:51,611 INFO [main] org.hibernate.Version: HHH000412: Hibernate ORM core version 5.6.12.Final
+2023-02-02 14:49:51,754 INFO [main] org.hibernate.annotations.common.reflection.java.JavaReflectionManager: HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-02-02 14:49:51,870 INFO [main] org.hibernate.dialect.Dialect: HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2023-02-02 14:49:52,579 INFO [main] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator: HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-02-02 14:49:52,589 INFO [main] org.springframework.orm.jpa.AbstractEntityManagerFactoryBean: Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-02-02 14:49:53,135 WARN [main] org.springframework.boot.autoconfigure.security.servlet.UserDetailsServiceAutoConfiguration: 
+
+Using generated security password: a8f7f937-c754-4842-8cf0-d0fce0638efb
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2023-02-02 14:49:53,276 WARN [main] org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration: spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-02-02 14:49:53,557 INFO [main] org.springframework.security.web.DefaultSecurityFilterChain: Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@1df83569, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@439047ef, org.springframework.security.web.context.SecurityContextPersistenceFilter@ccea4be, org.springframework.security.web.header.HeaderWriterFilter@1c3400df, org.springframework.web.filter.CorsFilter@7e0393df, maluevartem.cloud_storage_backend.security.JWTFilter@25be445f, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@528ef230, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@ae85aad, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@62b2bc2e, org.springframework.security.web.session.SessionManagementFilter@7e864fa4, org.springframework.security.web.access.ExceptionTranslationFilter@10c1682b, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@21b792c2]
+2023-02-02 14:49:53,904 INFO [main] org.apache.juli.logging.DirectJDKLog: Starting ProtocolHandler ["http-nio-8888"]
+2023-02-02 14:49:53,930 INFO [main] org.springframework.boot.web.embedded.tomcat.TomcatWebServer: Tomcat started on port(s): 8888 (http) with context path ''
+2023-02-02 14:49:53,941 INFO [main] org.springframework.boot.StartupInfoLogger: Started CloudStorageBackendApplication in 6.031 seconds (JVM running for 7.273)
+2023-02-02 14:50:03,799 INFO [http-nio-8888-exec-1] org.apache.juli.logging.DirectJDKLog: Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-02-02 14:50:03,800 INFO [http-nio-8888-exec-1] org.springframework.web.servlet.FrameworkServlet: Initializing Servlet 'dispatcherServlet'
+2023-02-02 14:50:03,801 INFO [http-nio-8888-exec-1] org.springframework.web.servlet.FrameworkServlet: Completed initialization in 1 ms
+2023-02-02 14:50:03,922 INFO [http-nio-8888-exec-1] maluevartem.cloud_storage_backend.controller.AuthenticationController: Пользователь пытается войти в систему: UserDto(login=User, password=user1234)
+2023-02-02 14:50:03,928 INFO [http-nio-8888-exec-1] maluevartem.cloud_storage_backend.service.AuthenticationService: Поиск пользователя в базе данных по логину: User
+2023-02-02 14:50:04,502 INFO [http-nio-8888-exec-1] maluevartem.cloud_storage_backend.security.JWTToken: Auth-token добавлен в список активных токеннов
+2023-02-02 14:50:04,502 INFO [http-nio-8888-exec-1] maluevartem.cloud_storage_backend.controller.AuthenticationController: Пользователь: UserDto(login=User, password=user1234) успешно вошел в систему. Auth-token: eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiIxIiwic3ViIjoiVXNlciIsImlhdCI6MTY3NTMzODYwNCwibmJmIjoxNjc1MzM4NjA0LCJleHAiOjE2NzUzNDA0MDR9.y5c8ymihlVC8ak1lEUZYF4c08B3U4FBaH3-v6q-6W0M
+2023-02-02 14:50:04,617 INFO [http-nio-8888-exec-2] maluevartem.cloud_storage_backend.security.JWTFilter: Токен действителен: eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiIxIiwic3ViIjoiVXNlciIsImlhdCI6MTY3NTMzODYwNCwibmJmIjoxNjc1MzM4NjA0LCJleHAiOjE2NzUzNDA0MDR9.y5c8ymihlVC8ak1lEUZYF4c08B3U4FBaH3-v6q-6W0M
+2023-02-02 14:50:04,622 INFO [http-nio-8888-exec-2] maluevartem.cloud_storage_backend.security.JWTFilter: Токен действителен: eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiIxIiwic3ViIjoiVXNlciIsImlhdCI6MTY3NTMzODYwNCwibmJmIjoxNjc1MzM4NjA0LCJleHAiOjE2NzUzNDA0MDR9.y5c8ymihlVC8ak1lEUZYF4c08B3U4FBaH3-v6q-6W0M
+2023-02-02 14:50:04,629 INFO [http-nio-8888-exec-2] maluevartem.cloud_storage_backend.controller.FileController: Запрос для получения списка файлов. Лимит: 3
+2023-02-02 14:50:04,635 INFO [http-nio-8888-exec-2] maluevartem.cloud_storage_backend.service.FileService: Поиск всех файлов в базе данных по Id пользователя: 1 и лимиту вывода: 3
+2023-02-02 14:50:04,691 INFO [http-nio-8888-exec-2] maluevartem.cloud_storage_backend.service.FileService: Все файлы в базе данных по Id пользователя: 1 и лимиту вывода: 3 найдены | Список файлов: [FileEntity{id=1, fileName='Регистрация БПЛА.pdf', fileType='application/pdf', hash='0127a5d609ce715877b3f1815a6def2ab3dc21e0e81bb04d22a4e8909f3408c0', size=32939, userId=1}]
+2023-02-02 14:50:09,667 INFO [http-nio-8888-exec-3] maluevartem.cloud_storage_backend.security.JWTFilter: Токен действителен: eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiIxIiwic3ViIjoiVXNlciIsImlhdCI6MTY3NTMzODYwNCwibmJmIjoxNjc1MzM4NjA0LCJleHAiOjE2NzUzNDA0MDR9.y5c8ymihlVC8ak1lEUZYF4c08B3U4FBaH3-v6q-6W0M
+2023-02-02 14:50:09,673 INFO [http-nio-8888-exec-3] maluevartem.cloud_storage_backend.security.JWTFilter: Токен действителен: eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiIxIiwic3ViIjoiVXNlciIsImlhdCI6MTY3NTMzODYwNCwibmJmIjoxNjc1MzM4NjA0LCJleHAiOjE2NzUzNDA0MDR9.y5c8ymihlVC8ak1lEUZYF4c08B3U4FBaH3-v6q-6W0M
+2023-02-02 14:50:43,395 INFO [http-nio-8888-exec-3] maluevartem.cloud_storage_backend.service.AuthenticationService: Пользователь начал процедуру выхода из системы: null
+2023-02-02 14:51:51,448 INFO [SpringApplicationShutdownHook] org.springframework.orm.jpa.AbstractEntityManagerFactoryBean: Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-02-02 14:51:51,451 INFO [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource: HikariPool-1 - Shutdown initiated...
+2023-02-02 14:51:51,492 INFO [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource: HikariPool-1 - Shutdown completed.
+2023-02-02 14:51:57,497 INFO [main] maluevartem.cloud_storage_backend.CloudStorageBackendApplication: Сервер запущен: Thu Feb 02 14:51:57 MSK 2023
+2023-02-02 14:51:58,149 INFO [main] org.springframework.boot.StartupInfoLogger: Starting CloudStorageBackendApplication using Java 11.0.14.1 on Jgeleziaka-13 with PID 10476 (D:\JavaCourse\DiplomaWork_CloudStorage\cloud_storage_backend\target\classes started by Пользователь in D:\JavaCourse\DiplomaWork_CloudStorage\cloud_storage_backend)
+2023-02-02 14:51:58,149 DEBUG [main] org.springframework.boot.StartupInfoLogger: Running with Spring Boot v2.7.5, Spring v5.3.23
+2023-02-02 14:51:58,150 INFO [main] org.springframework.boot.SpringApplication: No active profile set, falling back to 1 default profile: "default"
+2023-02-02 14:51:58,240 INFO [background-preinit] org.hibernate.validator.internal.util.Version: HV000001: Hibernate Validator 6.2.5.Final
+2023-02-02 14:51:59,124 INFO [main] org.springframework.data.repository.config.RepositoryConfigurationDelegate: Multiple Spring Data modules found, entering strict repository configuration mode
+2023-02-02 14:51:59,125 INFO [main] org.springframework.data.repository.config.RepositoryConfigurationDelegate: Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2023-02-02 14:51:59,162 INFO [main] org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport: Spring Data JDBC - Could not safely identify store assignment for repository candidate interface maluevartem.cloud_storage_backend.repository.FileRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2023-02-02 14:51:59,164 INFO [main] org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport: Spring Data JDBC - Could not safely identify store assignment for repository candidate interface maluevartem.cloud_storage_backend.repository.UserRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2023-02-02 14:51:59,166 INFO [main] org.springframework.data.repository.config.RepositoryConfigurationDelegate: Finished Spring Data repository scanning in 35 ms. Found 0 JDBC repository interfaces.
+2023-02-02 14:51:59,275 INFO [main] org.springframework.data.repository.config.RepositoryConfigurationDelegate: Multiple Spring Data modules found, entering strict repository configuration mode
+2023-02-02 14:51:59,275 INFO [main] org.springframework.data.repository.config.RepositoryConfigurationDelegate: Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-02-02 14:51:59,310 INFO [main] org.springframework.data.repository.config.RepositoryConfigurationDelegate: Finished Spring Data repository scanning in 30 ms. Found 2 JPA repository interfaces.
+2023-02-02 14:52:00,052 INFO [main] org.springframework.boot.web.embedded.tomcat.TomcatWebServer: Tomcat initialized with port(s): 8888 (http)
+2023-02-02 14:52:00,063 INFO [main] org.apache.juli.logging.DirectJDKLog: Initializing ProtocolHandler ["http-nio-8888"]
+2023-02-02 14:52:00,064 INFO [main] org.apache.juli.logging.DirectJDKLog: Starting service [Tomcat]
+2023-02-02 14:52:00,064 INFO [main] org.apache.juli.logging.DirectJDKLog: Starting Servlet engine: [Apache Tomcat/9.0.68]
+2023-02-02 14:52:00,188 INFO [main] org.apache.juli.logging.DirectJDKLog: Initializing Spring embedded WebApplicationContext
+2023-02-02 14:52:00,189 INFO [main] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext: Root WebApplicationContext: initialization completed in 1967 ms
+2023-02-02 14:52:00,252 DEBUG [main] org.springframework.web.filter.GenericFilterBean: Filter 'JWTFilter' configured for use
+2023-02-02 14:52:00,447 INFO [main] com.zaxxer.hikari.HikariDataSource: HikariPool-1 - Starting...
+2023-02-02 14:52:00,784 INFO [main] com.zaxxer.hikari.HikariDataSource: HikariPool-1 - Start completed.
+2023-02-02 14:52:01,224 INFO [main] liquibase.logging.core.JavaLogger: Successfully acquired change log lock
+2023-02-02 14:52:01,525 INFO [main] liquibase.logging.core.JavaLogger: Reading from mysqlDataBase.DATABASECHANGELOG
+2023-02-02 14:52:01,661 INFO [main] liquibase.logging.core.JavaLogger: Successfully released change log lock
+2023-02-02 14:52:01,723 INFO [main] org.hibernate.jpa.internal.util.LogHelper: HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-02-02 14:52:01,796 INFO [main] org.hibernate.Version: HHH000412: Hibernate ORM core version 5.6.12.Final
+2023-02-02 14:52:01,930 INFO [main] org.hibernate.annotations.common.reflection.java.JavaReflectionManager: HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-02-02 14:52:02,031 INFO [main] org.hibernate.dialect.Dialect: HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2023-02-02 14:52:02,605 INFO [main] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator: HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-02-02 14:52:02,616 INFO [main] org.springframework.orm.jpa.AbstractEntityManagerFactoryBean: Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-02-02 14:52:03,026 WARN [main] org.springframework.boot.autoconfigure.security.servlet.UserDetailsServiceAutoConfiguration: 
+
+Using generated security password: 88de1613-b82d-4890-966d-7850a07a462b
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2023-02-02 14:52:03,141 WARN [main] org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration: spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-02-02 14:52:03,362 INFO [main] org.springframework.security.web.DefaultSecurityFilterChain: Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@7e9ea888, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@24f8707c, org.springframework.security.web.context.SecurityContextPersistenceFilter@4257163f, org.springframework.security.web.header.HeaderWriterFilter@1002c49e, org.springframework.web.filter.CorsFilter@7e4a6afd, maluevartem.cloud_storage_backend.security.JWTFilter@32f5ecc4, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@63ff861e, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@46e38c28, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@c7aac7c, org.springframework.security.web.session.SessionManagementFilter@21a462ce, org.springframework.security.web.access.ExceptionTranslationFilter@3a388769, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@19a544cd]
+2023-02-02 14:52:03,637 INFO [main] org.apache.juli.logging.DirectJDKLog: Starting ProtocolHandler ["http-nio-8888"]
+2023-02-02 14:52:03,657 INFO [main] org.springframework.boot.web.embedded.tomcat.TomcatWebServer: Tomcat started on port(s): 8888 (http) with context path ''
+2023-02-02 14:52:03,667 INFO [main] org.springframework.boot.StartupInfoLogger: Started CloudStorageBackendApplication in 6.059 seconds (JVM running for 7.495)
+2023-02-02 14:52:05,716 INFO [http-nio-8888-exec-1] org.apache.juli.logging.DirectJDKLog: Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-02-02 14:52:05,716 INFO [http-nio-8888-exec-1] org.springframework.web.servlet.FrameworkServlet: Initializing Servlet 'dispatcherServlet'
+2023-02-02 14:52:05,718 INFO [http-nio-8888-exec-1] org.springframework.web.servlet.FrameworkServlet: Completed initialization in 2 ms
+2023-02-02 14:52:05,847 INFO [http-nio-8888-exec-1] maluevartem.cloud_storage_backend.controller.AuthenticationController: Пользователь пытается войти в систему: UserDto(login=User, password=user1234)
+2023-02-02 14:52:05,851 INFO [http-nio-8888-exec-1] maluevartem.cloud_storage_backend.service.AuthenticationService: Поиск пользователя в базе данных по логину: User
+2023-02-02 14:52:06,412 INFO [http-nio-8888-exec-1] maluevartem.cloud_storage_backend.security.JWTToken: Auth-token добавлен в список активных токеннов
+2023-02-02 14:52:06,412 INFO [http-nio-8888-exec-1] maluevartem.cloud_storage_backend.controller.AuthenticationController: Пользователь: UserDto(login=User, password=user1234) успешно вошел в систему. Auth-token: eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiIxIiwic3ViIjoiVXNlciIsImlhdCI6MTY3NTMzODcyNiwibmJmIjoxNjc1MzM4NzI2LCJleHAiOjE2NzUzNDA1MjZ9.BF4chEn124LbDKlAJ9MBZNkKaTKNFh05hw0gZDAbsD0
+2023-02-02 14:52:06,546 INFO [http-nio-8888-exec-3] maluevartem.cloud_storage_backend.security.JWTFilter: Токен действителен: eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiIxIiwic3ViIjoiVXNlciIsImlhdCI6MTY3NTMzODcyNiwibmJmIjoxNjc1MzM4NzI2LCJleHAiOjE2NzUzNDA1MjZ9.BF4chEn124LbDKlAJ9MBZNkKaTKNFh05hw0gZDAbsD0
+2023-02-02 14:52:06,551 INFO [http-nio-8888-exec-3] maluevartem.cloud_storage_backend.security.JWTFilter: Токен действителен: eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiIxIiwic3ViIjoiVXNlciIsImlhdCI6MTY3NTMzODcyNiwibmJmIjoxNjc1MzM4NzI2LCJleHAiOjE2NzUzNDA1MjZ9.BF4chEn124LbDKlAJ9MBZNkKaTKNFh05hw0gZDAbsD0
+2023-02-02 14:52:06,557 INFO [http-nio-8888-exec-3] maluevartem.cloud_storage_backend.controller.FileController: Запрос для получения списка файлов. Лимит: 3
+2023-02-02 14:52:06,563 INFO [http-nio-8888-exec-3] maluevartem.cloud_storage_backend.service.FileService: Поиск всех файлов в базе данных по Id пользователя: 1 и лимиту вывода: 3
+2023-02-02 14:52:06,617 INFO [http-nio-8888-exec-3] maluevartem.cloud_storage_backend.service.FileService: Все файлы в базе данных по Id пользователя: 1 и лимиту вывода: 3 найдены | Список файлов: [FileEntity{id=1, fileName='Регистрация БПЛА.pdf', fileType='application/pdf', hash='0127a5d609ce715877b3f1815a6def2ab3dc21e0e81bb04d22a4e8909f3408c0', size=32939, userId=1}]
+2023-02-02 14:52:08,196 INFO [http-nio-8888-exec-4] maluevartem.cloud_storage_backend.security.JWTFilter: Токен действителен: eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiIxIiwic3ViIjoiVXNlciIsImlhdCI6MTY3NTMzODcyNiwibmJmIjoxNjc1MzM4NzI2LCJleHAiOjE2NzUzNDA1MjZ9.BF4chEn124LbDKlAJ9MBZNkKaTKNFh05hw0gZDAbsD0
+2023-02-02 14:52:08,201 INFO [http-nio-8888-exec-4] maluevartem.cloud_storage_backend.security.JWTFilter: Токен действителен: eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiIxIiwic3ViIjoiVXNlciIsImlhdCI6MTY3NTMzODcyNiwibmJmIjoxNjc1MzM4NzI2LCJleHAiOjE2NzUzNDA1MjZ9.BF4chEn124LbDKlAJ9MBZNkKaTKNFh05hw0gZDAbsD0
+2023-02-02 14:52:08,232 INFO [http-nio-8888-exec-4] maluevartem.cloud_storage_backend.service.AuthenticationService: Пользователь начал процедуру выхода из системы: null
+2023-02-02 14:56:10,562 INFO [SpringApplicationShutdownHook] org.springframework.orm.jpa.AbstractEntityManagerFactoryBean: Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-02-02 14:56:10,565 INFO [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource: HikariPool-1 - Shutdown initiated...
+2023-02-02 14:56:10,592 INFO [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource: HikariPool-1 - Shutdown completed.
+2023-02-02 14:56:18,919 INFO [main] maluevartem.cloud_storage_backend.CloudStorageBackendApplication: Сервер запущен: Thu Feb 02 14:56:18 MSK 2023
+2023-02-02 14:56:19,537 INFO [background-preinit] org.hibernate.validator.internal.util.Version: HV000001: Hibernate Validator 6.2.5.Final
+2023-02-02 14:56:19,541 INFO [main] org.springframework.boot.StartupInfoLogger: Starting CloudStorageBackendApplication using Java 11.0.14.1 on Jgeleziaka-13 with PID 13796 (D:\JavaCourse\DiplomaWork_CloudStorage\cloud_storage_backend\target\classes started by Пользователь in D:\JavaCourse\DiplomaWork_CloudStorage\cloud_storage_backend)
+2023-02-02 14:56:19,544 DEBUG [main] org.springframework.boot.StartupInfoLogger: Running with Spring Boot v2.7.5, Spring v5.3.23
+2023-02-02 14:56:19,545 INFO [main] org.springframework.boot.SpringApplication: No active profile set, falling back to 1 default profile: "default"
+2023-02-02 14:56:20,365 INFO [main] org.springframework.data.repository.config.RepositoryConfigurationDelegate: Multiple Spring Data modules found, entering strict repository configuration mode
+2023-02-02 14:56:20,366 INFO [main] org.springframework.data.repository.config.RepositoryConfigurationDelegate: Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2023-02-02 14:56:20,400 INFO [main] org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport: Spring Data JDBC - Could not safely identify store assignment for repository candidate interface maluevartem.cloud_storage_backend.repository.FileRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2023-02-02 14:56:20,402 INFO [main] org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport: Spring Data JDBC - Could not safely identify store assignment for repository candidate interface maluevartem.cloud_storage_backend.repository.UserRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2023-02-02 14:56:20,404 INFO [main] org.springframework.data.repository.config.RepositoryConfigurationDelegate: Finished Spring Data repository scanning in 32 ms. Found 0 JDBC repository interfaces.
+2023-02-02 14:56:20,411 INFO [main] org.springframework.data.repository.config.RepositoryConfigurationDelegate: Multiple Spring Data modules found, entering strict repository configuration mode
+2023-02-02 14:56:20,412 INFO [main] org.springframework.data.repository.config.RepositoryConfigurationDelegate: Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-02-02 14:56:20,447 INFO [main] org.springframework.data.repository.config.RepositoryConfigurationDelegate: Finished Spring Data repository scanning in 31 ms. Found 2 JPA repository interfaces.
+2023-02-02 14:56:21,202 INFO [main] org.springframework.boot.web.embedded.tomcat.TomcatWebServer: Tomcat initialized with port(s): 8888 (http)
+2023-02-02 14:56:21,212 INFO [main] org.apache.juli.logging.DirectJDKLog: Initializing ProtocolHandler ["http-nio-8888"]
+2023-02-02 14:56:21,213 INFO [main] org.apache.juli.logging.DirectJDKLog: Starting service [Tomcat]
+2023-02-02 14:56:21,213 INFO [main] org.apache.juli.logging.DirectJDKLog: Starting Servlet engine: [Apache Tomcat/9.0.68]
+2023-02-02 14:56:21,326 INFO [main] org.apache.juli.logging.DirectJDKLog: Initializing Spring embedded WebApplicationContext
+2023-02-02 14:56:21,327 INFO [main] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext: Root WebApplicationContext: initialization completed in 1736 ms
+2023-02-02 14:56:21,393 DEBUG [main] org.springframework.web.filter.GenericFilterBean: Filter 'JWTFilter' configured for use
+2023-02-02 14:56:21,584 INFO [main] com.zaxxer.hikari.HikariDataSource: HikariPool-1 - Starting...
+2023-02-02 14:56:22,056 INFO [main] com.zaxxer.hikari.HikariDataSource: HikariPool-1 - Start completed.
+2023-02-02 14:56:22,394 INFO [main] liquibase.logging.core.JavaLogger: Successfully acquired change log lock
+2023-02-02 14:56:22,739 INFO [main] liquibase.logging.core.JavaLogger: Reading from mysqlDataBase.DATABASECHANGELOG
+2023-02-02 14:56:22,838 INFO [main] liquibase.logging.core.JavaLogger: Successfully released change log lock
+2023-02-02 14:56:22,895 INFO [main] org.hibernate.jpa.internal.util.LogHelper: HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-02-02 14:56:22,944 INFO [main] org.hibernate.Version: HHH000412: Hibernate ORM core version 5.6.12.Final
+2023-02-02 14:56:23,090 INFO [main] org.hibernate.annotations.common.reflection.java.JavaReflectionManager: HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-02-02 14:56:23,199 INFO [main] org.hibernate.dialect.Dialect: HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2023-02-02 14:56:23,848 INFO [main] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator: HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-02-02 14:56:23,856 INFO [main] org.springframework.orm.jpa.AbstractEntityManagerFactoryBean: Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-02-02 14:56:24,330 WARN [main] org.springframework.boot.autoconfigure.security.servlet.UserDetailsServiceAutoConfiguration: 
+
+Using generated security password: 458af0dd-eb4c-4168-af9a-5b15d7053029
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2023-02-02 14:56:24,482 WARN [main] org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration: spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-02-02 14:56:24,732 INFO [main] org.springframework.security.web.DefaultSecurityFilterChain: Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@12a8d03b, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@67cd1db3, org.springframework.security.web.context.SecurityContextPersistenceFilter@40ef385f, org.springframework.security.web.header.HeaderWriterFilter@15251cc2, org.springframework.web.filter.CorsFilter@7ccfed46, maluevartem.cloud_storage_backend.security.JWTFilter@33e434c8, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@28d728f1, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@51d6c42d, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@53630682, org.springframework.security.web.session.SessionManagementFilter@53813f01, org.springframework.security.web.access.ExceptionTranslationFilter@2ef812b, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@4bca2a09]
+2023-02-02 14:56:25,058 INFO [main] org.apache.juli.logging.DirectJDKLog: Starting ProtocolHandler ["http-nio-8888"]
+2023-02-02 14:56:25,082 INFO [main] org.springframework.boot.web.embedded.tomcat.TomcatWebServer: Tomcat started on port(s): 8888 (http) with context path ''
+2023-02-02 14:56:25,093 INFO [main] org.springframework.boot.StartupInfoLogger: Started CloudStorageBackendApplication in 6.02 seconds (JVM running for 7.847)
+2023-02-02 14:56:35,711 INFO [http-nio-8888-exec-2] org.apache.juli.logging.DirectJDKLog: Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-02-02 14:56:35,712 INFO [http-nio-8888-exec-2] org.springframework.web.servlet.FrameworkServlet: Initializing Servlet 'dispatcherServlet'
+2023-02-02 14:56:35,714 INFO [http-nio-8888-exec-2] org.springframework.web.servlet.FrameworkServlet: Completed initialization in 2 ms
+2023-02-02 14:56:35,855 INFO [http-nio-8888-exec-2] maluevartem.cloud_storage_backend.controller.AuthenticationController: Пользователь пытается войти в систему: UserDto(login=User, password=user1234)
+2023-02-02 14:56:35,861 INFO [http-nio-8888-exec-2] maluevartem.cloud_storage_backend.service.AuthenticationService: Поиск пользователя в базе данных по логину: User
+2023-02-02 14:57:33,784 WARN [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool$HouseKeeper: HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m11s628ms73µs400ns).
+2023-02-02 14:57:34,416 INFO [http-nio-8888-exec-2] maluevartem.cloud_storage_backend.security.JWTToken: Auth-token добавлен в список активных токеннов
+2023-02-02 14:57:34,416 INFO [http-nio-8888-exec-2] maluevartem.cloud_storage_backend.controller.AuthenticationController: Пользователь: UserDto(login=User, password=user1234) успешно вошел в систему. Auth-token: eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiIxIiwic3ViIjoiVXNlciIsImlhdCI6MTY3NTMzOTA1NCwibmJmIjoxNjc1MzM5MDU0LCJleHAiOjE2NzUzNDA4NTR9.bW-sM-dQqqk_jzIMYtPnrcoZTMSsSjzTsyOyuH2d0fo
+2023-02-02 14:57:34,547 INFO [http-nio-8888-exec-1] maluevartem.cloud_storage_backend.security.JWTFilter: Токен действителен: eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiIxIiwic3ViIjoiVXNlciIsImlhdCI6MTY3NTMzOTA1NCwibmJmIjoxNjc1MzM5MDU0LCJleHAiOjE2NzUzNDA4NTR9.bW-sM-dQqqk_jzIMYtPnrcoZTMSsSjzTsyOyuH2d0fo
+2023-02-02 14:57:34,552 INFO [http-nio-8888-exec-1] maluevartem.cloud_storage_backend.security.JWTFilter: Токен действителен: eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiIxIiwic3ViIjoiVXNlciIsImlhdCI6MTY3NTMzOTA1NCwibmJmIjoxNjc1MzM5MDU0LCJleHAiOjE2NzUzNDA4NTR9.bW-sM-dQqqk_jzIMYtPnrcoZTMSsSjzTsyOyuH2d0fo
+2023-02-02 14:57:34,565 INFO [http-nio-8888-exec-1] maluevartem.cloud_storage_backend.controller.FileController: Запрос для получения списка файлов. Лимит: 3
+2023-02-02 14:57:34,574 INFO [http-nio-8888-exec-1] maluevartem.cloud_storage_backend.service.FileService: Поиск всех файлов в базе данных по Id пользователя: 1 и лимиту вывода: 3
+2023-02-02 14:57:34,630 INFO [http-nio-8888-exec-1] maluevartem.cloud_storage_backend.service.FileService: Все файлы в базе данных по Id пользователя: 1 и лимиту вывода: 3 найдены | Список файлов: [FileEntity{id=1, fileName='Регистрация БПЛА.pdf', fileType='application/pdf', hash='0127a5d609ce715877b3f1815a6def2ab3dc21e0e81bb04d22a4e8909f3408c0', size=32939, userId=1}]
+2023-02-02 14:58:03,152 INFO [http-nio-8888-exec-5] maluevartem.cloud_storage_backend.security.JWTFilter: Токен действителен: eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiIxIiwic3ViIjoiVXNlciIsImlhdCI6MTY3NTMzOTA1NCwibmJmIjoxNjc1MzM5MDU0LCJleHAiOjE2NzUzNDA4NTR9.bW-sM-dQqqk_jzIMYtPnrcoZTMSsSjzTsyOyuH2d0fo
+2023-02-02 14:58:03,159 INFO [http-nio-8888-exec-5] maluevartem.cloud_storage_backend.security.JWTFilter: Токен действителен: eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiIxIiwic3ViIjoiVXNlciIsImlhdCI6MTY3NTMzOTA1NCwibmJmIjoxNjc1MzM5MDU0LCJleHAiOjE2NzUzNDA4NTR9.bW-sM-dQqqk_jzIMYtPnrcoZTMSsSjzTsyOyuH2d0fo
+2023-02-02 14:58:33,819 WARN [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool$HouseKeeper: HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m34ms228µs700ns).
+2023-02-02 14:58:33,936 ERROR [http-nio-8888-exec-5] maluevartem.cloud_storage_backend.exception.advice.ExceptionHandlerAdvice: (ERROR) Ошибка: Пользователь не найден, id: 0
+2023-02-02 14:58:34,469 INFO [SpringApplicationShutdownHook] org.springframework.orm.jpa.AbstractEntityManagerFactoryBean: Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-02-02 14:58:34,474 INFO [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource: HikariPool-1 - Shutdown initiated...
+2023-02-02 14:58:34,511 INFO [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource: HikariPool-1 - Shutdown completed.
+2023-02-02 14:59:53,637 INFO [main] maluevartem.cloud_storage_backend.CloudStorageBackendApplication: Сервер запущен: Thu Feb 02 14:59:53 MSK 2023
+2023-02-02 14:59:54,394 INFO [main] org.springframework.boot.StartupInfoLogger: Starting CloudStorageBackendApplication using Java 11.0.14.1 on Jgeleziaka-13 with PID 3976 (D:\JavaCourse\DiplomaWork_CloudStorage\cloud_storage_backend\target\classes started by Пользователь in D:\JavaCourse\DiplomaWork_CloudStorage\cloud_storage_backend)
+2023-02-02 14:59:54,394 INFO [background-preinit] org.hibernate.validator.internal.util.Version: HV000001: Hibernate Validator 6.2.5.Final
+2023-02-02 14:59:54,395 DEBUG [main] org.springframework.boot.StartupInfoLogger: Running with Spring Boot v2.7.5, Spring v5.3.23
+2023-02-02 14:59:54,396 INFO [main] org.springframework.boot.SpringApplication: No active profile set, falling back to 1 default profile: "default"
+2023-02-02 14:59:55,350 INFO [main] org.springframework.data.repository.config.RepositoryConfigurationDelegate: Multiple Spring Data modules found, entering strict repository configuration mode
+2023-02-02 14:59:55,351 INFO [main] org.springframework.data.repository.config.RepositoryConfigurationDelegate: Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2023-02-02 14:59:55,383 INFO [main] org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport: Spring Data JDBC - Could not safely identify store assignment for repository candidate interface maluevartem.cloud_storage_backend.repository.FileRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2023-02-02 14:59:55,384 INFO [main] org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport: Spring Data JDBC - Could not safely identify store assignment for repository candidate interface maluevartem.cloud_storage_backend.repository.UserRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2023-02-02 14:59:55,386 INFO [main] org.springframework.data.repository.config.RepositoryConfigurationDelegate: Finished Spring Data repository scanning in 28 ms. Found 0 JDBC repository interfaces.
+2023-02-02 14:59:55,393 INFO [main] org.springframework.data.repository.config.RepositoryConfigurationDelegate: Multiple Spring Data modules found, entering strict repository configuration mode
+2023-02-02 14:59:55,394 INFO [main] org.springframework.data.repository.config.RepositoryConfigurationDelegate: Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-02-02 14:59:55,430 INFO [main] org.springframework.data.repository.config.RepositoryConfigurationDelegate: Finished Spring Data repository scanning in 32 ms. Found 2 JPA repository interfaces.
+2023-02-02 14:59:56,073 INFO [main] org.springframework.boot.web.embedded.tomcat.TomcatWebServer: Tomcat initialized with port(s): 8888 (http)
+2023-02-02 14:59:56,084 INFO [main] org.apache.juli.logging.DirectJDKLog: Initializing ProtocolHandler ["http-nio-8888"]
+2023-02-02 14:59:56,084 INFO [main] org.apache.juli.logging.DirectJDKLog: Starting service [Tomcat]
+2023-02-02 14:59:56,085 INFO [main] org.apache.juli.logging.DirectJDKLog: Starting Servlet engine: [Apache Tomcat/9.0.68]
+2023-02-02 14:59:56,205 INFO [main] org.apache.juli.logging.DirectJDKLog: Initializing Spring embedded WebApplicationContext
+2023-02-02 14:59:56,206 INFO [main] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext: Root WebApplicationContext: initialization completed in 1764 ms
+2023-02-02 14:59:56,267 DEBUG [main] org.springframework.web.filter.GenericFilterBean: Filter 'JWTFilter' configured for use
+2023-02-02 14:59:56,458 INFO [main] com.zaxxer.hikari.HikariDataSource: HikariPool-1 - Starting...
+2023-02-02 14:59:56,822 INFO [main] com.zaxxer.hikari.HikariDataSource: HikariPool-1 - Start completed.
+2023-02-02 14:59:57,165 INFO [main] liquibase.logging.core.JavaLogger: Successfully acquired change log lock
+2023-02-02 14:59:57,500 INFO [main] liquibase.logging.core.JavaLogger: Reading from mysqlDataBase.DATABASECHANGELOG
+2023-02-02 14:59:57,616 INFO [main] liquibase.logging.core.JavaLogger: Successfully released change log lock
+2023-02-02 14:59:57,673 INFO [main] org.hibernate.jpa.internal.util.LogHelper: HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-02-02 14:59:57,733 INFO [main] org.hibernate.Version: HHH000412: Hibernate ORM core version 5.6.12.Final
+2023-02-02 14:59:57,877 INFO [main] org.hibernate.annotations.common.reflection.java.JavaReflectionManager: HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-02-02 14:59:58,005 INFO [main] org.hibernate.dialect.Dialect: HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2023-02-02 14:59:58,611 INFO [main] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator: HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-02-02 14:59:58,620 INFO [main] org.springframework.orm.jpa.AbstractEntityManagerFactoryBean: Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-02-02 14:59:59,116 WARN [main] org.springframework.boot.autoconfigure.security.servlet.UserDetailsServiceAutoConfiguration: 
+
+Using generated security password: 24d90303-d86f-403a-b2b1-1e2d5d0920bb
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2023-02-02 14:59:59,233 WARN [main] org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration: spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-02-02 14:59:59,460 INFO [main] org.springframework.security.web.DefaultSecurityFilterChain: Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@623be2a0, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@3b44ed3c, org.springframework.security.web.context.SecurityContextPersistenceFilter@12a7515b, org.springframework.security.web.header.HeaderWriterFilter@174aabb2, org.springframework.web.filter.CorsFilter@1df83569, maluevartem.cloud_storage_backend.security.JWTFilter@1dcedc93, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@2ded31cc, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@47b71556, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@439047ef, org.springframework.security.web.session.SessionManagementFilter@678b3746, org.springframework.security.web.access.ExceptionTranslationFilter@ae85aad, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@7da59f6e]
+2023-02-02 14:59:59,783 INFO [main] org.apache.juli.logging.DirectJDKLog: Starting ProtocolHandler ["http-nio-8888"]
+2023-02-02 14:59:59,806 INFO [main] org.springframework.boot.web.embedded.tomcat.TomcatWebServer: Tomcat started on port(s): 8888 (http) with context path ''
+2023-02-02 14:59:59,817 INFO [main] org.springframework.boot.StartupInfoLogger: Started CloudStorageBackendApplication in 6.062 seconds (JVM running for 7.501)
+2023-02-02 15:00:16,709 INFO [http-nio-8888-exec-1] org.apache.juli.logging.DirectJDKLog: Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-02-02 15:00:16,710 INFO [http-nio-8888-exec-1] org.springframework.web.servlet.FrameworkServlet: Initializing Servlet 'dispatcherServlet'
+2023-02-02 15:00:16,712 INFO [http-nio-8888-exec-1] org.springframework.web.servlet.FrameworkServlet: Completed initialization in 2 ms
+2023-02-02 15:00:16,850 INFO [http-nio-8888-exec-1] maluevartem.cloud_storage_backend.controller.AuthenticationController: Пользователь пытается войти в систему: UserDto(login=User, password=user1234)
+2023-02-02 15:00:16,856 INFO [http-nio-8888-exec-1] maluevartem.cloud_storage_backend.service.AuthenticationService: Поиск пользователя в базе данных по логину: User
+2023-02-02 15:00:36,033 INFO [http-nio-8888-exec-1] maluevartem.cloud_storage_backend.security.JWTToken: Auth-token добавлен в список активных токеннов
+2023-02-02 15:00:36,034 INFO [http-nio-8888-exec-1] maluevartem.cloud_storage_backend.controller.AuthenticationController: Пользователь: UserDto(login=User, password=user1234) успешно вошел в систему. Auth-token: eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiIxIiwic3ViIjoiVXNlciIsImlhdCI6MTY3NTMzOTIzNSwibmJmIjoxNjc1MzM5MjM1LCJleHAiOjE2NzUzNDEwMzV9.L07lTUa11WPvuaPB-JfsrwLUbeRslprb182-7ebfQRc
+2023-02-02 15:00:36,173 INFO [http-nio-8888-exec-2] maluevartem.cloud_storage_backend.security.JWTFilter: Токен действителен: eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiIxIiwic3ViIjoiVXNlciIsImlhdCI6MTY3NTMzOTIzNSwibmJmIjoxNjc1MzM5MjM1LCJleHAiOjE2NzUzNDEwMzV9.L07lTUa11WPvuaPB-JfsrwLUbeRslprb182-7ebfQRc
+2023-02-02 15:00:36,177 INFO [http-nio-8888-exec-2] maluevartem.cloud_storage_backend.security.JWTFilter: Токен действителен: eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiIxIiwic3ViIjoiVXNlciIsImlhdCI6MTY3NTMzOTIzNSwibmJmIjoxNjc1MzM5MjM1LCJleHAiOjE2NzUzNDEwMzV9.L07lTUa11WPvuaPB-JfsrwLUbeRslprb182-7ebfQRc
+2023-02-02 15:00:36,185 INFO [http-nio-8888-exec-2] maluevartem.cloud_storage_backend.controller.FileController: Запрос для получения списка файлов. Лимит: 3
+2023-02-02 15:00:36,192 INFO [http-nio-8888-exec-2] maluevartem.cloud_storage_backend.service.FileService: Поиск всех файлов в базе данных по Id пользователя: 1 и лимиту вывода: 3
+2023-02-02 15:00:36,249 INFO [http-nio-8888-exec-2] maluevartem.cloud_storage_backend.service.FileService: Все файлы в базе данных по Id пользователя: 1 и лимиту вывода: 3 найдены | Список файлов: [FileEntity{id=1, fileName='Регистрация БПЛА.pdf', fileType='application/pdf', hash='0127a5d609ce715877b3f1815a6def2ab3dc21e0e81bb04d22a4e8909f3408c0', size=32939, userId=1}]
+2023-02-02 15:00:38,444 INFO [http-nio-8888-exec-3] maluevartem.cloud_storage_backend.security.JWTFilter: Токен действителен: eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiIxIiwic3ViIjoiVXNlciIsImlhdCI6MTY3NTMzOTIzNSwibmJmIjoxNjc1MzM5MjM1LCJleHAiOjE2NzUzNDEwMzV9.L07lTUa11WPvuaPB-JfsrwLUbeRslprb182-7ebfQRc
+2023-02-02 15:00:38,465 INFO [http-nio-8888-exec-3] maluevartem.cloud_storage_backend.security.JWTFilter: Токен действителен: eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiIxIiwic3ViIjoiVXNlciIsImlhdCI6MTY3NTMzOTIzNSwibmJmIjoxNjc1MzM5MjM1LCJleHAiOjE2NzUzNDEwMzV9.L07lTUa11WPvuaPB-JfsrwLUbeRslprb182-7ebfQRc
+2023-02-02 15:01:40,588 WARN [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool$HouseKeeper: HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m5s180ms242µs800ns).
+2023-02-02 15:03:30,690 ERROR [http-nio-8888-exec-3] maluevartem.cloud_storage_backend.exception.advice.ExceptionHandlerAdvice: (ERROR) Ошибка: Пользователь не найден, id: 0
+2023-02-02 15:03:30,990 INFO [SpringApplicationShutdownHook] org.springframework.orm.jpa.AbstractEntityManagerFactoryBean: Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-02-02 15:03:30,998 INFO [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource: HikariPool-1 - Shutdown initiated...
+2023-02-02 15:03:31,021 INFO [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource: HikariPool-1 - Shutdown completed.
+2023-02-02 15:11:05,087 INFO [main] maluevartem.cloud_storage_backend.CloudStorageBackendApplication: Сервер запущен: Thu Feb 02 15:11:05 MSK 2023
+2023-02-02 15:11:05,639 INFO [background-preinit] org.hibernate.validator.internal.util.Version: HV000001: Hibernate Validator 6.2.5.Final
+2023-02-02 15:11:05,642 INFO [main] org.springframework.boot.StartupInfoLogger: Starting CloudStorageBackendApplication using Java 11.0.14.1 on Jgeleziaka-13 with PID 13268 (D:\JavaCourse\DiplomaWork_CloudStorage\cloud_storage_backend\target\classes started by Пользователь in D:\JavaCourse\DiplomaWork_CloudStorage\cloud_storage_backend)
+2023-02-02 15:11:05,644 DEBUG [main] org.springframework.boot.StartupInfoLogger: Running with Spring Boot v2.7.5, Spring v5.3.23
+2023-02-02 15:11:05,645 INFO [main] org.springframework.boot.SpringApplication: No active profile set, falling back to 1 default profile: "default"
+2023-02-02 15:11:06,476 INFO [main] org.springframework.data.repository.config.RepositoryConfigurationDelegate: Multiple Spring Data modules found, entering strict repository configuration mode
+2023-02-02 15:11:06,478 INFO [main] org.springframework.data.repository.config.RepositoryConfigurationDelegate: Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2023-02-02 15:11:06,512 INFO [main] org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport: Spring Data JDBC - Could not safely identify store assignment for repository candidate interface maluevartem.cloud_storage_backend.repository.FileRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2023-02-02 15:11:06,515 INFO [main] org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport: Spring Data JDBC - Could not safely identify store assignment for repository candidate interface maluevartem.cloud_storage_backend.repository.UserRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2023-02-02 15:11:06,516 INFO [main] org.springframework.data.repository.config.RepositoryConfigurationDelegate: Finished Spring Data repository scanning in 32 ms. Found 0 JDBC repository interfaces.
+2023-02-02 15:11:06,525 INFO [main] org.springframework.data.repository.config.RepositoryConfigurationDelegate: Multiple Spring Data modules found, entering strict repository configuration mode
+2023-02-02 15:11:06,525 INFO [main] org.springframework.data.repository.config.RepositoryConfigurationDelegate: Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-02-02 15:11:06,561 INFO [main] org.springframework.data.repository.config.RepositoryConfigurationDelegate: Finished Spring Data repository scanning in 31 ms. Found 2 JPA repository interfaces.
+2023-02-02 15:11:07,230 INFO [main] org.springframework.boot.web.embedded.tomcat.TomcatWebServer: Tomcat initialized with port(s): 8888 (http)
+2023-02-02 15:11:07,241 INFO [main] org.apache.juli.logging.DirectJDKLog: Initializing ProtocolHandler ["http-nio-8888"]
+2023-02-02 15:11:07,242 INFO [main] org.apache.juli.logging.DirectJDKLog: Starting service [Tomcat]
+2023-02-02 15:11:07,242 INFO [main] org.apache.juli.logging.DirectJDKLog: Starting Servlet engine: [Apache Tomcat/9.0.68]
+2023-02-02 15:11:07,365 INFO [main] org.apache.juli.logging.DirectJDKLog: Initializing Spring embedded WebApplicationContext
+2023-02-02 15:11:07,365 INFO [main] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext: Root WebApplicationContext: initialization completed in 1671 ms
+2023-02-02 15:11:07,428 DEBUG [main] org.springframework.web.filter.GenericFilterBean: Filter 'JWTFilter' configured for use
+2023-02-02 15:11:07,623 INFO [main] com.zaxxer.hikari.HikariDataSource: HikariPool-1 - Starting...
+2023-02-02 15:11:08,004 INFO [main] com.zaxxer.hikari.HikariDataSource: HikariPool-1 - Start completed.
+2023-02-02 15:11:08,391 INFO [main] liquibase.logging.core.JavaLogger: Successfully acquired change log lock
+2023-02-02 15:11:08,807 INFO [main] liquibase.logging.core.JavaLogger: Reading from mysqlDataBase.DATABASECHANGELOG
+2023-02-02 15:11:08,911 INFO [main] liquibase.logging.core.JavaLogger: Successfully released change log lock
+2023-02-02 15:11:08,999 INFO [main] org.hibernate.jpa.internal.util.LogHelper: HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-02-02 15:11:09,069 INFO [main] org.hibernate.Version: HHH000412: Hibernate ORM core version 5.6.12.Final
+2023-02-02 15:11:09,219 INFO [main] org.hibernate.annotations.common.reflection.java.JavaReflectionManager: HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-02-02 15:11:09,332 INFO [main] org.hibernate.dialect.Dialect: HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2023-02-02 15:11:10,047 INFO [main] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator: HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-02-02 15:11:10,057 INFO [main] org.springframework.orm.jpa.AbstractEntityManagerFactoryBean: Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-02-02 15:11:10,580 WARN [main] org.springframework.boot.autoconfigure.security.servlet.UserDetailsServiceAutoConfiguration: 
+
+Using generated security password: be40077e-d0b6-404c-9682-2f3fe93ad532
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2023-02-02 15:11:10,708 WARN [main] org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration: spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-02-02 15:11:10,974 INFO [main] org.springframework.security.web.DefaultSecurityFilterChain: Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@62b2bc2e, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@3e3d8e6c, org.springframework.security.web.context.SecurityContextPersistenceFilter@678b3746, org.springframework.security.web.header.HeaderWriterFilter@737ae41a, org.springframework.web.filter.CorsFilter@7fd3197b, maluevartem.cloud_storage_backend.security.JWTFilter@7f7c420c, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@73db1a6, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@12a7515b, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@1d2ce035, org.springframework.security.web.session.SessionManagementFilter@5f3fafca, org.springframework.security.web.access.ExceptionTranslationFilter@ccea4be, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@ab595e8]
+2023-02-02 15:11:11,338 INFO [main] org.apache.juli.logging.DirectJDKLog: Starting ProtocolHandler ["http-nio-8888"]
+2023-02-02 15:11:11,363 INFO [main] org.springframework.boot.web.embedded.tomcat.TomcatWebServer: Tomcat started on port(s): 8888 (http) with context path ''
+2023-02-02 15:11:11,375 INFO [main] org.springframework.boot.StartupInfoLogger: Started CloudStorageBackendApplication in 6.177 seconds (JVM running for 7.427)
+2023-02-02 15:11:22,399 INFO [http-nio-8888-exec-2] org.apache.juli.logging.DirectJDKLog: Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-02-02 15:11:22,399 INFO [http-nio-8888-exec-2] org.springframework.web.servlet.FrameworkServlet: Initializing Servlet 'dispatcherServlet'
+2023-02-02 15:11:22,400 INFO [http-nio-8888-exec-2] org.springframework.web.servlet.FrameworkServlet: Completed initialization in 1 ms
+2023-02-02 15:11:22,565 INFO [http-nio-8888-exec-1] maluevartem.cloud_storage_backend.controller.AuthenticationController: Пользователь пытается войти в систему: UserDto(login=User, password=user1234)
+2023-02-02 15:11:22,573 INFO [http-nio-8888-exec-1] maluevartem.cloud_storage_backend.service.AuthenticationService: Поиск пользователя в базе данных по логину: User
+2023-02-02 15:11:29,427 INFO [http-nio-8888-exec-1] maluevartem.cloud_storage_backend.security.JWTToken: Auth-token добавлен в список активных токеннов
+2023-02-02 15:11:29,427 INFO [http-nio-8888-exec-1] maluevartem.cloud_storage_backend.controller.AuthenticationController: Пользователь: UserDto(login=User, password=user1234) успешно вошел в систему. Auth-token: eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiIxIiwic3ViIjoiVXNlciIsImlhdCI6MTY3NTMzOTg4OSwibmJmIjoxNjc1MzM5ODg5LCJleHAiOjE2NzUzNDE2ODl9.3eGT1TEWDcwmtPxyAdmw-ANCC2lFo1V3JhTTJpupPq0
+2023-02-02 15:11:29,563 INFO [http-nio-8888-exec-5] maluevartem.cloud_storage_backend.security.JWTFilter: Токен действителен: eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiIxIiwic3ViIjoiVXNlciIsImlhdCI6MTY3NTMzOTg4OSwibmJmIjoxNjc1MzM5ODg5LCJleHAiOjE2NzUzNDE2ODl9.3eGT1TEWDcwmtPxyAdmw-ANCC2lFo1V3JhTTJpupPq0
+2023-02-02 15:11:29,569 INFO [http-nio-8888-exec-5] maluevartem.cloud_storage_backend.security.JWTFilter: Токен действителен: eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiIxIiwic3ViIjoiVXNlciIsImlhdCI6MTY3NTMzOTg4OSwibmJmIjoxNjc1MzM5ODg5LCJleHAiOjE2NzUzNDE2ODl9.3eGT1TEWDcwmtPxyAdmw-ANCC2lFo1V3JhTTJpupPq0
+2023-02-02 15:11:29,581 INFO [http-nio-8888-exec-5] maluevartem.cloud_storage_backend.controller.FileController: Запрос для получения списка файлов. Лимит: 3
+2023-02-02 15:11:29,588 INFO [http-nio-8888-exec-5] maluevartem.cloud_storage_backend.service.FileService: Поиск всех файлов в базе данных по Id пользователя: 1 и лимиту вывода: 3
+2023-02-02 15:11:29,635 INFO [http-nio-8888-exec-5] maluevartem.cloud_storage_backend.service.FileService: Все файлы в базе данных по Id пользователя: 1 и лимиту вывода: 3 найдены | Список файлов: [FileEntity{id=1, fileName='Регистрация БПЛА.pdf', fileType='application/pdf', hash='0127a5d609ce715877b3f1815a6def2ab3dc21e0e81bb04d22a4e8909f3408c0', size=32939, userId=1}]
+2023-02-02 15:11:35,866 INFO [http-nio-8888-exec-8] maluevartem.cloud_storage_backend.security.JWTFilter: Токен действителен: eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiIxIiwic3ViIjoiVXNlciIsImlhdCI6MTY3NTMzOTg4OSwibmJmIjoxNjc1MzM5ODg5LCJleHAiOjE2NzUzNDE2ODl9.3eGT1TEWDcwmtPxyAdmw-ANCC2lFo1V3JhTTJpupPq0
+2023-02-02 15:11:35,874 INFO [http-nio-8888-exec-8] maluevartem.cloud_storage_backend.security.JWTFilter: Токен действителен: eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiIxIiwic3ViIjoiVXNlciIsImlhdCI6MTY3NTMzOTg4OSwibmJmIjoxNjc1MzM5ODg5LCJleHAiOjE2NzUzNDE2ODl9.3eGT1TEWDcwmtPxyAdmw-ANCC2lFo1V3JhTTJpupPq0
+2023-02-02 15:11:57,049 INFO [http-nio-8888-exec-8] maluevartem.cloud_storage_backend.service.AuthenticationService: Пользователь начал процедуру выхода из системы: UserEntity(id=1, login=User, password=$2a$12$L/60e15uj8ZFqTldPHFJo.v3Tlyf4MXtTmPesF0rvWCRnrpiE5ggq, fileList=[FileEntity{id=1, fileName='Регистрация БПЛА.pdf', fileType='application/pdf', hash='0127a5d609ce715877b3f1815a6def2ab3dc21e0e81bb04d22a4e8909f3408c0', size=32939, userId=1}])
+2023-02-02 15:11:57,086 INFO [http-nio-8888-exec-8] maluevartem.cloud_storage_backend.service.AuthenticationService: Токен пользователя: UserEntity(id=1, login=User, password=$2a$12$L/60e15uj8ZFqTldPHFJo.v3Tlyf4MXtTmPesF0rvWCRnrpiE5ggq, fileList=[FileEntity{id=1, fileName='Регистрация БПЛА.pdf', fileType='application/pdf', hash='0127a5d609ce715877b3f1815a6def2ab3dc21e0e81bb04d22a4e8909f3408c0', size=32939, userId=1}]) удален из списка активных токеннов. Auth-token: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiIxIiwic3ViIjoiVXNlciIsImlhdCI6MTY3NTMzOTg4OSwibmJmIjoxNjc1MzM5ODg5LCJleHAiOjE2NzUzNDE2ODl9.3eGT1TEWDcwmtPxyAdmw-ANCC2lFo1V3JhTTJpupPq0
+2023-02-02 15:11:57,087 INFO [http-nio-8888-exec-8] maluevartem.cloud_storage_backend.controller.AuthenticationController: Пользователь: User успешно вышел из системы. Auth-token: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiIxIiwic3ViIjoiVXNlciIsImlhdCI6MTY3NTMzOTg4OSwibmJmIjoxNjc1MzM5ODg5LCJleHAiOjE2NzUzNDE2ODl9.3eGT1TEWDcwmtPxyAdmw-ANCC2lFo1V3JhTTJpupPq0
+2023-02-02 15:12:09,110 INFO [SpringApplicationShutdownHook] org.springframework.orm.jpa.AbstractEntityManagerFactoryBean: Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-02-02 15:12:09,113 INFO [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource: HikariPool-1 - Shutdown initiated...
+2023-02-02 15:12:09,140 INFO [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource: HikariPool-1 - Shutdown completed.
+2023-02-02 15:12:33,406 INFO [main] maluevartem.cloud_storage_backend.CloudStorageBackendApplication: Сервер запущен: Thu Feb 02 15:12:33 MSK 2023
+2023-02-02 15:12:33,878 INFO [main] org.springframework.boot.StartupInfoLogger: Starting CloudStorageBackendApplication using Java 11.0.14.1 on Jgeleziaka-13 with PID 13164 (D:\JavaCourse\DiplomaWork_CloudStorage\cloud_storage_backend\target\classes started by Пользователь in D:\JavaCourse\DiplomaWork_CloudStorage\cloud_storage_backend)
+2023-02-02 15:12:33,879 DEBUG [main] org.springframework.boot.StartupInfoLogger: Running with Spring Boot v2.7.5, Spring v5.3.23
+2023-02-02 15:12:33,880 INFO [main] org.springframework.boot.SpringApplication: No active profile set, falling back to 1 default profile: "default"
+2023-02-02 15:12:33,880 INFO [background-preinit] org.hibernate.validator.internal.util.Version: HV000001: Hibernate Validator 6.2.5.Final
+2023-02-02 15:12:34,588 INFO [main] org.springframework.data.repository.config.RepositoryConfigurationDelegate: Multiple Spring Data modules found, entering strict repository configuration mode
+2023-02-02 15:12:34,588 INFO [main] org.springframework.data.repository.config.RepositoryConfigurationDelegate: Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2023-02-02 15:12:34,615 INFO [main] org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport: Spring Data JDBC - Could not safely identify store assignment for repository candidate interface maluevartem.cloud_storage_backend.repository.FileRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2023-02-02 15:12:34,617 INFO [main] org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport: Spring Data JDBC - Could not safely identify store assignment for repository candidate interface maluevartem.cloud_storage_backend.repository.UserRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2023-02-02 15:12:34,618 INFO [main] org.springframework.data.repository.config.RepositoryConfigurationDelegate: Finished Spring Data repository scanning in 25 ms. Found 0 JDBC repository interfaces.
+2023-02-02 15:12:34,625 INFO [main] org.springframework.data.repository.config.RepositoryConfigurationDelegate: Multiple Spring Data modules found, entering strict repository configuration mode
+2023-02-02 15:12:34,626 INFO [main] org.springframework.data.repository.config.RepositoryConfigurationDelegate: Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-02-02 15:12:34,655 INFO [main] org.springframework.data.repository.config.RepositoryConfigurationDelegate: Finished Spring Data repository scanning in 26 ms. Found 2 JPA repository interfaces.
+2023-02-02 15:12:35,220 INFO [main] org.springframework.boot.web.embedded.tomcat.TomcatWebServer: Tomcat initialized with port(s): 8888 (http)
+2023-02-02 15:12:35,229 INFO [main] org.apache.juli.logging.DirectJDKLog: Initializing ProtocolHandler ["http-nio-8888"]
+2023-02-02 15:12:35,229 INFO [main] org.apache.juli.logging.DirectJDKLog: Starting service [Tomcat]
+2023-02-02 15:12:35,230 INFO [main] org.apache.juli.logging.DirectJDKLog: Starting Servlet engine: [Apache Tomcat/9.0.68]
+2023-02-02 15:12:35,334 INFO [main] org.apache.juli.logging.DirectJDKLog: Initializing Spring embedded WebApplicationContext
+2023-02-02 15:12:35,334 INFO [main] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext: Root WebApplicationContext: initialization completed in 1419 ms
+2023-02-02 15:12:35,387 DEBUG [main] org.springframework.web.filter.GenericFilterBean: Filter 'JWTFilter' configured for use
+2023-02-02 15:12:35,549 INFO [main] com.zaxxer.hikari.HikariDataSource: HikariPool-1 - Starting...
+2023-02-02 15:12:35,868 INFO [main] com.zaxxer.hikari.HikariDataSource: HikariPool-1 - Start completed.
+2023-02-02 15:12:36,207 INFO [main] liquibase.logging.core.JavaLogger: Successfully acquired change log lock
+2023-02-02 15:12:36,489 INFO [main] liquibase.logging.core.JavaLogger: Reading from mysqlDataBase.DATABASECHANGELOG
+2023-02-02 15:12:36,621 INFO [main] liquibase.logging.core.JavaLogger: Successfully released change log lock
+2023-02-02 15:12:36,677 INFO [main] org.hibernate.jpa.internal.util.LogHelper: HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-02-02 15:12:36,739 INFO [main] org.hibernate.Version: HHH000412: Hibernate ORM core version 5.6.12.Final
+2023-02-02 15:12:36,876 INFO [main] org.hibernate.annotations.common.reflection.java.JavaReflectionManager: HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-02-02 15:12:36,973 INFO [main] org.hibernate.dialect.Dialect: HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2023-02-02 15:12:37,496 INFO [main] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator: HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-02-02 15:12:37,504 INFO [main] org.springframework.orm.jpa.AbstractEntityManagerFactoryBean: Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-02-02 15:12:37,897 WARN [main] org.springframework.boot.autoconfigure.security.servlet.UserDetailsServiceAutoConfiguration: 
+
+Using generated security password: 0c184723-f018-469f-a4aa-910277a21273
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2023-02-02 15:12:37,996 WARN [main] org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration: spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-02-02 15:12:38,272 INFO [main] org.springframework.security.web.DefaultSecurityFilterChain: Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@7ec5d3e1, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@3b235623, org.springframework.security.web.context.SecurityContextPersistenceFilter@52737c1, org.springframework.security.web.header.HeaderWriterFilter@18174bd9, org.springframework.web.filter.CorsFilter@3ddc5a75, maluevartem.cloud_storage_backend.security.JWTFilter@2693c618, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@649a6d88, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@69e23e94, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@3b2114ce, org.springframework.security.web.session.SessionManagementFilter@18711946, org.springframework.security.web.access.ExceptionTranslationFilter@4a937d43, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@153cf928]
+2023-02-02 15:12:38,533 INFO [main] org.apache.juli.logging.DirectJDKLog: Starting ProtocolHandler ["http-nio-8888"]
+2023-02-02 15:12:38,553 INFO [main] org.springframework.boot.web.embedded.tomcat.TomcatWebServer: Tomcat started on port(s): 8888 (http) with context path ''
+2023-02-02 15:12:38,563 INFO [main] org.springframework.boot.StartupInfoLogger: Started CloudStorageBackendApplication in 5.057 seconds (JVM running for 6.093)
+2023-02-02 15:12:50,815 INFO [http-nio-8888-exec-1] org.apache.juli.logging.DirectJDKLog: Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-02-02 15:12:50,816 INFO [http-nio-8888-exec-1] org.springframework.web.servlet.FrameworkServlet: Initializing Servlet 'dispatcherServlet'
+2023-02-02 15:12:50,817 INFO [http-nio-8888-exec-1] org.springframework.web.servlet.FrameworkServlet: Completed initialization in 1 ms
+2023-02-02 15:12:50,934 INFO [http-nio-8888-exec-1] maluevartem.cloud_storage_backend.controller.AuthenticationController: Пользователь пытается войти в систему: UserDto(login=User, password=user1234)
+2023-02-02 15:12:50,939 INFO [http-nio-8888-exec-1] maluevartem.cloud_storage_backend.service.AuthenticationService: Поиск пользователя в базе данных по логину: User
+2023-02-02 15:12:51,485 INFO [http-nio-8888-exec-1] maluevartem.cloud_storage_backend.security.JWTToken: Auth-token добавлен в список активных токеннов
+2023-02-02 15:12:51,485 INFO [http-nio-8888-exec-1] maluevartem.cloud_storage_backend.controller.AuthenticationController: Пользователь: UserDto(login=User, password=user1234) успешно вошел в систему. Auth-token: eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiIxIiwic3ViIjoiVXNlciIsImlhdCI6MTY3NTMzOTk3MSwibmJmIjoxNjc1MzM5OTcxLCJleHAiOjE2NzUzNDE3NzF9.cXFNVcFinc49Hue24BxhTfyw62-Lk56Ygy-NNhLuIPw
+2023-02-02 15:12:51,584 INFO [http-nio-8888-exec-2] maluevartem.cloud_storage_backend.security.JWTFilter: Токен действителен: eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiIxIiwic3ViIjoiVXNlciIsImlhdCI6MTY3NTMzOTk3MSwibmJmIjoxNjc1MzM5OTcxLCJleHAiOjE2NzUzNDE3NzF9.cXFNVcFinc49Hue24BxhTfyw62-Lk56Ygy-NNhLuIPw
+2023-02-02 15:12:51,594 INFO [http-nio-8888-exec-2] maluevartem.cloud_storage_backend.security.JWTFilter: Токен действителен: eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiIxIiwic3ViIjoiVXNlciIsImlhdCI6MTY3NTMzOTk3MSwibmJmIjoxNjc1MzM5OTcxLCJleHAiOjE2NzUzNDE3NzF9.cXFNVcFinc49Hue24BxhTfyw62-Lk56Ygy-NNhLuIPw
+2023-02-02 15:12:51,600 INFO [http-nio-8888-exec-2] maluevartem.cloud_storage_backend.controller.FileController: Запрос для получения списка файлов. Лимит: 3
+2023-02-02 15:12:51,609 INFO [http-nio-8888-exec-2] maluevartem.cloud_storage_backend.service.FileService: Поиск всех файлов в базе данных по Id пользователя: 1 и лимиту вывода: 3
+2023-02-02 15:12:51,647 INFO [http-nio-8888-exec-2] maluevartem.cloud_storage_backend.service.FileService: Все файлы в базе данных по Id пользователя: 1 и лимиту вывода: 3 найдены | Список файлов: [FileEntity{id=1, fileName='Регистрация БПЛА.pdf', fileType='application/pdf', hash='0127a5d609ce715877b3f1815a6def2ab3dc21e0e81bb04d22a4e8909f3408c0', size=32939, userId=1}]
+2023-02-02 15:12:53,563 INFO [http-nio-8888-exec-4] maluevartem.cloud_storage_backend.security.JWTFilter: Токен действителен: eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiIxIiwic3ViIjoiVXNlciIsImlhdCI6MTY3NTMzOTk3MSwibmJmIjoxNjc1MzM5OTcxLCJleHAiOjE2NzUzNDE3NzF9.cXFNVcFinc49Hue24BxhTfyw62-Lk56Ygy-NNhLuIPw
+2023-02-02 15:12:53,569 INFO [http-nio-8888-exec-4] maluevartem.cloud_storage_backend.security.JWTFilter: Токен действителен: eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiIxIiwic3ViIjoiVXNlciIsImlhdCI6MTY3NTMzOTk3MSwibmJmIjoxNjc1MzM5OTcxLCJleHAiOjE2NzUzNDE3NzF9.cXFNVcFinc49Hue24BxhTfyw62-Lk56Ygy-NNhLuIPw
+2023-02-02 15:12:53,590 INFO [http-nio-8888-exec-4] maluevartem.cloud_storage_backend.service.AuthenticationService: Пользователь начал процедуру выхода из системы: UserEntity(id=1, login=User, password=$2a$12$L/60e15uj8ZFqTldPHFJo.v3Tlyf4MXtTmPesF0rvWCRnrpiE5ggq, fileList=[FileEntity{id=1, fileName='Регистрация БПЛА.pdf', fileType='application/pdf', hash='0127a5d609ce715877b3f1815a6def2ab3dc21e0e81bb04d22a4e8909f3408c0', size=32939, userId=1}])
+2023-02-02 15:12:53,637 INFO [http-nio-8888-exec-4] maluevartem.cloud_storage_backend.service.AuthenticationService: Токен пользователя: UserEntity(id=1, login=User, password=$2a$12$L/60e15uj8ZFqTldPHFJo.v3Tlyf4MXtTmPesF0rvWCRnrpiE5ggq, fileList=[FileEntity{id=1, fileName='Регистрация БПЛА.pdf', fileType='application/pdf', hash='0127a5d609ce715877b3f1815a6def2ab3dc21e0e81bb04d22a4e8909f3408c0', size=32939, userId=1}]) удален из списка активных токеннов. Auth-token: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiIxIiwic3ViIjoiVXNlciIsImlhdCI6MTY3NTMzOTk3MSwibmJmIjoxNjc1MzM5OTcxLCJleHAiOjE2NzUzNDE3NzF9.cXFNVcFinc49Hue24BxhTfyw62-Lk56Ygy-NNhLuIPw
+2023-02-02 15:12:53,638 INFO [http-nio-8888-exec-4] maluevartem.cloud_storage_backend.controller.AuthenticationController: Пользователь: User успешно вышел из системы. Auth-token: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiIxIiwic3ViIjoiVXNlciIsImlhdCI6MTY3NTMzOTk3MSwibmJmIjoxNjc1MzM5OTcxLCJleHAiOjE2NzUzNDE3NzF9.cXFNVcFinc49Hue24BxhTfyw62-Lk56Ygy-NNhLuIPw
+2023-02-02 15:14:49,823 INFO [http-nio-8888-exec-6] maluevartem.cloud_storage_backend.controller.AuthenticationController: Пользователь пытается войти в систему: UserDto(login=User, password=user1234)
+2023-02-02 15:14:49,824 INFO [http-nio-8888-exec-6] maluevartem.cloud_storage_backend.service.AuthenticationService: Поиск пользователя в базе данных по логину: User
+2023-02-02 15:14:50,232 INFO [http-nio-8888-exec-6] maluevartem.cloud_storage_backend.security.JWTToken: Auth-token добавлен в список активных токеннов
+2023-02-02 15:14:50,232 INFO [http-nio-8888-exec-6] maluevartem.cloud_storage_backend.controller.AuthenticationController: Пользователь: UserDto(login=User, password=user1234) успешно вошел в систему. Auth-token: eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiIxIiwic3ViIjoiVXNlciIsImlhdCI6MTY3NTM0MDA5MCwibmJmIjoxNjc1MzQwMDkwLCJleHAiOjE2NzUzNDE4OTB9.YIyx5IWOnMmdoNDuoZ1ZDG6jcxLSEiD3HEVonSNGKxc
+2023-02-02 15:15:19,588 INFO [SpringApplicationShutdownHook] org.springframework.orm.jpa.AbstractEntityManagerFactoryBean: Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-02-02 15:15:19,591 INFO [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource: HikariPool-1 - Shutdown initiated...
+2023-02-02 15:15:19,639 INFO [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource: HikariPool-1 - Shutdown completed.
+2023-02-02 15:15:26,990 INFO [main] maluevartem.cloud_storage_backend.CloudStorageBackendApplication: Сервер запущен: Thu Feb 02 15:15:26 MSK 2023
+2023-02-02 15:15:27,438 INFO [main] org.springframework.boot.StartupInfoLogger: Starting CloudStorageBackendApplication using Java 11.0.14.1 on Jgeleziaka-13 with PID 14360 (D:\JavaCourse\DiplomaWork_CloudStorage\cloud_storage_backend\target\classes started by Пользователь in D:\JavaCourse\DiplomaWork_CloudStorage\cloud_storage_backend)
+2023-02-02 15:15:27,438 DEBUG [main] org.springframework.boot.StartupInfoLogger: Running with Spring Boot v2.7.5, Spring v5.3.23
+2023-02-02 15:15:27,438 INFO [background-preinit] org.hibernate.validator.internal.util.Version: HV000001: Hibernate Validator 6.2.5.Final
+2023-02-02 15:15:27,439 INFO [main] org.springframework.boot.SpringApplication: No active profile set, falling back to 1 default profile: "default"
+2023-02-02 15:15:28,166 INFO [main] org.springframework.data.repository.config.RepositoryConfigurationDelegate: Multiple Spring Data modules found, entering strict repository configuration mode
+2023-02-02 15:15:28,167 INFO [main] org.springframework.data.repository.config.RepositoryConfigurationDelegate: Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2023-02-02 15:15:28,194 INFO [main] org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport: Spring Data JDBC - Could not safely identify store assignment for repository candidate interface maluevartem.cloud_storage_backend.repository.FileRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2023-02-02 15:15:28,196 INFO [main] org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport: Spring Data JDBC - Could not safely identify store assignment for repository candidate interface maluevartem.cloud_storage_backend.repository.UserRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2023-02-02 15:15:28,197 INFO [main] org.springframework.data.repository.config.RepositoryConfigurationDelegate: Finished Spring Data repository scanning in 26 ms. Found 0 JDBC repository interfaces.
+2023-02-02 15:15:28,205 INFO [main] org.springframework.data.repository.config.RepositoryConfigurationDelegate: Multiple Spring Data modules found, entering strict repository configuration mode
+2023-02-02 15:15:28,205 INFO [main] org.springframework.data.repository.config.RepositoryConfigurationDelegate: Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-02-02 15:15:28,234 INFO [main] org.springframework.data.repository.config.RepositoryConfigurationDelegate: Finished Spring Data repository scanning in 25 ms. Found 2 JPA repository interfaces.
+2023-02-02 15:15:28,775 INFO [main] org.springframework.boot.web.embedded.tomcat.TomcatWebServer: Tomcat initialized with port(s): 8888 (http)
+2023-02-02 15:15:28,782 INFO [main] org.apache.juli.logging.DirectJDKLog: Initializing ProtocolHandler ["http-nio-8888"]
+2023-02-02 15:15:28,783 INFO [main] org.apache.juli.logging.DirectJDKLog: Starting service [Tomcat]
+2023-02-02 15:15:28,783 INFO [main] org.apache.juli.logging.DirectJDKLog: Starting Servlet engine: [Apache Tomcat/9.0.68]
+2023-02-02 15:15:28,884 INFO [main] org.apache.juli.logging.DirectJDKLog: Initializing Spring embedded WebApplicationContext
+2023-02-02 15:15:28,884 INFO [main] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext: Root WebApplicationContext: initialization completed in 1395 ms
+2023-02-02 15:15:28,936 DEBUG [main] org.springframework.web.filter.GenericFilterBean: Filter 'JWTFilter' configured for use
+2023-02-02 15:15:29,089 INFO [main] com.zaxxer.hikari.HikariDataSource: HikariPool-1 - Starting...
+2023-02-02 15:15:29,365 INFO [main] com.zaxxer.hikari.HikariDataSource: HikariPool-1 - Start completed.
+2023-02-02 15:15:29,702 INFO [main] liquibase.logging.core.JavaLogger: Successfully acquired change log lock
+2023-02-02 15:15:29,970 INFO [main] liquibase.logging.core.JavaLogger: Reading from mysqlDataBase.DATABASECHANGELOG
+2023-02-02 15:15:30,071 INFO [main] liquibase.logging.core.JavaLogger: Successfully released change log lock
+2023-02-02 15:15:30,138 INFO [main] org.hibernate.jpa.internal.util.LogHelper: HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-02-02 15:15:30,175 INFO [main] org.hibernate.Version: HHH000412: Hibernate ORM core version 5.6.12.Final
+2023-02-02 15:15:30,290 INFO [main] org.hibernate.annotations.common.reflection.java.JavaReflectionManager: HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-02-02 15:15:30,372 INFO [main] org.hibernate.dialect.Dialect: HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2023-02-02 15:15:30,866 INFO [main] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator: HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-02-02 15:15:30,874 INFO [main] org.springframework.orm.jpa.AbstractEntityManagerFactoryBean: Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-02-02 15:15:31,265 WARN [main] org.springframework.boot.autoconfigure.security.servlet.UserDetailsServiceAutoConfiguration: 
+
+Using generated security password: 01e38b21-4514-483e-be66-b92b41f659c8
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2023-02-02 15:15:31,359 WARN [main] org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration: spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-02-02 15:15:31,586 INFO [main] org.springframework.security.web.DefaultSecurityFilterChain: Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@17d25e1d, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@359fd0a2, org.springframework.security.web.context.SecurityContextPersistenceFilter@55d98bbb, org.springframework.security.web.header.HeaderWriterFilter@27a23d87, org.springframework.web.filter.CorsFilter@30b075b9, maluevartem.cloud_storage_backend.security.JWTFilter@a6e4897, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@30f54522, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@5af47414, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@510e0dd2, org.springframework.security.web.session.SessionManagementFilter@2cbae0f1, org.springframework.security.web.access.ExceptionTranslationFilter@7f97e963, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@67201002]
+2023-02-02 15:15:31,876 INFO [main] org.apache.juli.logging.DirectJDKLog: Starting ProtocolHandler ["http-nio-8888"]
+2023-02-02 15:15:31,896 INFO [main] org.springframework.boot.web.embedded.tomcat.TomcatWebServer: Tomcat started on port(s): 8888 (http) with context path ''
+2023-02-02 15:15:31,906 INFO [main] org.springframework.boot.StartupInfoLogger: Started CloudStorageBackendApplication in 4.827 seconds (JVM running for 5.759)
+2023-02-02 15:15:41,827 INFO [http-nio-8888-exec-1] org.apache.juli.logging.DirectJDKLog: Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-02-02 15:15:41,828 INFO [http-nio-8888-exec-1] org.springframework.web.servlet.FrameworkServlet: Initializing Servlet 'dispatcherServlet'
+2023-02-02 15:15:41,829 INFO [http-nio-8888-exec-1] org.springframework.web.servlet.FrameworkServlet: Completed initialization in 1 ms
+2023-02-02 15:15:41,951 INFO [http-nio-8888-exec-1] maluevartem.cloud_storage_backend.controller.AuthenticationController: Пользователь пытается войти в систему: UserDto(login=User, password=user1234)
+2023-02-02 15:15:41,956 INFO [http-nio-8888-exec-1] maluevartem.cloud_storage_backend.service.AuthenticationService: Поиск пользователя в базе данных по логину: User
+2023-02-02 15:15:42,487 INFO [http-nio-8888-exec-1] maluevartem.cloud_storage_backend.security.JWTToken: Auth-token eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiIxIiwic3ViIjoiVXNlciIsImlhdCI6MTY3NTM0MDE0MiwibmJmIjoxNjc1MzQwMTQyLCJleHAiOjE2NzUzNDE5NDJ9.__klsfQ-i0MToPwAyEUs6doXYPHKKePaLjOuuAizNGk добавлен в список активных токеннов
+2023-02-02 15:15:42,488 INFO [http-nio-8888-exec-1] maluevartem.cloud_storage_backend.controller.AuthenticationController: Пользователь: UserDto(login=User, password=user1234) успешно вошел в систему. Auth-token: eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiIxIiwic3ViIjoiVXNlciIsImlhdCI6MTY3NTM0MDE0MiwibmJmIjoxNjc1MzQwMTQyLCJleHAiOjE2NzUzNDE5NDJ9.__klsfQ-i0MToPwAyEUs6doXYPHKKePaLjOuuAizNGk
+2023-02-02 15:15:42,602 INFO [http-nio-8888-exec-2] maluevartem.cloud_storage_backend.security.JWTFilter: Токен действителен: eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiIxIiwic3ViIjoiVXNlciIsImlhdCI6MTY3NTM0MDE0MiwibmJmIjoxNjc1MzQwMTQyLCJleHAiOjE2NzUzNDE5NDJ9.__klsfQ-i0MToPwAyEUs6doXYPHKKePaLjOuuAizNGk
+2023-02-02 15:15:42,610 INFO [http-nio-8888-exec-2] maluevartem.cloud_storage_backend.security.JWTFilter: Токен действителен: eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiIxIiwic3ViIjoiVXNlciIsImlhdCI6MTY3NTM0MDE0MiwibmJmIjoxNjc1MzQwMTQyLCJleHAiOjE2NzUzNDE5NDJ9.__klsfQ-i0MToPwAyEUs6doXYPHKKePaLjOuuAizNGk
+2023-02-02 15:15:42,618 INFO [http-nio-8888-exec-2] maluevartem.cloud_storage_backend.controller.FileController: Запрос для получения списка файлов. Лимит: 3
+2023-02-02 15:15:42,626 INFO [http-nio-8888-exec-2] maluevartem.cloud_storage_backend.service.FileService: Поиск всех файлов в базе данных по Id пользователя: 1 и лимиту вывода: 3
+2023-02-02 15:15:42,666 INFO [http-nio-8888-exec-2] maluevartem.cloud_storage_backend.service.FileService: Все файлы в базе данных по Id пользователя: 1 и лимиту вывода: 3 найдены | Список файлов: [FileEntity{id=1, fileName='Регистрация БПЛА.pdf', fileType='application/pdf', hash='0127a5d609ce715877b3f1815a6def2ab3dc21e0e81bb04d22a4e8909f3408c0', size=32939, userId=1}]
+2023-02-02 15:15:44,661 INFO [http-nio-8888-exec-3] maluevartem.cloud_storage_backend.security.JWTFilter: Токен действителен: eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiIxIiwic3ViIjoiVXNlciIsImlhdCI6MTY3NTM0MDE0MiwibmJmIjoxNjc1MzQwMTQyLCJleHAiOjE2NzUzNDE5NDJ9.__klsfQ-i0MToPwAyEUs6doXYPHKKePaLjOuuAizNGk
+2023-02-02 15:15:44,666 INFO [http-nio-8888-exec-3] maluevartem.cloud_storage_backend.security.JWTFilter: Токен действителен: eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiIxIiwic3ViIjoiVXNlciIsImlhdCI6MTY3NTM0MDE0MiwibmJmIjoxNjc1MzQwMTQyLCJleHAiOjE2NzUzNDE5NDJ9.__klsfQ-i0MToPwAyEUs6doXYPHKKePaLjOuuAizNGk
+2023-02-02 15:15:44,689 INFO [http-nio-8888-exec-3] maluevartem.cloud_storage_backend.service.AuthenticationService: Пользователь начал процедуру выхода из системы: UserEntity(id=1, login=User, password=$2a$12$L/60e15uj8ZFqTldPHFJo.v3Tlyf4MXtTmPesF0rvWCRnrpiE5ggq, fileList=[FileEntity{id=1, fileName='Регистрация БПЛА.pdf', fileType='application/pdf', hash='0127a5d609ce715877b3f1815a6def2ab3dc21e0e81bb04d22a4e8909f3408c0', size=32939, userId=1}])
+2023-02-02 15:15:44,717 INFO [http-nio-8888-exec-3] maluevartem.cloud_storage_backend.service.AuthenticationService: Токен пользователя: UserEntity(id=1, login=User, password=$2a$12$L/60e15uj8ZFqTldPHFJo.v3Tlyf4MXtTmPesF0rvWCRnrpiE5ggq, fileList=[FileEntity{id=1, fileName='Регистрация БПЛА.pdf', fileType='application/pdf', hash='0127a5d609ce715877b3f1815a6def2ab3dc21e0e81bb04d22a4e8909f3408c0', size=32939, userId=1}]) удален из списка активных токеннов. Auth-token: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiIxIiwic3ViIjoiVXNlciIsImlhdCI6MTY3NTM0MDE0MiwibmJmIjoxNjc1MzQwMTQyLCJleHAiOjE2NzUzNDE5NDJ9.__klsfQ-i0MToPwAyEUs6doXYPHKKePaLjOuuAizNGk
+2023-02-02 15:15:44,718 INFO [http-nio-8888-exec-3] maluevartem.cloud_storage_backend.controller.AuthenticationController: Пользователь: User успешно вышел из системы. Auth-token: Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiIxIiwic3ViIjoiVXNlciIsImlhdCI6MTY3NTM0MDE0MiwibmJmIjoxNjc1MzQwMTQyLCJleHAiOjE2NzUzNDE5NDJ9.__klsfQ-i0MToPwAyEUs6doXYPHKKePaLjOuuAizNGk
+2023-02-02 15:17:47,463 INFO [http-nio-8888-exec-5] maluevartem.cloud_storage_backend.controller.AuthenticationController: Пользователь пытается войти в систему: UserDto(login=User, password=user1234)
+2023-02-02 15:17:47,464 INFO [http-nio-8888-exec-5] maluevartem.cloud_storage_backend.service.AuthenticationService: Поиск пользователя в базе данных по логину: User
+2023-02-02 15:17:47,863 INFO [http-nio-8888-exec-5] maluevartem.cloud_storage_backend.security.JWTToken: Auth-token eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiIxIiwic3ViIjoiVXNlciIsImlhdCI6MTY3NTM0MDI2NywibmJmIjoxNjc1MzQwMjY3LCJleHAiOjE2NzUzNDIwNjd9.AP2yMUFQ0G_Z6fiZLGs_uxR-nBgN9Y8rU8NVKfj4fMI добавлен в список активных токеннов
+2023-02-02 15:17:47,864 INFO [http-nio-8888-exec-5] maluevartem.cloud_storage_backend.controller.AuthenticationController: Пользователь: UserDto(login=User, password=user1234) успешно вошел в систему. Auth-token: eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiIxIiwic3ViIjoiVXNlciIsImlhdCI6MTY3NTM0MDI2NywibmJmIjoxNjc1MzQwMjY3LCJleHAiOjE2NzUzNDIwNjd9.AP2yMUFQ0G_Z6fiZLGs_uxR-nBgN9Y8rU8NVKfj4fMI
+2023-02-02 15:25:26,332 INFO [SpringApplicationShutdownHook] org.springframework.orm.jpa.AbstractEntityManagerFactoryBean: Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-02-02 15:25:26,337 INFO [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource: HikariPool-1 - Shutdown initiated...
+2023-02-02 15:25:26,368 INFO [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource: HikariPool-1 - Shutdown completed.

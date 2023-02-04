@@ -8,6 +8,7 @@ import io.jsonwebtoken.io.Decoders;
 import io.jsonwebtoken.security.Keys;
 import lombok.NonNull;
 import lombok.extern.slf4j.Slf4j;
+import maluevartem.cloud_storage_backend.config.AuthenticationConfigConstants;
 import maluevartem.cloud_storage_backend.entity.UserEntity;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
@@ -52,7 +53,7 @@ public class JWTToken {
                 .setExpiration(exp)
                 .signWith(secret)
                 .compact();
-        log.info("Auth-token добавлен в список активных токеннов");
+        log.info("Auth-token {} добавлен в список активных токеннов", token);
         listTokens.add(token);
         return token;
     }
@@ -100,6 +101,6 @@ public class JWTToken {
     }
 
     public void removeToken(String token) {
-        listTokens.remove(token);
+        listTokens.remove(token.substring(AuthenticationConfigConstants.TOKEN_PREFIX.length()));
     }
 }

@@ -41,7 +41,7 @@ public class AuthenticationService {
 
     public String logout(String authToken, HttpServletRequest request, HttpServletResponse response) {
         Authentication auth = SecurityContextHolder.getContext().getAuthentication();
-        UserEntity userEntity = userRepository.findUserByLogin(auth.getName()).orElseThrow(()
+        UserEntity userEntity = userRepository.findUserByLogin(auth.getPrincipal().toString()).orElseThrow(()
                 -> new UserNotFoundException("Пользователь не найден", 0));
         log.info("Пользователь начал процедуру выхода из системы: {}", userEntity);
         SecurityContextLogoutHandler securityContextLogoutHandler = new SecurityContextLogoutHandler();
