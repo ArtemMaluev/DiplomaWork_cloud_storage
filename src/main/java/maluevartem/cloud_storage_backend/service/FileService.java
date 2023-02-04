@@ -4,6 +4,7 @@ import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import maluevartem.cloud_storage_backend.dto.FileDto;
 import maluevartem.cloud_storage_backend.entity.FileEntity;
+import maluevartem.cloud_storage_backend.entity.UserEntity;
 import maluevartem.cloud_storage_backend.exception.FileNotFoundException;
 import maluevartem.cloud_storage_backend.exception.IncorrectDataEntry;
 import maluevartem.cloud_storage_backend.model.FileBody;
@@ -62,6 +63,7 @@ public class FileService {
                 .fileData(fileData)
                 .hash(hash)
                 .size(file.getSize())
+                .userEntity(UserEntity.builder().id(userID).build())
                 .build();
 
         log.info("Файл создан и сохранен в базе данных. Имя файла: {}, хэш: {}, Id пользователя: {}", fileName, hash, userID);
@@ -101,8 +103,6 @@ public class FileService {
                 .fileName(file.getFileName())
                 .fileType(file.getFileType())
                 .fileData(file.getFileData())
-                .hash(file.getHash())
-                .size(file.getSize())
                 .build();
     }
 

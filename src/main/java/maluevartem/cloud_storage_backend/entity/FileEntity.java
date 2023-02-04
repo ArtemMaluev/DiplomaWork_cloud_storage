@@ -4,6 +4,7 @@ import lombok.*;
 import org.hibernate.Hibernate;
 
 import javax.persistence.*;
+import java.util.Arrays;
 import java.util.Objects;
 
 @Data
@@ -30,6 +31,7 @@ public class FileEntity {
 
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "user_id", nullable = false)
+    @ToString.Exclude
     private UserEntity userEntity;
 
     @Override
@@ -47,5 +49,17 @@ public class FileEntity {
     @Override
     public int hashCode() {
         return getClass().hashCode();
+    }
+
+    @Override
+    public String toString() {
+        return "FileEntity{" +
+                "id=" + id +
+                ", fileName='" + fileName + '\'' +
+                ", fileType='" + fileType + '\'' +
+                ", hash='" + hash + '\'' +
+                ", size=" + size +
+                ", userId=" + userEntity.getId() +
+                '}';
     }
 }
