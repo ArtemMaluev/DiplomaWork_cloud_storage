@@ -37,7 +37,7 @@ public class CloudStorageBackendApplicationContainerTest {
 
     @Container
     public static GenericContainer<?> appBackendCloud =
-            new GenericContainer<>("app_backend_cloud:latest")
+            new GenericContainer<>("app-cloud-storage-back:latest")
                     .withExposedPorts(PORT)
                     .dependsOn(mySQLContainer);
     @BeforeEach

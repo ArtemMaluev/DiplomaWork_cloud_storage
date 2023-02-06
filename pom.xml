@@ -9,7 +9,7 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>maluevArtem</groupId>
-    <artifactId>cloud_storage_backend</artifactId>
+    <artifactId>cloud_storage_diplom</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>cloud_storage_backend</name>
     <description>cloud_storage_backend</description>
