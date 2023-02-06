@@ -2,6 +2,7 @@ package maluevartem.cloud_storage_backend.service;
 
 import maluevartem.cloud_storage_backend.dto.UserDto;
 import maluevartem.cloud_storage_backend.entity.UserEntity;
+import maluevartem.cloud_storage_backend.enums.Role;
 import maluevartem.cloud_storage_backend.repository.UserRepository;
 import maluevartem.cloud_storage_backend.utils.MapperUtils;
 import org.junit.jupiter.api.BeforeEach;
@@ -13,6 +14,7 @@ import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.boot.test.mock.mockito.MockBean;
 import org.springframework.test.context.junit.jupiter.SpringExtension;
 
+import java.util.Collections;
 import java.util.Optional;
 
 @ExtendWith(SpringExtension.class)
@@ -39,6 +41,7 @@ public class RegistrationServiceTest {
                 .id(1L)
                 .login("LoginTest")
                 .password("PasswordTest")
+                .roles(Role.ROLE_USER.getAuthority())
                 .build();
     }
 

@@ -4,12 +4,15 @@ import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import maluevartem.cloud_storage_backend.dto.UserDto;
 import maluevartem.cloud_storage_backend.entity.UserEntity;
+import maluevartem.cloud_storage_backend.enums.Role;
 import maluevartem.cloud_storage_backend.exception.IncorrectDataEntry;
 import maluevartem.cloud_storage_backend.exception.UserNotFoundException;
 import maluevartem.cloud_storage_backend.repository.UserRepository;
 import maluevartem.cloud_storage_backend.utils.MapperUtils;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
+
+import java.util.Collections;
 
 @Slf4j
 @Service
@@ -30,6 +33,7 @@ public class RegistrationService {
                     " } уже зарегистрирован", userEntity.getId());
         });
         userEntity.setPassword(passwordEncoder.encode(userEntity.getPassword()));
+        userEntity.setRoles(Role.ROLE_USER.getAuthority());
         log.info("Новый пользователь зарегистрирован: {}", userEntity);
         return mapperUtils.toUserDto(userRepository.save(userEntity));
     }

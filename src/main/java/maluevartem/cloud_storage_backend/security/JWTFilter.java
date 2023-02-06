@@ -4,6 +4,7 @@ import io.jsonwebtoken.Claims;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import maluevartem.cloud_storage_backend.config.AuthenticationConfigConstants;
+import maluevartem.cloud_storage_backend.enums.Role;
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.stereotype.Component;
 import org.springframework.util.StringUtils;
@@ -15,6 +16,9 @@ import javax.servlet.ServletRequest;
 import javax.servlet.ServletResponse;
 import javax.servlet.http.HttpServletRequest;
 import java.io.IOException;
+import java.util.List;
+import java.util.Set;
+import java.util.stream.Collectors;
 
 @Slf4j
 @Component
@@ -31,6 +35,7 @@ public class JWTFilter extends GenericFilterBean {
             Claims claims = jwtToken.getAccessClaims(token);
 
             JWTAuthentication jwtInfoToken = new JWTAuthentication();
+            jwtInfoToken.setRoles(getRoles(claims));
             jwtInfoToken.setUsername(claims.getSubject());
             jwtInfoToken.setAuthenticated(true);
 
@@ -45,5 +50,12 @@ public class JWTFilter extends GenericFilterBean {
             return bearer.substring(7);
         }
         return null;
+    }
+
+    private static Set<Role> getRoles(Claims claims) {
+        List<String> roles = claims.get("roles", List.class);
+        return roles.stream()
+                .map(Role::valueOf)
+                .collect(Collectors.toSet());
     }
 }

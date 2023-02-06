@@ -4,9 +4,11 @@ import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import maluevartem.cloud_storage_backend.enums.Role;
 
 import javax.persistence.*;
 import java.util.List;
+import java.util.Set;
 
 @Data
 @AllArgsConstructor
@@ -22,6 +24,8 @@ public class UserEntity {
     private String login;
 
     private String password;
+
+    private String roles;
 
     @OneToMany(mappedBy = "userEntity", cascade = CascadeType.ALL)
     private List<FileEntity> fileList;

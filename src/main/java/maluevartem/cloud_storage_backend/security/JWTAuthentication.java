@@ -1,6 +1,7 @@
 package maluevartem.cloud_storage_backend.security;
 
 import lombok.Data;
+import maluevartem.cloud_storage_backend.enums.Role;
 import org.springframework.security.core.Authentication;
 import org.springframework.security.core.GrantedAuthority;
 
@@ -13,12 +14,11 @@ public class JWTAuthentication implements Authentication {
     private boolean authenticated;
     private String username;
     private String firstName;
-
-    private Set<String> roles;
+    private Set<Role> roles;
 
     @Override
     public Collection<? extends GrantedAuthority> getAuthorities() {
-        return null;
+        return roles;
     }
 
     @Override
