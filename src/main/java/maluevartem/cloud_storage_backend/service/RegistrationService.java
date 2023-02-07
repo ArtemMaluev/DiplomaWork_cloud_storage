@@ -33,7 +33,8 @@ public class RegistrationService {
                     " } уже зарегистрирован", userEntity.getId());
         });
         userEntity.setPassword(passwordEncoder.encode(userEntity.getPassword()));
-        userEntity.setRoles(Role.ROLE_USER.getAuthority());
+        userEntity.setRoles(Collections.singleton(Role.ROLE_USER));
+        userEntity.setRole(Role.ROLE_USER.getAuthority());
         log.info("Новый пользователь зарегистрирован: {}", userEntity);
         return mapperUtils.toUserDto(userRepository.save(userEntity));
     }

@@ -6,6 +6,7 @@ import maluevartem.cloud_storage_backend.dto.UserDto;
 import maluevartem.cloud_storage_backend.service.RegistrationService;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.web.bind.annotation.*;
 
 import javax.validation.Valid;
@@ -25,12 +26,14 @@ public class RegistrationController {
     }
 
     @GetMapping("/{id}")
+    @PreAuthorize("hasAuthority('ROLE_ADMIN')")
     public ResponseEntity<UserDto> getUser(@PathVariable Long id) {
         log.info("Получен пользователь по ID: {}", id);
         return new ResponseEntity<>(registrationService.getUser(id), HttpStatus.OK);
     }
 
     @DeleteMapping("/delete/{id}")
+    @PreAuthorize("hasAuthority('ROLE_ADMIN')")
     public ResponseEntity<Void> deleteUser(@PathVariable Long id) {
         log.info("Удален пользователь с ID: {}", id);
         registrationService.deleteUser(id);

@@ -41,7 +41,7 @@ public class RegistrationServiceTest {
                 .id(1L)
                 .login("LoginTest")
                 .password("PasswordTest")
-                .roles(Role.ROLE_USER.getAuthority())
+                .roles(Collections.singleton(Role.ROLE_USER))
                 .build();
     }
 

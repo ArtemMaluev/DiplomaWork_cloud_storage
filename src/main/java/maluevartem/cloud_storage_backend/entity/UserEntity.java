@@ -25,7 +25,10 @@ public class UserEntity {
 
     private String password;
 
-    private String roles;
+    private String role;
+
+    @ElementCollection
+    private Set<Role> roles;
 
     @OneToMany(mappedBy = "userEntity", cascade = CascadeType.ALL)
     private List<FileEntity> fileList;
