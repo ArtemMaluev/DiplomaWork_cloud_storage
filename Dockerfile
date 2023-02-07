@@ -4,7 +4,7 @@ VOLUME /tmp
 
 EXPOSE 8888
 
-COPY target/cloud_storage_diplom-0.0.1-SNAPSHOT.jar app-cloud-storage-back.jar
+COPY target/DiplomaWork_cloud_storage-0.0.1-SNAPSHOT.jar app-cloud-storage-back.jar
 
 ADD src/main/resources/application.properties src/main/resources/application.properties
 
